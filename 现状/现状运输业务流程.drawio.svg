@@ -1,120 +1,855 @@
-<svg content="&lt;mxfile compressed=&quot;false&quot; host=&quot;drawio&quot; version=&quot;26.0.0&quot;&gt;
-  &lt;diagram id=&quot;as-is-transport&quot; name=&quot;现状运输业务流程&quot;&gt;
-    &lt;mxGraphModel dx=&quot;1800&quot; dy=&quot;1100&quot; grid=&quot;1&quot; gridSize=&quot;10&quot; guides=&quot;1&quot; tooltips=&quot;1&quot; connect=&quot;1&quot; arrows=&quot;1&quot; fold=&quot;1&quot; page=&quot;1&quot; pageScale=&quot;1&quot; pageWidth=&quot;1800&quot; pageHeight=&quot;1100&quot; math=&quot;0&quot; shadow=&quot;0&quot;&gt;
-      &lt;root&gt;
-        &lt;mxCell id=&quot;0&quot;/&gt;
-        &lt;mxCell id=&quot;1&quot; parent=&quot;0&quot;/&gt;
-
-        &lt;mxCell id=&quot;2&quot; value=&quot;现有运输业务流程（As-Is）&quot; style=&quot;text;html=1;align=left;verticalAlign=middle;fontSize=26;fontStyle=1;fontColor=#172B4D;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;40&quot; y=&quot;20&quot; width=&quot;600&quot; height=&quot;40&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;3&quot; value=&quot;蓝色：货物/单据流　绿色：资金流　橙色：人工操作或账实不一致风险&quot; style=&quot;text;html=1;align=left;verticalAlign=middle;fontSize=13;fontColor=#52606D;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;40&quot; y=&quot;60&quot; width=&quot;700&quot; height=&quot;30&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-
-        &lt;mxCell id=&quot;10&quot; value=&quot;第三方厂商&quot; style=&quot;swimlane;html=1;startSize=34;horizontal=0;collapsible=0;fillColor=#EEF4FF;strokeColor=#7DA2EB;fontStyle=1;fontSize=16;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;40&quot; y=&quot;100&quot; width=&quot;1720&quot; height=&quot;150&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;11&quot; value=&quot;我方业务员&quot; style=&quot;swimlane;html=1;startSize=34;horizontal=0;collapsible=0;fillColor=#FFFFFF;strokeColor=#AAB3C0;fontStyle=1;fontSize=16;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;40&quot; y=&quot;270&quot; width=&quot;1720&quot; height=&quot;170&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;12&quot; value=&quot;现有 TMS 系统&quot; style=&quot;swimlane;html=1;startSize=34;horizontal=0;collapsible=0;fillColor=#F8F5FF;strokeColor=#9673A6;fontStyle=1;fontSize=16;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;40&quot; y=&quot;460&quot; width=&quot;1720&quot; height=&quot;200&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;13&quot; value=&quot;实际承运车辆&quot; style=&quot;swimlane;html=1;startSize=34;horizontal=0;collapsible=0;fillColor=#FFF8ED;strokeColor=#D79B00;fontStyle=1;fontSize=16;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;40&quot; y=&quot;680&quot; width=&quot;1720&quot; height=&quot;140&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;14&quot; value=&quot;财务与资金&quot; style=&quot;swimlane;html=1;startSize=34;horizontal=0;collapsible=0;fillColor=#F1FBF4;strokeColor=#82B366;fontStyle=1;fontSize=16;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;40&quot; y=&quot;840&quot; width=&quot;1720&quot; height=&quot;210&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-
-        &lt;mxCell id=&quot;20&quot; value=&quot;&amp;lt;b&amp;gt;多个厂商后台&amp;lt;/b&amp;gt;&amp;#xa;每天几百条运输需求/厂商&amp;#xa;汽车或大型汽车配件&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;&quot; vertex=&quot;1&quot; parent=&quot;10&quot;&gt;&lt;mxGeometry x=&quot;180&quot; y=&quot;40&quot; width=&quot;240&quot; height=&quot;80&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;21&quot; value=&quot;&amp;lt;b&amp;gt;厂商原始 Excel&amp;lt;/b&amp;gt;&amp;#xa;各厂商字段不同&amp;#xa;数量及文件数暂未确定&quot; style=&quot;shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;&quot; vertex=&quot;1&quot; parent=&quot;10&quot;&gt;&lt;mxGeometry x=&quot;530&quot; y=&quot;40&quot; width=&quot;270&quot; height=&quot;80&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;22&quot; value=&quot;业务员登录后台并导出&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2563EB;fontColor=#2563EB;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;20&quot; target=&quot;21&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-
-        &lt;mxCell id=&quot;30&quot; value=&quot;&amp;lt;b&amp;gt;人工统一字段&amp;lt;/b&amp;gt;&amp;#xa;形成“原始运输需求表”&amp;#xa;一行 = 一个实际货物&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=13;&quot; vertex=&quot;1&quot; parent=&quot;11&quot;&gt;&lt;mxGeometry x=&quot;180&quot; y=&quot;45&quot; width=&quot;260&quot; height=&quot;90&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;31&quot; value=&quot;&amp;lt;b&amp;gt;人工按线路二次整理&amp;lt;/b&amp;gt;&amp;#xa;形成多份“运输计划表”&amp;#xa;部分货物在线路途经点送达&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=13;&quot; vertex=&quot;1&quot; parent=&quot;11&quot;&gt;&lt;mxGeometry x=&quot;550&quot; y=&quot;45&quot; width=&quot;280&quot; height=&quot;90&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;32&quot; value=&quot;&amp;lt;b&amp;gt;人工分配实际运输车辆&amp;lt;/b&amp;gt;&amp;#xa;一份计划可能由多辆外车运输&amp;#xa;车辆不属于我方&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=13;&quot; vertex=&quot;1&quot; parent=&quot;11&quot;&gt;&lt;mxGeometry x=&quot;970&quot; y=&quot;45&quot; width=&quot;280&quot; height=&quot;90&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;33&quot; value=&quot;人工整理&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#C2410C;fontColor=#9A3412;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;21&quot; target=&quot;30&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;&lt;Array as=&quot;points&quot;&gt;&lt;mxPoint x=&quot;705&quot; y=&quot;260&quot;/&gt;&lt;mxPoint x=&quot;350&quot; y=&quot;260&quot;/&gt;&lt;/Array&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;34&quot; value=&quot;&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2563EB;exitX=1;exitY=0.5;entryX=0;entryY=0.5;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;30&quot; target=&quot;31&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;35&quot; value=&quot;&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2563EB;exitX=1;exitY=0.5;entryX=0;entryY=0.5;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;31&quot; target=&quot;32&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-
-        &lt;mxCell id=&quot;40&quot; value=&quot;&amp;lt;b&amp;gt;运单系统：整车运单&amp;lt;/b&amp;gt;&amp;#xa;发/收货地、名称、规格、重量、运费&amp;#xa;系统计费后，人工调参对齐厂商付款&amp;#xa;每张运单有支付码&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=13;&quot; vertex=&quot;1&quot; parent=&quot;12&quot;&gt;&lt;mxGeometry x=&quot;140&quot; y=&quot;45&quot; width=&quot;330&quot; height=&quot;115&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;41&quot; value=&quot;&amp;lt;b&amp;gt;当前实际录单方式&amp;lt;/b&amp;gt;&amp;#xa;常将几百个货物合并成 1 张整车运单&amp;#xa;&amp;lt;font color=&amp;quot;#9A3412&amp;quot;&amp;gt;系统运单数 ≠ 实际货物数&amp;lt;/font&amp;gt;&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;strokeWidth=2;fontSize=13;&quot; vertex=&quot;1&quot; parent=&quot;12&quot;&gt;&lt;mxGeometry x=&quot;580&quot; y=&quot;50&quot; width=&quot;320&quot; height=&quot;105&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;42&quot; value=&quot;&amp;lt;b&amp;gt;调度中心：整车调度单&amp;lt;/b&amp;gt;&amp;#xa;装载整车运单&amp;#xa;车牌、司机、电话、所属公司、包车费&amp;#xa;&amp;lt;font color=&amp;quot;#9A3412&amp;quot;&amp;gt;仅一个且非实际车牌；实际可能多车&amp;lt;/font&amp;gt;&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=13;&quot; vertex=&quot;1&quot; parent=&quot;12&quot;&gt;&lt;mxGeometry x=&quot;1030&quot; y=&quot;40&quot; width=&quot;360&quot; height=&quot;125&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;43&quot; value=&quot;人工逐货物录入/合并&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#C2410C;fontColor=#9A3412;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;31&quot; target=&quot;40&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;&lt;Array as=&quot;points&quot;&gt;&lt;mxPoint x=&quot;730&quot; y=&quot;470&quot;/&gt;&lt;mxPoint x=&quot;345&quot; y=&quot;470&quot;/&gt;&lt;/Array&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;44&quot; value=&quot;省事合并&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#C2410C;fontColor=#9A3412;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;40&quot; target=&quot;41&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;45&quot; value=&quot;装载到调度单&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2563EB;fontColor=#2563EB;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;41&quot; target=&quot;42&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-
-        &lt;mxCell id=&quot;50&quot; value=&quot;&amp;lt;b&amp;gt;多辆实际外部运输车辆&amp;lt;/b&amp;gt;&amp;#xa;装货 → 沿线路运输 → 分点送达&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=13;&quot; vertex=&quot;1&quot; parent=&quot;13&quot;&gt;&lt;mxGeometry x=&quot;970&quot; y=&quot;35&quot; width=&quot;330&quot; height=&quot;70&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;51&quot; value=&quot;&amp;lt;b&amp;gt;收货回执单&amp;lt;/b&amp;gt;&amp;#xa;业务员逐一人工获取&quot; style=&quot;shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=13;&quot; vertex=&quot;1&quot; parent=&quot;13&quot;&gt;&lt;mxGeometry x=&quot;1420&quot; y=&quot;35&quot; width=&quot;250&quot; height=&quot;70&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;52&quot; value=&quot;系统信息与实际承运不一致&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#C2410C;fontColor=#9A3412;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;42&quot; target=&quot;50&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;53&quot; value=&quot;逐货物送达&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2563EB;fontColor=#2563EB;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;50&quot; target=&quot;51&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-
-        &lt;mxCell id=&quot;60&quot; value=&quot;&amp;lt;b&amp;gt;厂商 → 我方：整车运单费（应收）&amp;lt;/b&amp;gt;&amp;#xa;通过支付码付款，支付形式可能灵活&amp;#xa;&amp;lt;font color=&amp;quot;#166534&amp;quot;&amp;gt;整车运单费 ＞ 实际运输费用&amp;lt;/font&amp;gt;&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=13;&quot; vertex=&quot;1&quot; parent=&quot;14&quot;&gt;&lt;mxGeometry x=&quot;120&quot; y=&quot;55&quot; width=&quot;340&quot; height=&quot;105&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;61&quot; value=&quot;&amp;lt;b&amp;gt;我方 → 实际车辆：运输费（应付）&amp;lt;/b&amp;gt;&amp;#xa;运输前预付 60%&amp;#xa;结算完成后支付剩余 40%&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=13;&quot; vertex=&quot;1&quot; parent=&quot;14&quot;&gt;&lt;mxGeometry x=&quot;560&quot; y=&quot;55&quot; width=&quot;320&quot; height=&quot;105&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;62&quot; value=&quot;&amp;lt;b&amp;gt;TMS 触发结算 / 财务审核&amp;lt;/b&amp;gt;&amp;#xa;业务员人工把调度单设为“已送达”&amp;#xa;财务线下核实真实性&amp;#xa;&amp;lt;font color=&amp;quot;#9A3412&amp;quot;&amp;gt;因运单数与实际货物数不匹配&amp;lt;/font&amp;gt;&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=13;&quot; vertex=&quot;1&quot; parent=&quot;14&quot;&gt;&lt;mxGeometry x=&quot;990&quot; y=&quot;50&quot; width=&quot;340&quot; height=&quot;115&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;63&quot; value=&quot;&amp;lt;b&amp;gt;审核通过后付款&amp;lt;/b&amp;gt;&amp;#xa;款项付给调度单所属公司&amp;#xa;大概率是我方子公司&amp;#xa;业务员再支付实车尾款 40%&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=13;&quot; vertex=&quot;1&quot; parent=&quot;14&quot;&gt;&lt;mxGeometry x=&quot;1420&quot; y=&quot;55&quot; width=&quot;270&quot; height=&quot;110&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;64&quot; value=&quot;支付码收款（形式灵活）&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16803C;fontColor=#166534;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;40&quot; target=&quot;60&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;&lt;Array as=&quot;points&quot;&gt;&lt;mxPoint x=&quot;345&quot; y=&quot;850&quot;/&gt;&lt;mxPoint x=&quot;330&quot; y=&quot;850&quot;/&gt;&lt;/Array&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;65&quot; value=&quot;预付 60%&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16803C;fontColor=#166534;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;50&quot; target=&quot;61&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;&lt;Array as=&quot;points&quot;&gt;&lt;mxPoint x=&quot;970&quot; y=&quot;750&quot;/&gt;&lt;mxPoint x=&quot;970&quot; y=&quot;947&quot;/&gt;&lt;/Array&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;66&quot; value=&quot;人工确认全部货物送达&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#C2410C;fontColor=#9A3412;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;51&quot; target=&quot;62&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;&lt;Array as=&quot;points&quot;&gt;&lt;mxPoint x=&quot;1585&quot; y=&quot;850&quot;/&gt;&lt;mxPoint x=&quot;1200&quot; y=&quot;850&quot;/&gt;&lt;/Array&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;67&quot; value=&quot;审核通过&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16803C;fontColor=#166534;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;62&quot; target=&quot;63&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-        &lt;mxCell id=&quot;68&quot; value=&quot;支付剩余 40%&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16803C;fontColor=#166534;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=1;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;63&quot; target=&quot;61&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;&lt;Array as=&quot;points&quot;&gt;&lt;mxPoint x=&quot;1595&quot; y=&quot;1030&quot;/&gt;&lt;mxPoint x=&quot;760&quot; y=&quot;1030&quot;/&gt;&lt;/Array&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;
-
-        &lt;mxCell id=&quot;70&quot; value=&quot;利润关系：厂商支付的整车运单费 − 实际车辆运输费 − 其他成本 = 我方利润（应大于 0）&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#166534;fontStyle=1;fontSize=14;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;310&quot; y=&quot;1060&quot; width=&quot;1180&quot; height=&quot;35&quot; as=&quot;geometry&quot;/&gt;&lt;/mxCell&gt;
-      &lt;/root&gt;
-    &lt;/mxGraphModel&gt;
-  &lt;/diagram&gt;
-&lt;/mxfile&gt;
-" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1800" height="1120" viewBox="0 0 1800 1120" role="img" aria-labelledby="title desc">
-  <title id="title">现有运输业务流程与资金流</title>
-  <desc id="desc">多厂商原始运输需求经人工整理后录入TMS，生成整车运单与整车调度单，外部车辆执行运输，业务员人工核实回单，财务审核后结算；图中同时显示厂商应收和实际运输应付。</desc>
-  <defs>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#52606d"/></marker>
-    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#2563eb"/></marker>
-    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#16803c"/></marker>
-    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#c2410c"/></marker>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#172b4d" flood-opacity="0.12"/></filter>
-    <style>
-      text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;fill:#172b4d}.title{font-size:28px;font-weight:700}.subtitle{font-size:14px;fill:#52606d}.lane{font-size:17px;font-weight:700}.head{font-size:16px;font-weight:700}.body{font-size:13px;fill:#344563}.small{font-size:12px;fill:#52606d}.risk{font-size:13px;fill:#9a3412}.money{font-size:14px;font-weight:700;fill:#166534}.edge{fill:none;stroke:#52606d;stroke-width:2;marker-end:url(#arrow)}.data{fill:none;stroke:#2563eb;stroke-width:2.3;marker-end:url(#arrowBlue)}.cash{fill:none;stroke:#16803c;stroke-width:2.5;marker-end:url(#arrowGreen)}.manual{fill:none;stroke:#c2410c;stroke-width:2;stroke-dasharray:7 5;marker-end:url(#arrowOrange)}
-    </style>
-  </defs>
-
-  <rect width="1800" height="1120" fill="#f7f9fc"/>
-  <text x="50" y="48" class="title">现有运输业务流程与资金流（As-Is）</text>
-  <text x="50" y="74" class="subtitle">蓝色：货物 / 单据流　绿色：资金流　橙色虚线：人工操作或账实不一致风险</text>
-
-  <!-- swimlanes -->
-  <rect x="40" y="100" width="1720" height="155" rx="12" fill="#eef4ff" stroke="#b3c7f7"/>
-  <rect x="40" y="270" width="1720" height="175" rx="12" fill="#fff" stroke="#d8dee9"/>
-  <rect x="40" y="460" width="1720" height="205" rx="12" fill="#f8f5ff" stroke="#cfc4ed"/>
-  <rect x="40" y="680" width="1720" height="145" rx="12" fill="#fff8ed" stroke="#f0c88b"/>
-  <rect x="40" y="840" width="1720" height="230" rx="12" fill="#f1fbf4" stroke="#9ed5ad"/>
-  <text x="60" y="130" class="lane">第三方厂商</text>
-  <text x="60" y="300" class="lane">我方业务员</text>
-  <text x="60" y="490" class="lane">现有 TMS 系统</text>
-  <text x="60" y="710" class="lane">实际承运车辆</text>
-  <text x="60" y="870" class="lane">财务与资金</text>
-
-  <!-- vendor lane -->
-  <g filter="url(#shadow)"><rect x="220" y="135" width="240" height="85" rx="10" fill="#fff" stroke="#7da2eb"/><text x="340" y="162" text-anchor="middle" class="head">多个厂商后台</text><text x="340" y="185" text-anchor="middle" class="body">每天几百条运输需求 / 厂商</text><text x="340" y="205" text-anchor="middle" class="small">汽车或大型汽车配件</text></g>
-  <g filter="url(#shadow)"><rect x="570" y="135" width="285" height="85" rx="10" fill="#fff" stroke="#7da2eb"/><text x="712" y="161" text-anchor="middle" class="head">厂商原始 Excel</text><text x="712" y="184" text-anchor="middle" class="body">字段各异，数量及文件数暂不确定</text><text x="712" y="205" text-anchor="middle" class="small">厂商 / 名称 / 重量 / 规格 / 起讫地 / 时效</text></g>
-  <path d="M460 177 H570" class="data"/><text x="515" y="167" text-anchor="middle" class="small">业务员导出</text>
-
-  <!-- staff lane -->
-  <g filter="url(#shadow)"><rect x="220" y="320" width="255" height="90" rx="10" fill="#fff" stroke="#94a3b8"/><text x="347" y="348" text-anchor="middle" class="head">人工统一字段</text><text x="347" y="373" text-anchor="middle" class="body">形成“原始运输需求表”</text><text x="347" y="394" text-anchor="middle" class="small">一行 = 一个实际货物</text></g>
-  <g filter="url(#shadow)"><rect x="590" y="320" width="280" height="90" rx="10" fill="#fff" stroke="#94a3b8"/><text x="730" y="348" text-anchor="middle" class="head">人工按线路二次整理</text><text x="730" y="373" text-anchor="middle" class="body">形成多份“运输计划表”</text><text x="730" y="394" text-anchor="middle" class="small">同一线路，部分货物沿途送达</text></g>
-  <g filter="url(#shadow)"><rect x="1010" y="320" width="275" height="90" rx="10" fill="#fff" stroke="#94a3b8"/><text x="1147" y="348" text-anchor="middle" class="head">人工分配实际运输车辆</text><text x="1147" y="373" text-anchor="middle" class="body">一份计划可能由多辆外车运输</text><text x="1147" y="394" text-anchor="middle" class="small">车辆不属于我方</text></g>
-  <path d="M712 220 V285 H347 V320" class="manual"/><path d="M475 365 H590" class="data"/><path d="M870 365 H1010" class="data"/>
-
-  <!-- TMS lane -->
-  <g filter="url(#shadow)"><rect x="185" y="515" width="320" height="110" rx="10" fill="#fff" stroke="#8b72c5"/><text x="345" y="543" text-anchor="middle" class="head">运单系统：整车运单</text><text x="345" y="566" text-anchor="middle" class="body">发货地 / 收货地 / 名称 / 规格 / 重量 / 运费</text><text x="345" y="588" text-anchor="middle" class="body">运费由系统计算，并人工调参对齐厂商付款</text><text x="345" y="610" text-anchor="middle" class="small">每张整车运单有支付码</text></g>
-  <g filter="url(#shadow)"><rect x="625" y="515" width="315" height="110" rx="10" fill="#fff4ed" stroke="#e7783d" stroke-width="2"/><text x="782" y="543" text-anchor="middle" class="head">当前实际录单方式</text><text x="782" y="567" text-anchor="middle" class="risk">为省操作，常把几百个货物</text><text x="782" y="589" text-anchor="middle" class="risk">合并成 1 张“整车运单”</text><text x="782" y="611" text-anchor="middle" class="small">系统运单数 ≠ 实际货物数</text></g>
-  <g filter="url(#shadow)"><rect x="1070" y="505" width="355" height="130" rx="10" fill="#fff" stroke="#8b72c5"/><text x="1247" y="533" text-anchor="middle" class="head">调度中心：整车调度单</text><text x="1247" y="556" text-anchor="middle" class="body">装载整车运单</text><text x="1247" y="579" text-anchor="middle" class="body">车牌 / 司机 / 电话 / 所属公司 / 包车费</text><text x="1247" y="602" text-anchor="middle" class="risk">系统仅一个且非实际车牌</text><text x="1247" y="622" text-anchor="middle" class="risk">实际承运车辆可能有多辆</text></g>
-  <path d="M730 410 V470 H345 V515" class="manual"/><path d="M505 570 H625" class="manual"/><path d="M940 570 H1070" class="data"/><text x="1005" y="557" text-anchor="middle" class="small">装载</text>
-
-  <!-- carrier lane -->
-  <g filter="url(#shadow)"><rect x="1010" y="720" width="330" height="75" rx="10" fill="#fff" stroke="#dd9c39"/><text x="1175" y="747" text-anchor="middle" class="head">多辆实际外部运输车辆</text><text x="1175" y="772" text-anchor="middle" class="body">装货 → 沿线路运输 → 分点送达</text></g>
-  <g filter="url(#shadow)"><rect x="1455" y="720" width="250" height="75" rx="10" fill="#fff" stroke="#dd9c39"/><text x="1580" y="747" text-anchor="middle" class="head">收货回执单</text><text x="1580" y="772" text-anchor="middle" class="body">由业务员逐一人工获取</text></g>
-  <path d="M1247 635 V685 H1175 V720" class="manual"/><path d="M1340 757 H1455" class="data"/>
-  <path d="M1580 720 V650 H1510 V570 H1425" class="manual"/><text x="1515" y="640" text-anchor="middle" class="small">人工确认全部送达</text>
-
-  <!-- finance lane -->
-  <g filter="url(#shadow)"><rect x="170" y="900" width="325" height="120" rx="10" fill="#fff" stroke="#54a96d"/><text x="332" y="928" text-anchor="middle" class="head">厂商 → 我方：整车运单费（应收）</text><text x="332" y="952" text-anchor="middle" class="body">通过整车运单支付码付款</text><text x="332" y="976" text-anchor="middle" class="body">支付时间 / 批次 / 付款主体可能灵活</text><text x="332" y="1002" text-anchor="middle" class="money">整车运单费 ＞ 实际运输费用</text></g>
-  <g filter="url(#shadow)"><rect x="610" y="900" width="315" height="120" rx="10" fill="#fff" stroke="#54a96d"/><text x="767" y="928" text-anchor="middle" class="head">我方 → 实际车辆：运输费（应付）</text><text x="767" y="953" text-anchor="middle" class="body">运输前预付 60%</text><text x="767" y="978" text-anchor="middle" class="body">结算完成后再支付 40%</text><text x="767" y="1002" text-anchor="middle" class="money">差额形成我方毛利</text></g>
-  <g filter="url(#shadow)"><rect x="1040" y="895" width="320" height="130" rx="10" fill="#fff" stroke="#54a96d"/><text x="1200" y="923" text-anchor="middle" class="head">TMS 结算触发与财务审核</text><text x="1200" y="948" text-anchor="middle" class="body">业务员人工将调度单设为“已送达”</text><text x="1200" y="972" text-anchor="middle" class="body">财务线下核实送达真实性</text><text x="1200" y="996" text-anchor="middle" class="risk">原因：系统运单数与实际货物数不匹配</text></g>
-  <g filter="url(#shadow)"><rect x="1450" y="900" width="265" height="120" rx="10" fill="#fff" stroke="#54a96d"/><text x="1582" y="928" text-anchor="middle" class="head">审核通过后付款</text><text x="1582" y="953" text-anchor="middle" class="body">支付给调度单“所属公司”</text><text x="1582" y="977" text-anchor="middle" class="body">大概率为我方子公司</text><text x="1582" y="1002" text-anchor="middle" class="small">业务员随后付实际车辆尾款 40%</text></g>
-  <path d="M332 900 V835 H345 V625" class="cash"/><text x="350" y="850" class="small">支付码收款（形式灵活）</text>
-  <path d="M1010 365 H965 V850 H767 V900" class="cash"/><text x="845" y="840" class="small">运输前预付 60%</text>
-  <path d="M1580 795 V860 H1200 V895" class="manual"/><path d="M1360 960 H1450" class="cash"/><path d="M1582 1020 V1050 H767 V1020" class="cash"/><text x="1175" y="1045" text-anchor="middle" class="small">业务员向实际车辆支付剩余 40%</text>
-
-  <!-- key relation -->
-  <rect x="40" y="1080" width="1720" height="28" rx="6" fill="#e9f7ed"/>
-  <text x="900" y="1100" text-anchor="middle" class="money">利润关系：厂商支付的整车运单费 − 实际车辆运输费 − 其他成本 = 我方利润（应大于 0）</text>
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1721px" height="1076px" viewBox="-0.5 -0.5 1721 1076" content="&lt;mxfile compressed=&quot;false&quot;&gt;&lt;diagram id=&quot;as-is-transport&quot; name=&quot;现状运输业务流程&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <g>
+            <rect x="0" y="0" width="600" height="40" fill="none" stroke="none" pointer-events="all"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 20px; margin-left: 2px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #172B4D; ">
+                                <div style="display: inline-block; font-size: 26px; font-family: &quot;Helvetica&quot;; color: light-dark(#172B4D, #bacbe8); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: nowrap; ">
+                                    现有运输业务流程（As-Is）
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="2" y="28" fill="#172B4D" font-family="&quot;Helvetica&quot;" font-size="26px" font-weight="bold">
+                        现有运输业务流程（As-Is）
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="0" y="40" width="700" height="30" fill="none" stroke="none" pointer-events="all"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 55px; margin-left: 2px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #52606D; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Helvetica&quot;; color: light-dark(#52606D, #929eaa); line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                    蓝色：货物/单据流　绿色：资金流　橙色：人工操作或账实不一致风险
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="2" y="59" fill="#52606D" font-family="&quot;Helvetica&quot;" font-size="13px">
+                        蓝色：货物/单据流　绿色：资金流　橙色：人工操作或账实不一致风险
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 34 80 L 0 80 L 0 230 L 34 230" fill="#eef4ff" stroke="#7da2eb" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(238, 244, 255), rgb(23, 28, 37)); stroke: light-dark(rgb(125, 162, 235), rgb(71, 103, 166));"/>
+            <path d="M 34 80 L 1720 80 L 1720 230 L 34 230" fill="none" stroke="#7da2eb" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(125, 162, 235), rgb(71, 103, 166));"/>
+            <path d="M 34 80 L 34 230" fill="none" stroke="#7da2eb" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(125, 162, 235), rgb(71, 103, 166));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)rotate(-90 17 155)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 155px; margin-left: 17px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 16px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: nowrap; ">
+                                    第三方厂商
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="17" y="160" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="16px" text-anchor="middle" font-weight="bold">
+                        第三方厂商
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="180" y="120" width="240" height="80" rx="12" ry="12" fill="#dae8fc" stroke="#6c8ebf" pointer-events="all" style="fill: light-dark(rgb(218, 232, 252), rgb(29, 41, 59)); stroke: light-dark(rgb(108, 142, 191), rgb(92, 121, 163));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 238px; height: 1px; padding-top: 160px; margin-left: 181px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <b>
+                                        多个厂商后台
+                                    </b>
+                                    <br/>
+                                    每天几百条运输需求/厂商
+                                    <br/>
+                                    汽车或大型汽车配件
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="300" y="164" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="13px" text-anchor="middle">
+                        多个厂商后台每天几百条运输需求/厂商...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 530 200 L 584 120 L 800 120 L 746 200 Z" fill="#ffe6cc" stroke="#d79b00" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 230, 204), rgb(54, 33, 10)); stroke: light-dark(rgb(215, 155, 0), rgb(153, 101, 0));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 268px; height: 1px; padding-top: 160px; margin-left: 531px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <b>
+                                        厂商原始 Excel
+                                    </b>
+                                    <br/>
+                                    各厂商字段不同
+                                    <br/>
+                                    数量及文件数暂未确定
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="665" y="164" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="13px" text-anchor="middle">
+                        厂商原始 Excel...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 34 250 L 0 250 L 0 420 L 34 420" fill="#ffffff" stroke="#aab3c0" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); stroke: light-dark(rgb(170, 179, 192), rgb(77, 85, 96));"/>
+            <path d="M 34 250 L 1720 250 L 1720 420 L 34 420" fill="none" stroke="#aab3c0" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(170, 179, 192), rgb(77, 85, 96));"/>
+            <path d="M 34 250 L 34 420" fill="none" stroke="#aab3c0" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(170, 179, 192), rgb(77, 85, 96));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)rotate(-90 17 335)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 335px; margin-left: 17px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 16px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: nowrap; ">
+                                    我方业务员
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="17" y="340" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="16px" text-anchor="middle" font-weight="bold">
+                        我方业务员
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="180" y="295" width="260" height="90" rx="13.5" ry="13.5" fill="#f5f5f5" stroke="#666666" pointer-events="all" style="fill: light-dark(rgb(245, 245, 245), rgb(26, 26, 26)); stroke: light-dark(rgb(102, 102, 102), rgb(149, 149, 149));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 258px; height: 1px; padding-top: 340px; margin-left: 181px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <b>
+                                        人工统一字段
+                                    </b>
+                                    <br/>
+                                    形成“原始运输需求表”
+                                    <br/>
+                                    一行 = 一个实际货物
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="310" y="344" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="13px" text-anchor="middle">
+                        人工统一字段形成“原始运输需求表”一行 = 一个实际货物...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="550" y="295" width="280" height="90" rx="13.5" ry="13.5" fill="#f5f5f5" stroke="#666666" pointer-events="all" style="fill: light-dark(rgb(245, 245, 245), rgb(26, 26, 26)); stroke: light-dark(rgb(102, 102, 102), rgb(149, 149, 149));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 278px; height: 1px; padding-top: 340px; margin-left: 551px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <b>
+                                        人工按线路二次整理
+                                    </b>
+                                    <br/>
+                                    形成多份“运输计划表”
+                                    <br/>
+                                    部分货物在线路途经点送达
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="690" y="344" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="13px" text-anchor="middle">
+                        人工按线路二次整理形成多份“运输计划表”部分货物在线路途经点送达...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="970" y="295" width="280" height="90" rx="13.5" ry="13.5" fill="#f5f5f5" stroke="#666666" pointer-events="all" style="fill: light-dark(rgb(245, 245, 245), rgb(26, 26, 26)); stroke: light-dark(rgb(102, 102, 102), rgb(149, 149, 149));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 278px; height: 1px; padding-top: 340px; margin-left: 971px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <b>
+                                        人工分配实际运输车辆
+                                    </b>
+                                    <br/>
+                                    一份计划可能由多辆外车运输
+                                    <br/>
+                                    车辆不属于我方
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1110" y="344" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="13px" text-anchor="middle">
+                        人工分配实际运输车辆一份计划可能由多辆外车运输车辆不属于我方...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 34 440 L 0 440 L 0 640 L 34 640" fill="#f8f5ff" stroke="#9673a6" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(248, 245, 255), rgb(26, 24, 32)); stroke: light-dark(rgb(150, 115, 166), rgb(149, 119, 163));"/>
+            <path d="M 34 440 L 1720 440 L 1720 640 L 34 640" fill="none" stroke="#9673a6" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(150, 115, 166), rgb(149, 119, 163));"/>
+            <path d="M 34 440 L 34 640" fill="none" stroke="#9673a6" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(150, 115, 166), rgb(149, 119, 163));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)rotate(-90 17 540)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 540px; margin-left: 17px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 16px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: nowrap; ">
+                                    现有 TMS 系统
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="17" y="545" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="16px" text-anchor="middle" font-weight="bold">
+                        现有 TMS 系统
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="140" y="485" width="330" height="115" rx="17.25" ry="17.25" fill="#e1d5e7" stroke="#9673a6" pointer-events="all" style="fill: light-dark(rgb(225, 213, 231), rgb(57, 47, 63)); stroke: light-dark(rgb(150, 115, 166), rgb(149, 119, 163));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 328px; height: 1px; padding-top: 543px; margin-left: 141px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <b>
+                                        运单系统：整车运单
+                                    </b>
+                                    <br/>
+                                    发/收货地、名称、规格、重量、运费
+                                    <br/>
+                                    系统计费后，人工调参对齐厂商付款
+                                    <br/>
+                                    每张运单有支付码
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="305" y="546" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="13px" text-anchor="middle">
+                        运单系统：整车运单发/收货地、名称、规格、重量、运费...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="580" y="490" width="320" height="105" rx="15.75" ry="15.75" fill="#f8cecc" stroke="#b85450" stroke-width="2" pointer-events="all" style="fill: light-dark(rgb(248, 206, 204), rgb(81, 45, 43)); stroke: light-dark(rgb(184, 84, 80), rgb(215, 129, 126));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 318px; height: 1px; padding-top: 543px; margin-left: 581px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <b>
+                                        当前实际录单方式
+                                    </b>
+                                    <br/>
+                                    常将几百个货物合并成 1 张整车运单
+                                    <br/>
+                                    <font color="#9A3412" style="color: light-dark(rgb(154, 52, 18), rgb(246, 159, 129));">
+                                        系统运单数 ≠ 实际货物数
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="740" y="546" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="13px" text-anchor="middle">
+                        当前实际录单方式常将几百个货物合并成 1 张整车运单...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="1030" y="480" width="360" height="125" rx="18.75" ry="18.75" fill="#e1d5e7" stroke="#9673a6" pointer-events="all" style="fill: light-dark(rgb(225, 213, 231), rgb(57, 47, 63)); stroke: light-dark(rgb(150, 115, 166), rgb(149, 119, 163));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 358px; height: 1px; padding-top: 543px; margin-left: 1031px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <b>
+                                        调度中心：整车调度单
+                                    </b>
+                                    <br/>
+                                    装载整车运单
+                                    <br/>
+                                    车牌、司机、电话、所属公司、包车费
+                                    <br/>
+                                    <font color="#9A3412" style="color: light-dark(rgb(154, 52, 18), rgb(246, 159, 129));">
+                                        仅一个且非实际车牌；实际可能多车
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1210" y="546" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="13px" text-anchor="middle">
+                        调度中心：整车调度单装载整车运单车牌、司机、电话、所属公司、包车费仅一个且非实际车牌；实际可能多车...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 34 660 L 0 660 L 0 800 L 34 800" fill="#fff8ed" stroke="#d79b00" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 248, 237), rgb(29, 23, 14)); stroke: light-dark(rgb(215, 155, 0), rgb(153, 101, 0));"/>
+            <path d="M 34 660 L 1720 660 L 1720 800 L 34 800" fill="none" stroke="#d79b00" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(215, 155, 0), rgb(153, 101, 0));"/>
+            <path d="M 34 660 L 34 800" fill="none" stroke="#d79b00" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(215, 155, 0), rgb(153, 101, 0));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)rotate(-90 17 730)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 730px; margin-left: 17px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 16px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: nowrap; ">
+                                    实际承运车辆
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="17" y="735" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="16px" text-anchor="middle" font-weight="bold">
+                        实际承运车辆
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="970" y="695" width="330" height="70" rx="10.5" ry="10.5" fill="#fff2cc" stroke="#d6b656" pointer-events="all" style="fill: light-dark(rgb(255, 242, 204), rgb(40, 29, 0)); stroke: light-dark(rgb(214, 182, 86), rgb(109, 81, 0));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 328px; height: 1px; padding-top: 730px; margin-left: 971px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <b>
+                                        多辆实际外部运输车辆
+                                    </b>
+                                    <br/>
+                                    装货 → 沿线路运输 → 分点送达
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1135" y="734" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="13px" text-anchor="middle">
+                        多辆实际外部运输车辆
+装货 → 沿线路运输 → 分点送达
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 1420 765 L 1470 695 L 1670 695 L 1620 765 Z" fill="#ffe6cc" stroke="#d79b00" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 230, 204), rgb(54, 33, 10)); stroke: light-dark(rgb(215, 155, 0), rgb(153, 101, 0));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 248px; height: 1px; padding-top: 730px; margin-left: 1421px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <b>
+                                        收货回执单
+                                    </b>
+                                    <br/>
+                                    业务员逐一人工获取
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1545" y="734" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="13px" text-anchor="middle">
+                        收货回执单
+业务员逐一人工获取
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 34 820 L 0 820 L 0 1030 L 34 1030" fill="#f1fbf4" stroke="#82b366" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(241, 251, 244), rgb(17, 26, 20)); stroke: light-dark(rgb(130, 179, 102), rgb(68, 110, 44));"/>
+            <path d="M 34 820 L 1720 820 L 1720 1030 L 34 1030" fill="none" stroke="#82b366" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(130, 179, 102), rgb(68, 110, 44));"/>
+            <path d="M 34 820 L 34 1030" fill="none" stroke="#82b366" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(130, 179, 102), rgb(68, 110, 44));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)rotate(-90 17 925)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 925px; margin-left: 17px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 16px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: nowrap; ">
+                                    财务与资金
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="17" y="930" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="16px" text-anchor="middle" font-weight="bold">
+                        财务与资金
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="120" y="875" width="340" height="105" rx="15.75" ry="15.75" fill="#d5e8d4" stroke="#82b366" pointer-events="all" style="fill: light-dark(rgb(213, 232, 212), rgb(31, 47, 30)); stroke: light-dark(rgb(130, 179, 102), rgb(68, 110, 44));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 338px; height: 1px; padding-top: 928px; margin-left: 121px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <b>
+                                        厂商 → 我方：整车运单费（应收）
+                                    </b>
+                                    <br/>
+                                    通过支付码付款，支付形式可能灵活
+                                    <br/>
+                                    <font color="#166534" style="color: light-dark(rgb(22, 101, 52), rgb(117, 185, 143));">
+                                        整车运单费 ＞ 实际运输费用
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="290" y="931" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="13px" text-anchor="middle">
+                        厂商 → 我方：整车运单费（应收）...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="560" y="875" width="320" height="105" rx="15.75" ry="15.75" fill="#d5e8d4" stroke="#82b366" pointer-events="all" style="fill: light-dark(rgb(213, 232, 212), rgb(31, 47, 30)); stroke: light-dark(rgb(130, 179, 102), rgb(68, 110, 44));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 318px; height: 1px; padding-top: 928px; margin-left: 561px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <b>
+                                        我方 → 实际车辆：运输费（应付）
+                                    </b>
+                                    <br/>
+                                    运输前预付 60%
+                                    <br/>
+                                    结算完成后支付剩余 40%
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="720" y="931" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="13px" text-anchor="middle">
+                        我方 → 实际车辆：运输费（应付）...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="990" y="870" width="340" height="115" rx="17.25" ry="17.25" fill="#fff2cc" stroke="#d6b656" pointer-events="all" style="fill: light-dark(rgb(255, 242, 204), rgb(40, 29, 0)); stroke: light-dark(rgb(214, 182, 86), rgb(109, 81, 0));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 338px; height: 1px; padding-top: 928px; margin-left: 991px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <b>
+                                        TMS 触发结算 / 财务审核
+                                    </b>
+                                    <br/>
+                                    业务员人工把调度单设为“已送达”
+                                    <br/>
+                                    财务线下核实真实性
+                                    <br/>
+                                    <font color="#9A3412" style="color: light-dark(rgb(154, 52, 18), rgb(246, 159, 129));">
+                                        因运单数与实际货物数不匹配
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1160" y="931" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="13px" text-anchor="middle">
+                        TMS 触发结算 / 财务审核...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="1420" y="875" width="270" height="110" rx="16.5" ry="16.5" fill="#d5e8d4" stroke="#82b366" pointer-events="all" style="fill: light-dark(rgb(213, 232, 212), rgb(31, 47, 30)); stroke: light-dark(rgb(130, 179, 102), rgb(68, 110, 44));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 268px; height: 1px; padding-top: 930px; margin-left: 1421px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <b>
+                                        审核通过后付款
+                                    </b>
+                                    <br/>
+                                    款项付给调度单所属公司
+                                    <br/>
+                                    大概率是我方子公司
+                                    <br/>
+                                    业务员再支付实车尾款 40%
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1555" y="934" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="13px" text-anchor="middle">
+                        审核通过后付款款项付给调度单所属公司大概率是我方子公司业务员再支付实车尾款 40%...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 420 160 L 550.63 160" fill="none" stroke="#2563eb" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(37, 99, 235), rgb(105, 158, 255));"/>
+            <path d="M 555.88 160 L 548.88 163.5 L 550.63 160 L 548.88 156.5 Z" fill="#2563eb" stroke="#2563eb" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(37, 99, 235), rgb(105, 158, 255)); stroke: light-dark(rgb(37, 99, 235), rgb(105, 158, 255));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 160px; margin-left: 488px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #2563EB; background-color: #FFFFFF; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;; color: light-dark(#2563EB, #699eff); line-height: 1.2; pointer-events: all; background-color: light-dark(#FFFFFF, #121212); white-space: nowrap; ">
+                                    业务员登录后台并导出
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="488" y="163" fill="#2563EB" font-family="&quot;Helvetica&quot;" font-size="11px" text-anchor="middle">
+                        业务员登录后台并导出
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 665 200 L 665 230 Q 665 240 655 240 L 320.06 240 Q 310.06 240 310.05 250 L 310.01 288.63" fill="none" stroke="#c2410c" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(194, 65, 12), rgb(251, 140, 94));"/>
+            <path d="M 310 293.88 L 306.51 286.88 L 310.01 288.63 L 313.51 286.89 Z" fill="#c2410c" stroke="#c2410c" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(194, 65, 12), rgb(251, 140, 94)); stroke: light-dark(rgb(194, 65, 12), rgb(251, 140, 94));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 240px; margin-left: 480px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #9A3412; background-color: #FFFFFF; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;; color: light-dark(#9A3412, #f69f81); line-height: 1.2; pointer-events: all; background-color: light-dark(#FFFFFF, #121212); white-space: nowrap; ">
+                                    人工整理
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="480" y="243" fill="#9A3412" font-family="&quot;Helvetica&quot;" font-size="11px" text-anchor="middle">
+                        人工整理
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 440 340 L 543.63 340" fill="none" stroke="#2563eb" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(37, 99, 235), rgb(105, 158, 255));"/>
+            <path d="M 548.88 340 L 541.88 343.5 L 543.63 340 L 541.88 336.5 Z" fill="#2563eb" stroke="#2563eb" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(37, 99, 235), rgb(105, 158, 255)); stroke: light-dark(rgb(37, 99, 235), rgb(105, 158, 255));"/>
+        </g>
+        <g>
+            <path d="M 830 340 L 963.63 340" fill="none" stroke="#2563eb" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(37, 99, 235), rgb(105, 158, 255));"/>
+            <path d="M 968.88 340 L 961.88 343.5 L 963.63 340 L 961.88 336.5 Z" fill="#2563eb" stroke="#2563eb" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(37, 99, 235), rgb(105, 158, 255)); stroke: light-dark(rgb(37, 99, 235), rgb(105, 158, 255));"/>
+        </g>
+        <g>
+            <path d="M 690 385 L 690.05 440 Q 690.06 450 680.06 450 L 315 450 Q 305 450 305 460 L 305 478.63" fill="none" stroke="#c2410c" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(194, 65, 12), rgb(251, 140, 94));"/>
+            <path d="M 305 483.88 L 301.5 476.88 L 305 478.63 L 308.5 476.88 Z" fill="#c2410c" stroke="#c2410c" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(194, 65, 12), rgb(251, 140, 94)); stroke: light-dark(rgb(194, 65, 12), rgb(251, 140, 94));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 450px; margin-left: 513px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #9A3412; background-color: #FFFFFF; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;; color: light-dark(#9A3412, #f69f81); line-height: 1.2; pointer-events: all; background-color: light-dark(#FFFFFF, #121212); white-space: nowrap; ">
+                                    人工逐货物录入/合并
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="513" y="453" fill="#9A3412" font-family="&quot;Helvetica&quot;" font-size="11px" text-anchor="middle">
+                        人工逐货物录入/合并
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 470 542.5 L 573.63 542.5" fill="none" stroke="#c2410c" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(194, 65, 12), rgb(251, 140, 94));"/>
+            <path d="M 578.88 542.5 L 571.88 546 L 573.63 542.5 L 571.88 539 Z" fill="#c2410c" stroke="#c2410c" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(194, 65, 12), rgb(251, 140, 94)); stroke: light-dark(rgb(194, 65, 12), rgb(251, 140, 94));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 543px; margin-left: 525px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #9A3412; background-color: #FFFFFF; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;; color: light-dark(#9A3412, #f69f81); line-height: 1.2; pointer-events: all; background-color: light-dark(#FFFFFF, #121212); white-space: nowrap; ">
+                                    省事合并
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="525" y="546" fill="#9A3412" font-family="&quot;Helvetica&quot;" font-size="11px" text-anchor="middle">
+                        省事合并
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 900 542.5 L 1023.63 542.5" fill="none" stroke="#2563eb" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(37, 99, 235), rgb(105, 158, 255));"/>
+            <path d="M 1028.88 542.5 L 1021.88 546 L 1023.63 542.5 L 1021.88 539 Z" fill="#2563eb" stroke="#2563eb" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(37, 99, 235), rgb(105, 158, 255)); stroke: light-dark(rgb(37, 99, 235), rgb(105, 158, 255));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 543px; margin-left: 965px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #2563EB; background-color: #FFFFFF; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;; color: light-dark(#2563EB, #699eff); line-height: 1.2; pointer-events: all; background-color: light-dark(#FFFFFF, #121212); white-space: nowrap; ">
+                                    装载到调度单
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="965" y="546" fill="#2563EB" font-family="&quot;Helvetica&quot;" font-size="11px" text-anchor="middle">
+                        装载到调度单
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 1210 605 L 1210.05 640 Q 1210.06 650 1200.06 650 L 1145 650 Q 1135 650 1135 660 L 1135 688.63" fill="none" stroke="#c2410c" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(194, 65, 12), rgb(251, 140, 94));"/>
+            <path d="M 1135 693.88 L 1131.5 686.88 L 1135 688.63 L 1138.5 686.88 Z" fill="#c2410c" stroke="#c2410c" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(194, 65, 12), rgb(251, 140, 94)); stroke: light-dark(rgb(194, 65, 12), rgb(251, 140, 94));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 650px; margin-left: 1173px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #9A3412; background-color: #FFFFFF; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;; color: light-dark(#9A3412, #f69f81); line-height: 1.2; pointer-events: all; background-color: light-dark(#FFFFFF, #121212); white-space: nowrap; ">
+                                    系统信息与实际承运不一致
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1173" y="653" fill="#9A3412" font-family="&quot;Helvetica&quot;" font-size="11px" text-anchor="middle">
+                        系统信息与实际承运不一致
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 1300 730 L 1438.63 730" fill="none" stroke="#2563eb" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(37, 99, 235), rgb(105, 158, 255));"/>
+            <path d="M 1443.88 730 L 1436.88 733.5 L 1438.63 730 L 1436.88 726.5 Z" fill="#2563eb" stroke="#2563eb" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(37, 99, 235), rgb(105, 158, 255)); stroke: light-dark(rgb(37, 99, 235), rgb(105, 158, 255));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 730px; margin-left: 1373px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #2563EB; background-color: #FFFFFF; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;; color: light-dark(#2563EB, #699eff); line-height: 1.2; pointer-events: all; background-color: light-dark(#FFFFFF, #121212); white-space: nowrap; ">
+                                    逐货物送达
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1373" y="733" fill="#2563EB" font-family="&quot;Helvetica&quot;" font-size="11px" text-anchor="middle">
+                        逐货物送达
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 305 600 L 305 820 Q 305 830 297.53 830 L 293.79 830 Q 290.06 830 290.05 840 L 290.01 868.63" fill="none" stroke="#16803c" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(22, 128, 60), rgb(83, 174, 115));"/>
+            <path d="M 290 873.88 L 286.51 866.88 L 290.01 868.63 L 293.51 866.89 Z" fill="#16803c" stroke="#16803c" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(22, 128, 60), rgb(83, 174, 115)); stroke: light-dark(rgb(22, 128, 60), rgb(83, 174, 115));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 745px; margin-left: 305px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #166534; background-color: #FFFFFF; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;; color: light-dark(#166534, #75b98f); line-height: 1.2; pointer-events: all; background-color: light-dark(#FFFFFF, #121212); white-space: nowrap; ">
+                                    支付码收款（形式灵活）
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="305" y="748" fill="#166534" font-family="&quot;Helvetica&quot;" font-size="11px" text-anchor="middle">
+                        支付码收款（形式灵活）
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 970 730 L 940.06 730 Q 930.06 730 930.06 740 L 930.06 917.53 Q 930.06 927.53 920.06 927.52 L 886.37 927.5" fill="none" stroke="#16803c" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(22, 128, 60), rgb(83, 174, 115));"/>
+            <path d="M 881.12 927.5 L 888.12 924 L 886.37 927.5 L 888.12 931 Z" fill="#16803c" stroke="#16803c" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(22, 128, 60), rgb(83, 174, 115)); stroke: light-dark(rgb(22, 128, 60), rgb(83, 174, 115));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 834px; margin-left: 930px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #166534; background-color: #FFFFFF; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;; color: light-dark(#166534, #75b98f); line-height: 1.2; pointer-events: all; background-color: light-dark(#FFFFFF, #121212); white-space: nowrap; ">
+                                    预付 60%
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="930" y="837" fill="#166534" font-family="&quot;Helvetica&quot;" font-size="11px" text-anchor="middle">
+                        预付 60%
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 1545 765 L 1545 820 Q 1545 830 1535 830 L 1170.06 830 Q 1160.06 830 1160.04 840 L 1160.01 863.63" fill="none" stroke="#c2410c" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(194, 65, 12), rgb(251, 140, 94));"/>
+            <path d="M 1160 868.88 L 1156.51 861.88 L 1160.01 863.63 L 1163.51 861.89 Z" fill="#c2410c" stroke="#c2410c" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(194, 65, 12), rgb(251, 140, 94)); stroke: light-dark(rgb(194, 65, 12), rgb(251, 140, 94));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 830px; margin-left: 1365px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #9A3412; background-color: #FFFFFF; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;; color: light-dark(#9A3412, #f69f81); line-height: 1.2; pointer-events: all; background-color: light-dark(#FFFFFF, #121212); white-space: nowrap; ">
+                                    人工确认全部货物送达
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1365" y="833" fill="#9A3412" font-family="&quot;Helvetica&quot;" font-size="11px" text-anchor="middle">
+                        人工确认全部货物送达
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 1330 927.5 L 1365 927.52 Q 1375 927.53 1375 928.76 L 1375 929.38 Q 1375 930 1385 930 L 1413.63 930" fill="none" stroke="#16803c" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(22, 128, 60), rgb(83, 174, 115));"/>
+            <path d="M 1418.88 930 L 1411.88 933.5 L 1413.63 930 L 1411.88 926.5 Z" fill="#16803c" stroke="#16803c" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(22, 128, 60), rgb(83, 174, 115)); stroke: light-dark(rgb(22, 128, 60), rgb(83, 174, 115));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 928px; margin-left: 1375px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #166534; background-color: #FFFFFF; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;; color: light-dark(#166534, #75b98f); line-height: 1.2; pointer-events: all; background-color: light-dark(#FFFFFF, #121212); white-space: nowrap; ">
+                                    审核通过
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1375" y="932" fill="#166534" font-family="&quot;Helvetica&quot;" font-size="11px" text-anchor="middle">
+                        审核通过
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 1555 985 L 1555 1000 Q 1555 1010 1545 1010 L 730.06 1010 Q 720.06 1010 720.04 1000 L 720.01 986.37" fill="none" stroke="#16803c" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(22, 128, 60), rgb(83, 174, 115));"/>
+            <path d="M 720 981.12 L 723.52 988.11 L 720.01 986.37 L 716.52 988.12 Z" fill="#16803c" stroke="#16803c" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(22, 128, 60), rgb(83, 174, 115)); stroke: light-dark(rgb(22, 128, 60), rgb(83, 174, 115));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 1010px; margin-left: 1135px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #166534; background-color: #FFFFFF; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;; color: light-dark(#166534, #75b98f); line-height: 1.2; pointer-events: all; background-color: light-dark(#FFFFFF, #121212); white-space: nowrap; ">
+                                    支付剩余 40%
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1135" y="1013" fill="#166534" font-family="&quot;Helvetica&quot;" font-size="11px" text-anchor="middle">
+                        支付剩余 40%
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="270" y="1040" width="1180" height="35" rx="5.25" ry="5.25" fill="#d5e8d4" stroke="#82b366" pointer-events="all" style="fill: light-dark(rgb(213, 232, 212), rgb(31, 47, 30)); stroke: light-dark(rgb(130, 179, 102), rgb(68, 110, 44));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1178px; height: 1px; padding-top: 1058px; margin-left: 271px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #166534; ">
+                                <div style="display: inline-block; font-size: 14px; font-family: &quot;Helvetica&quot;; color: light-dark(#166534, #75b98f); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    利润关系：厂商支付的整车运单费 − 实际车辆运输费 − 其他成本 = 我方利润（应大于 0）
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="860" y="1062" fill="#166534" font-family="&quot;Helvetica&quot;" font-size="14px" text-anchor="middle" font-weight="bold">
+                        利润关系：厂商支付的整车运单费 − 实际车辆运输费 − 其他成本 = 我方利润（应大于 0）
+                    </text>
+                </switch>
+            </g>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
 </svg>

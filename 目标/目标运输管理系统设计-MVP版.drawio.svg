@@ -1,0 +1,896 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="2547px" height="1443px" viewBox="-0.5 -0.5 2547 1443" content="&lt;mxfile compressed=&quot;false&quot;&gt;&lt;diagram id=&quot;mvp-system-design&quot; name=&quot;目标运输管理系统设计-MVP版&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <g>
+            <rect x="0" y="0" width="1600" height="44" fill="none" stroke="none" pointer-events="all"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 22px; margin-left: 2px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #172B4D; ">
+                                <div style="display: inline-block; font-size: 27px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#172B4D, #bacbe8); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: nowrap; ">
+                                    运输管理系统：第一期MVP系统设计
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="2" y="30" fill="#172B4D" font-family="&quot;Microsoft YaHei&quot;" font-size="27px" font-weight="bold">
+                        运输管理系统：第一期MVP系统设计
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="0" y="47" width="1900" height="28" fill="none" stroke="none" pointer-events="all"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 1px; height: 1px; padding-top: 61px; margin-left: 2px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #52606D; ">
+                                <div style="display: inline-block; font-size: 14px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#52606D, #929eaa); line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                    P1主链路 + 最小支撑能力；仅内部运营后台，司机反馈与回单由内部人员代录，结算资料推送现有结算系统
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="2" y="65" fill="#52606D" font-family="&quot;Microsoft YaHei&quot;" font-size="14px">
+                        P1主链路 + 最小支撑能力；仅内部运营后台，司机反馈与回单由内部人员代录，结算资料推送现有结算系统
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="1816" y="7" width="140" height="28" rx="4.2" ry="4.2" fill="#e8f1fb" stroke="#4f7cac" pointer-events="all" style="fill: light-dark(rgb(232, 241, 251), rgb(24, 32, 41)); stroke: light-dark(rgb(79, 124, 172), rgb(103, 141, 183));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 21px; margin-left: 1886px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #17324D; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#17324D, #b1c8df); line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                    P1核心
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1886" y="24" fill="#17324D" font-family="&quot;Microsoft YaHei&quot;" font-size="11px" text-anchor="middle">
+                        P1核心
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="1976" y="7" width="140" height="28" rx="4.2" ry="4.2" fill="#f0eaf7" stroke="#8064a2" pointer-events="all" style="fill: light-dark(rgb(240, 234, 247), rgb(37, 32, 43)); stroke: light-dark(rgb(128, 100, 162), rgb(157, 133, 186));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 21px; margin-left: 2046px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #382B4D; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#382B4D, #cabfdc); line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                    任务编排
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="2046" y="24" fill="#382B4D" font-family="&quot;Microsoft YaHei&quot;" font-size="11px" text-anchor="middle">
+                        任务编排
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="2136" y="7" width="140" height="28" rx="4.2" ry="4.2" fill="#e8f5ea" stroke="#4f8a5b" pointer-events="all" style="fill: light-dark(rgb(232, 245, 234), rgb(21, 33, 23)); stroke: light-dark(rgb(79, 138, 91), rgb(95, 146, 105));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 21px; margin-left: 2206px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #24452B; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#24452B, #a5c1ab); line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                    结算
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="2206" y="24" fill="#24452B" font-family="&quot;Microsoft YaHei&quot;" font-size="11px" text-anchor="middle">
+                        结算
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="2296" y="7" width="190" height="28" rx="4.2" ry="4.2" fill="#f8fafc" stroke="#64748b" stroke-dasharray="3 3" pointer-events="all" style="fill: light-dark(rgb(248, 250, 252), rgb(21, 23, 25)); stroke: light-dark(rgb(100, 116, 139), rgb(126, 140, 159));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 21px; margin-left: 2391px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #334155; ">
+                                <div style="display: inline-block; font-size: 11px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#334155, #acb8c9); line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                    外部/人工
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="2391" y="24" fill="#334155" font-family="&quot;Microsoft YaHei&quot;" font-size="11px" text-anchor="middle">
+                        外部/人工
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 44 92 L 10.56 92 Q 6 92 6 96.56 L 6 247.44 Q 6 252 10.56 252 L 44 252" fill="#f8fafc" stroke="#94a3b8" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(248, 250, 252), rgb(21, 23, 25)); stroke: light-dark(rgb(148, 163, 184), rgb(87, 100, 118));"/>
+            <path d="M 44 252 L 2541.44 252 Q 2546 252 2546 247.44 L 2546 96.56 Q 2546 92 2541.44 92 L 44 92" fill="none" stroke="#94a3b8" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(148, 163, 184), rgb(87, 100, 118));"/>
+            <path d="M 44 92 L 44 252" fill="none" stroke="#94a3b8" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(148, 163, 184), rgb(87, 100, 118));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)rotate(-90 25 172)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 172px; margin-left: 25px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #243447; ">
+                                <div style="display: inline-block; font-size: 16px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#243447, #b6c4d4); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: nowrap; ">
+                                    外部输入与一期保留系统
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="25" y="177" fill="#243447" font-family="&quot;Microsoft YaHei&quot;" font-size="16px" text-anchor="middle" font-weight="bold">
+                        外部输入与一期保留系统
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="56" y="147" width="530" height="70" rx="5.6" ry="5.6" fill="#f8fafc" stroke="#64748b" stroke-width="1.5" stroke-dasharray="9 6" pointer-events="all" style="fill: light-dark(rgb(248, 250, 252), rgb(21, 23, 25)); stroke: light-dark(rgb(100, 116, 139), rgb(126, 140, 159));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 518px; height: 1px; padding-top: 182px; margin-left: 62px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #334155; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#334155, #acb8c9); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    委托厂商后台
+                                    <br/>
+                                    人工登录并导出Excel
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="321" y="186" fill="#334155" font-family="&quot;Microsoft YaHei&quot;" font-size="13px" text-anchor="middle" font-weight="bold">
+                        委托厂商后台
+人工登录并导出Excel
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="666" y="147" width="530" height="70" rx="5.6" ry="5.6" fill="#f8fafc" stroke="#64748b" stroke-width="1.5" stroke-dasharray="9 6" pointer-events="all" style="fill: light-dark(rgb(248, 250, 252), rgb(21, 23, 25)); stroke: light-dark(rgb(100, 116, 139), rgb(126, 140, 159));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 518px; height: 1px; padding-top: 182px; margin-left: 672px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #334155; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#334155, #acb8c9); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    项目、合同与价格资料
+                                    <br/>
+                                    字段模板 / 合同价 / 外车价
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="931" y="186" fill="#334155" font-family="&quot;Microsoft YaHei&quot;" font-size="13px" text-anchor="middle" font-weight="bold">
+                        项目、合同与价格资料
+字段模板 / 合同价 / 外车价
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="1276" y="147" width="530" height="70" rx="5.6" ry="5.6" fill="#f8fafc" stroke="#64748b" stroke-width="1.5" stroke-dasharray="9 6" pointer-events="all" style="fill: light-dark(rgb(248, 250, 252), rgb(21, 23, 25)); stroke: light-dark(rgb(100, 116, 139), rgb(126, 140, 159));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 518px; height: 1px; padding-top: 182px; margin-left: 1282px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #334155; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#334155, #acb8c9); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    承运商、派车公司
+                                    <br/>
+                                    司机 / 车辆 / 资质与结算主体
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1541" y="186" fill="#334155" font-family="&quot;Microsoft YaHei&quot;" font-size="13px" text-anchor="middle" font-weight="bold">
+                        承运商、派车公司
+司机 / 车辆 / 资质与结算主体
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="1886" y="147" width="580" height="70" rx="5.6" ry="5.6" fill="#f8fafc" stroke="#64748b" stroke-width="1.5" stroke-dasharray="9 6" pointer-events="all" style="fill: light-dark(rgb(248, 250, 252), rgb(21, 23, 25)); stroke: light-dark(rgb(100, 116, 139), rgb(126, 140, 159));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 568px; height: 1px; padding-top: 182px; margin-left: 1892px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #334155; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#334155, #acb8c9); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    现有结算系统（成熟）
+                                    <br/>
+                                    审核/对账/开票/收付款，并推送金蝶
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="2176" y="186" fill="#334155" font-family="&quot;Microsoft YaHei&quot;" font-size="13px" text-anchor="middle" font-weight="bold">
+                        现有结算系统（成熟）
+审核/对账/开票/收付款，并推送金蝶
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 44 282 L 10.56 282 Q 6 282 6 286.56 L 6 577.44 Q 6 582 10.56 582 L 44 582" fill="#f7fafd" stroke="#6b91b8" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(247, 250, 253), rgb(20, 23, 25)); stroke: light-dark(rgb(107, 145, 184), rgb(88, 121, 154));"/>
+            <path d="M 44 582 L 2541.44 582 Q 2546 582 2546 577.44 L 2546 286.56 Q 2546 282 2541.44 282 L 44 282" fill="none" stroke="#6b91b8" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(107, 145, 184), rgb(88, 121, 154));"/>
+            <path d="M 44 282 L 44 582" fill="none" stroke="#6b91b8" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(107, 145, 184), rgb(88, 121, 154));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)rotate(-90 25 432)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 432px; margin-left: 25px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #243447; ">
+                                <div style="display: inline-block; font-size: 16px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#243447, #b6c4d4); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: nowrap; ">
+                                    MVP可执行主链路
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="25" y="437" fill="#243447" font-family="&quot;Microsoft YaHei&quot;" font-size="16px" text-anchor="middle" font-weight="bold">
+                        MVP可执行主链路
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="56" y="352" width="220" height="150" rx="12" ry="12" fill="#e8f1fb" stroke="#4f7cac" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(232, 241, 251), rgb(24, 32, 41)); stroke: light-dark(rgb(79, 124, 172), rgb(103, 141, 183));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 208px; height: 1px; padding-top: 427px; margin-left: 62px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #17324D; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#17324D, #b1c8df); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    Excel批量导入
+                                    <br/>
+                                    项目模板映射
+                                    <br/>
+                                    校验、去重、错误修正
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="166" y="431" fill="#17324D" font-family="&quot;Microsoft YaHei&quot;" font-size="12px" text-anchor="middle" font-weight="bold">
+                        Excel批量导入...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="316" y="352" width="240" height="150" rx="12" ry="12" fill="#e8f1fb" stroke="#4f7cac" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(232, 241, 251), rgb(24, 32, 41)); stroke: light-dark(rgb(79, 124, 172), rgb(103, 141, 183));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 228px; height: 1px; padding-top: 427px; margin-left: 322px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #17324D; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#17324D, #b1c8df); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    运输需求 / 内部运单
+                                    <br/>
+                                    一行 = 一货物 = 一运单
+                                    <br/>
+                                    保留原始批次
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="436" y="431" fill="#17324D" font-family="&quot;Microsoft YaHei&quot;" font-size="12px" text-anchor="middle" font-weight="bold">
+                        运输需求 / 内部运单...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="596" y="352" width="240" height="150" rx="12" ry="12" fill="#fff3d6" stroke="#c88719" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(255, 243, 214), rgb(37, 27, 2)); stroke: light-dark(rgb(200, 135, 25), rgb(167, 111, 16));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 228px; height: 1px; padding-top: 427px; margin-left: 602px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #5A3A05; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#5A3A05, #d1b688); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    人工运输计划
+                                    <br/>
+                                    同项目按线路合单
+                                    <br/>
+                                    途经点、送达顺序
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="716" y="431" fill="#5A3A05" font-family="&quot;Microsoft YaHei&quot;" font-size="12px" text-anchor="middle" font-weight="bold">
+                        人工运输计划同项目按线路合单途经点、送达顺序...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="876" y="352" width="240" height="150" rx="12" ry="12" fill="#f0eaf7" stroke="#8064a2" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(240, 234, 247), rgb(37, 32, 43)); stroke: light-dark(rgb(128, 100, 162), rgb(157, 133, 186));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 228px; height: 1px; padding-top: 427px; margin-left: 882px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #382B4D; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#382B4D, #cabfdc); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    运输任务 / 执行单元
+                                    <br/>
+                                    计划拆分任务
+                                    <br/>
+                                    关联1-N件货物
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="996" y="431" fill="#382B4D" font-family="&quot;Microsoft YaHei&quot;" font-size="12px" text-anchor="middle" font-weight="bold">
+                        运输任务 / 执行单元...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="1156" y="352" width="240" height="150" rx="12" ry="12" fill="#f0eaf7" stroke="#8064a2" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(240, 234, 247), rgb(37, 32, 43)); stroke: light-dark(rgb(128, 100, 162), rgb(157, 133, 186));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 228px; height: 1px; padding-top: 427px; margin-left: 1162px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #382B4D; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#382B4D, #cabfdc); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    业务类型与资源绑定
+                                    <br/>
+                                    整车 / 板车 / 自驾
+                                    <br/>
+                                    绑定车、人、承运方
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1276" y="431" fill="#382B4D" font-family="&quot;Microsoft YaHei&quot;" font-size="12px" text-anchor="middle" font-weight="bold">
+                        业务类型与资源绑定整车 / 板车 / 自驾...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="1436" y="352" width="240" height="150" rx="12" ry="12" fill="#e7f4f3" stroke="#4f8a8b" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(231, 244, 243), rgb(21, 32, 31)); stroke: light-dark(rgb(79, 138, 139), rgb(89, 140, 140));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 228px; height: 1px; padding-top: 427px; margin-left: 1442px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #194748; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#194748, #99c1c2); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    驻厂核验
+                                    <br/>
+                                    货物、车辆和人员核对
+                                    <br/>
+                                    保险 / 临牌、异常反馈
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1556" y="431" fill="#194748" font-family="&quot;Microsoft YaHei&quot;" font-size="12px" text-anchor="middle" font-weight="bold">
+                        驻厂核验货物、车辆和人员核对保险 / 临牌、异常反馈...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="1716" y="352" width="240" height="150" rx="12" ry="12" fill="#e7f4f3" stroke="#4f8a8b" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(231, 244, 243), rgb(21, 32, 31)); stroke: light-dark(rgb(79, 138, 139), rgb(89, 140, 140));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 228px; height: 1px; padding-top: 427px; margin-left: 1722px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #194748; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#194748, #99c1c2); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    人工履约登记
+                                    <br/>
+                                    取车/装车、发车、在途
+                                    <br/>
+                                    到达、异常及证据
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1836" y="431" fill="#194748" font-family="&quot;Microsoft YaHei&quot;" font-size="12px" text-anchor="middle" font-weight="bold">
+                        人工履约登记取车/装车、发车、在途...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="1996" y="352" width="240" height="150" rx="12" ry="12" fill="#e7f4f3" stroke="#4f8a8b" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(231, 244, 243), rgb(21, 32, 31)); stroke: light-dark(rgb(79, 138, 139), rgb(89, 140, 140));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 228px; height: 1px; padding-top: 427px; margin-left: 2002px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #194748; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#194748, #99c1c2); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    逐货送达与回单
+                                    <br/>
+                                    内部人员上传POD
+                                    <br/>
+                                    审核、补传、回传登记
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="2116" y="431" fill="#194748" font-family="&quot;Microsoft YaHei&quot;" font-size="12px" text-anchor="middle" font-weight="bold">
+                        逐货送达与回单内部人员上传POD...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="2276" y="352" width="240" height="150" rx="12" ry="12" fill="#e8f5ea" stroke="#4f8a5b" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(232, 245, 234), rgb(21, 33, 23)); stroke: light-dark(rgb(79, 138, 91), rgb(95, 146, 105));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 228px; height: 1px; padding-top: 427px; margin-left: 2282px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #24452B; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#24452B, #a5c1ab); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    结算资料生成与推送
+                                    <br/>
+                                    预付/尾款、应收/应付
+                                    <br/>
+                                    调整/理赔、状态回写
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="2396" y="431" fill="#24452B" font-family="&quot;Microsoft YaHei&quot;" font-size="12px" text-anchor="middle" font-weight="bold">
+                        结算资料生成与推送预付/尾款、应收/应付...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 44 612 L 10.56 612 Q 6 612 6 616.56 L 6 927.44 Q 6 932 10.56 932 L 44 932" fill="#fbf9fd" stroke="#8064a2" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(251, 249, 253), rgb(24, 22, 25)); stroke: light-dark(rgb(128, 100, 162), rgb(157, 133, 186));"/>
+            <path d="M 44 932 L 2541.44 932 Q 2546 932 2546 927.44 L 2546 616.56 Q 2546 612 2541.44 612 L 44 612" fill="none" stroke="#8064a2" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(128, 100, 162), rgb(157, 133, 186));"/>
+            <path d="M 44 612 L 44 932" fill="none" stroke="#8064a2" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(128, 100, 162), rgb(157, 133, 186));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)rotate(-90 25 772)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 772px; margin-left: 25px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #243447; ">
+                                <div style="display: inline-block; font-size: 16px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#243447, #b6c4d4); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: nowrap; ">
+                                    三类业务的统一执行方式
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="25" y="777" fill="#243447" font-family="&quot;Microsoft YaHei&quot;" font-size="16px" text-anchor="middle" font-weight="bold">
+                        三类业务的统一执行方式
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="76" y="702" width="720" height="135" rx="10.8" ry="10.8" fill="#e7f4f3" stroke="#4f8a8b" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(231, 244, 243), rgb(21, 32, 31)); stroke: light-dark(rgb(79, 138, 139), rgb(89, 140, 140));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 708px; height: 1px; padding-top: 770px; margin-left: 82px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #194748; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#194748, #99c1c2); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    整车业务（出人车）
+                                    <br/>
+                                    1辆承运车 + 1名司机 + 1-N件货物
+                                    <br/>
+                                    同时校验车辆、司机和承运方
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="436" y="773" fill="#194748" font-family="&quot;Microsoft YaHei&quot;" font-size="13px" text-anchor="middle" font-weight="bold">
+                        整车业务（出人车）1辆承运车 + 1名司机 + 1-N件货物...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="916" y="702" width="720" height="135" rx="10.8" ry="10.8" fill="#e7f4f3" stroke="#4f8a8b" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(231, 244, 243), rgb(21, 32, 31)); stroke: light-dark(rgb(79, 138, 139), rgb(89, 140, 140));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 708px; height: 1px; padding-top: 770px; margin-left: 922px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #194748; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#194748, #99c1c2); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    板车运输（出车）
+                                    <br/>
+                                    1辆板车 + 1-N件商品车 / 配件
+                                    <br/>
+                                    维护装载清单；司机来源按项目约定
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1276" y="773" fill="#194748" font-family="&quot;Microsoft YaHei&quot;" font-size="13px" text-anchor="middle" font-weight="bold">
+                        板车运输（出车）1辆板车 + 1-N件商品车 / 配件...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="1756" y="702" width="720" height="135" rx="10.8" ry="10.8" fill="#f0eaf7" stroke="#8064a2" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(240, 234, 247), rgb(37, 32, 43)); stroke: light-dark(rgb(128, 100, 162), rgb(157, 133, 186));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 708px; height: 1px; padding-top: 770px; margin-left: 1762px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #382B4D; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#382B4D, #cabfdc); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    自驾运输（出人）
+                                    <br/>
+                                    商品车逐车绑定司机
+                                    <br/>
+                                    单车地跑 / 编组跑路 / 背载
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="2116" y="773" fill="#382B4D" font-family="&quot;Microsoft YaHei&quot;" font-size="13px" text-anchor="middle" font-weight="bold">
+                        自驾运输（出人）商品车逐车绑定司机单车地跑 / 编组跑路 / 背载...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="196" y="862" width="2160" height="55" rx="4.4" ry="4.4" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(241, 245, 249), rgb(23, 27, 30)); stroke: light-dark(rgb(100, 116, 139), rgb(126, 140, 159));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 2148px; height: 1px; padding-top: 890px; margin-left: 202px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #27364A; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#27364A, #b5c2d3); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    统一模型：运输需求 → 运输计划 → 运输任务 → 执行编组（可选）→ 1-N个执行单元；三类业务共用回单、异常和结算主流程
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1276" y="893" fill="#27364A" font-family="&quot;Microsoft YaHei&quot;" font-size="12px" text-anchor="middle" font-weight="bold">
+                        统一模型：运输需求 → 运输计划 → 运输任务 → 执行编组（可选）→ 1-N个执行单元；三类业务共用回单、异常和结算主流程
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 44 962 L 10.56 962 Q 6 962 6 966.56 L 6 1187.44 Q 6 1192 10.56 1192 L 44 1192" fill="#fffcf5" stroke="#c88719" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 252, 245), rgb(22, 20, 14)); stroke: light-dark(rgb(200, 135, 25), rgb(167, 111, 16));"/>
+            <path d="M 44 1192 L 2541.44 1192 Q 2546 1192 2546 1187.44 L 2546 966.56 Q 2546 962 2541.44 962 L 44 962" fill="none" stroke="#c88719" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(200, 135, 25), rgb(167, 111, 16));"/>
+            <path d="M 44 962 L 44 1192" fill="none" stroke="#c88719" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(200, 135, 25), rgb(167, 111, 16));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)rotate(-90 25 1077)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 1077px; margin-left: 25px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #243447; ">
+                                <div style="display: inline-block; font-size: 16px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#243447, #b6c4d4); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: nowrap; ">
+                                    主链路运行所需的最小业务规则
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="25" y="1082" fill="#243447" font-family="&quot;Microsoft YaHei&quot;" font-size="16px" text-anchor="middle" font-weight="bold">
+                        主链路运行所需的最小业务规则
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="76" y="1032" width="550" height="110" rx="8.8" ry="8.8" fill="#e8f1fb" stroke="#4f7cac" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(232, 241, 251), rgb(24, 32, 41)); stroke: light-dark(rgb(79, 124, 172), rgb(103, 141, 183));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 538px; height: 1px; padding-top: 1087px; margin-left: 82px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #17324D; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#17324D, #b1c8df); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    全链路追溯
+                                    <br/>
+                                    原始批次 → 需求 → 计划
+                                    <br/>
+                                    → 任务 → 回单 → 结算
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="351" y="1091" fill="#17324D" font-family="&quot;Microsoft YaHei&quot;" font-size="13px" text-anchor="middle" font-weight="bold">
+                        全链路追溯原始批次 → 需求 → 计划...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="666" y="1032" width="580" height="110" rx="8.8" ry="8.8" fill="#fff3d6" stroke="#c88719" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(255, 243, 214), rgb(37, 27, 2)); stroke: light-dark(rgb(200, 135, 25), rgb(167, 111, 16));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 568px; height: 1px; padding-top: 1087px; margin-left: 672px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #5A3A05; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#5A3A05, #d1b688); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    状态与证据门禁
+                                    <br/>
+                                    驻厂通过才发车
+                                    <br/>
+                                    逐货回单通过才结尾款
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="956" y="1091" fill="#5A3A05" font-family="&quot;Microsoft YaHei&quot;" font-size="13px" text-anchor="middle" font-weight="bold">
+                        状态与证据门禁驻厂通过才发车逐货回单通过才结尾款...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="1286" y="1032" width="580" height="110" rx="8.8" ry="8.8" fill="#e8f5ea" stroke="#4f8a5b" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(232, 245, 234), rgb(21, 33, 23)); stroke: light-dark(rgb(79, 138, 91), rgb(95, 146, 105));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 568px; height: 1px; padding-top: 1087px; margin-left: 1292px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #24452B; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#24452B, #a5c1ab); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    结算职责边界
+                                    <br/>
+                                    运输系统生成应收应付依据
+                                    <br/>
+                                    现有结算系统完成财务处理
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1576" y="1091" fill="#24452B" font-family="&quot;Microsoft YaHei&quot;" font-size="13px" text-anchor="middle" font-weight="bold">
+                        结算职责边界运输系统生成应收应付依据现有结算系统完成财务处理...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="1906" y="1032" width="580" height="110" rx="8.8" ry="8.8" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(241, 245, 249), rgb(23, 27, 30)); stroke: light-dark(rgb(100, 116, 139), rgb(126, 140, 159));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 568px; height: 1px; padding-top: 1087px; margin-left: 1912px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #27364A; ">
+                                <div style="display: inline-block; font-size: 13px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#27364A, #b5c2d3); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    人工代录必须留痕
+                                    <br/>
+                                    发生时间、录入时间、操作者
+                                    <br/>
+                                    信息来源、附件与备注
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="2196" y="1091" fill="#27364A" font-family="&quot;Microsoft YaHei&quot;" font-size="13px" text-anchor="middle" font-weight="bold">
+                        人工代录必须留痕发生时间、录入时间、操作者信息来源、附件与备注...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 44 1222 L 10.56 1222 Q 6 1222 6 1226.56 L 6 1437.44 Q 6 1442 10.56 1442 L 44 1442" fill="#f8fafc" stroke="#94a3b8" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(248, 250, 252), rgb(21, 23, 25)); stroke: light-dark(rgb(148, 163, 184), rgb(87, 100, 118));"/>
+            <path d="M 44 1442 L 2541.44 1442 Q 2546 1442 2546 1437.44 L 2546 1226.56 Q 2546 1222 2541.44 1222 L 44 1222" fill="none" stroke="#94a3b8" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(148, 163, 184), rgb(87, 100, 118));"/>
+            <path d="M 44 1222 L 44 1442" fill="none" stroke="#94a3b8" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(148, 163, 184), rgb(87, 100, 118));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)rotate(-90 25 1332)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 1332px; margin-left: 25px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #243447; ">
+                                <div style="display: inline-block; font-size: 16px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#243447, #b6c4d4); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: nowrap; ">
+                                    第一期范围边界
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="25" y="1337" fill="#243447" font-family="&quot;Microsoft YaHei&quot;" font-size="16px" text-anchor="middle" font-weight="bold">
+                        第一期范围边界
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="76" y="1292" width="1180" height="110" rx="8.8" ry="8.8" fill="#e8f1fb" stroke="#4f7cac" stroke-width="1.5" pointer-events="all" style="fill: light-dark(rgb(232, 241, 251), rgb(24, 32, 41)); stroke: light-dark(rgb(79, 124, 172), rgb(103, 141, 183));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1168px; height: 1px; padding-top: 1347px; margin-left: 82px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #17324D; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#17324D, #b1c8df); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    MVP必须实现
+                                    <br/>
+                                    Excel导入、基础资料、人工计划、三类业务资源绑定、驻厂核验、人工履约、逐货回单、结算资料推送与状态回写
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="666" y="1351" fill="#17324D" font-family="&quot;Microsoft YaHei&quot;" font-size="12px" text-anchor="middle" font-weight="bold">
+                        MVP必须实现...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <rect x="1296" y="1292" width="1200" height="105" rx="8.4" ry="8.4" fill="#fff8eb" stroke="#d59a2d" stroke-width="1.5" stroke-dasharray="9 6" pointer-events="all" style="fill: light-dark(rgb(255, 248, 235), rgb(29, 23, 12)); stroke: light-dark(rgb(213, 154, 45), rgb(148, 97, 4));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1188px; height: 1px; padding-top: 1345px; margin-left: 1302px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #60450A; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#60450A, #c7b07d); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                                    第一期明确不做
+                                    <br/>
+                                    司机端/H5、实时定位、智能合单、自动派车、自动预警、承运商/厂商门户、厂商API、回单自动上传、运输系统直连金蝶
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1896" y="1348" fill="#60450A" font-family="&quot;Microsoft YaHei&quot;" font-size="12px" text-anchor="middle" font-weight="bold">
+                        第一期明确不做
+司机端/H5、实时定位、智能合单、自动派车、自动预警、承运商/厂商门户、厂商API、回单自动上传、运输系统直连金蝶
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 276 427 L 306.61 427" fill="none" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+            <path d="M 314.21 427 L 306.61 429.53 L 306.61 424.47 Z" fill="#526575" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(82, 101, 117), rgb(138, 155, 168)); stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+        </g>
+        <g>
+            <path d="M 556 427 L 586.61 427" fill="none" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+            <path d="M 594.21 427 L 586.61 429.53 L 586.61 424.47 Z" fill="#526575" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(82, 101, 117), rgb(138, 155, 168)); stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+        </g>
+        <g>
+            <path d="M 836 427 L 866.61 427" fill="none" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+            <path d="M 874.21 427 L 866.61 429.53 L 866.61 424.47 Z" fill="#526575" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(82, 101, 117), rgb(138, 155, 168)); stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+        </g>
+        <g>
+            <path d="M 1116 427 L 1146.61 427" fill="none" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+            <path d="M 1154.21 427 L 1146.61 429.53 L 1146.61 424.47 Z" fill="#526575" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(82, 101, 117), rgb(138, 155, 168)); stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+        </g>
+        <g>
+            <path d="M 1396 427 L 1426.61 427" fill="none" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+            <path d="M 1434.21 427 L 1426.61 429.53 L 1426.61 424.47 Z" fill="#526575" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(82, 101, 117), rgb(138, 155, 168)); stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+        </g>
+        <g>
+            <path d="M 1676 427 L 1706.61 427" fill="none" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+            <path d="M 1714.21 427 L 1706.61 429.53 L 1706.61 424.47 Z" fill="#526575" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(82, 101, 117), rgb(138, 155, 168)); stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+        </g>
+        <g>
+            <path d="M 1956 427 L 1986.61 427" fill="none" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+            <path d="M 1994.21 427 L 1986.61 429.53 L 1986.61 424.47 Z" fill="#526575" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(82, 101, 117), rgb(138, 155, 168)); stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+        </g>
+        <g>
+            <path d="M 2236 427 L 2266.61 427" fill="none" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+            <path d="M 2274.21 427 L 2266.61 429.53 L 2266.61 424.47 Z" fill="#526575" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(82, 101, 117), rgb(138, 155, 168)); stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+        </g>
+        <g>
+            <path d="M 321 217 L 321 257 Q 321 267 311 267 L 166 267 Q 156 267 156 277 L 156 342 Q 156 352 156.31 352 L 156.61 352" fill="none" stroke="#64748b" stroke-width="1.6" stroke-miterlimit="10" stroke-dasharray="11.2 8" pointer-events="stroke" style="stroke: light-dark(rgb(100, 116, 139), rgb(126, 140, 159));"/>
+            <path d="M 164.21 352 L 156.61 354.53 L 156.61 349.47 Z" fill="#64748b" stroke="#64748b" stroke-width="1.6" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(100, 116, 139), rgb(126, 140, 159)); stroke: light-dark(rgb(100, 116, 139), rgb(126, 140, 159));"/>
+        </g>
+        <g>
+            <path d="M 931 217 L 931 257 Q 931 267 921 267 L 726 267 Q 716 267 716 277 L 716 342.61" fill="none" stroke="#64748b" stroke-width="1.6" stroke-miterlimit="10" stroke-dasharray="11.2 8" pointer-events="stroke" style="stroke: light-dark(rgb(100, 116, 139), rgb(126, 140, 159));"/>
+            <path d="M 716 350.21 L 713.47 342.61 L 718.53 342.61 Z" fill="#64748b" stroke="#64748b" stroke-width="1.6" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(100, 116, 139), rgb(126, 140, 159)); stroke: light-dark(rgb(100, 116, 139), rgb(126, 140, 159));"/>
+        </g>
+        <g>
+            <path d="M 1541 217 L 1541 257 Q 1541 267 1531 267 L 1286 267 Q 1276 267 1276 277 L 1276 342.61" fill="none" stroke="#64748b" stroke-width="1.6" stroke-miterlimit="10" stroke-dasharray="11.2 8" pointer-events="stroke" style="stroke: light-dark(rgb(100, 116, 139), rgb(126, 140, 159));"/>
+            <path d="M 1276 350.21 L 1273.47 342.61 L 1278.53 342.61 Z" fill="#64748b" stroke="#64748b" stroke-width="1.6" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(100, 116, 139), rgb(126, 140, 159)); stroke: light-dark(rgb(100, 116, 139), rgb(126, 140, 159));"/>
+        </g>
+        <g>
+            <path d="M 2396 352 L 2396 277 Q 2396 267 2386 267 L 2186 267 Q 2176 267 2176 257 L 2176 226.39" fill="none" stroke="#4f8a5b" stroke-width="1.6" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(79, 138, 91), rgb(95, 146, 105));"/>
+            <path d="M 2176 218.79 L 2178.53 226.39 L 2173.47 226.39 Z" fill="#4f8a5b" stroke="#4f8a5b" stroke-width="1.6" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(79, 138, 91), rgb(95, 146, 105)); stroke: light-dark(rgb(79, 138, 91), rgb(95, 146, 105));"/>
+        </g>
+        <g>
+            <path d="M 1204 502 L 1205 502 Q 1206 502 1206 512 L 1206 662 Q 1206 672 1196 672 L 446 672 Q 436 672 436 682 L 436 692.61" fill="none" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+            <path d="M 436 700.21 L 433.47 692.61 L 438.53 692.61 Z" fill="#526575" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(82, 101, 117), rgb(138, 155, 168)); stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+        </g>
+        <g>
+            <path d="M 1276 502 L 1276 692.61" fill="none" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+            <path d="M 1276 700.21 L 1273.47 692.61 L 1278.53 692.61 Z" fill="#526575" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(82, 101, 117), rgb(138, 155, 168)); stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 602px; margin-left: 1276px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #526575; background-color: #FFFFFF; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Microsoft YaHei&quot;; color: light-dark(#526575, #8a9ba8); line-height: 1.2; pointer-events: all; background-color: light-dark(#FFFFFF, #121212); white-space: nowrap; ">
+                                    按业务类型编排
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="1276" y="606" fill="#526575" font-family="&quot;Microsoft YaHei&quot;" font-size="12px" text-anchor="middle">
+                        按业务类型编排
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 1348 502 L 1347 502 Q 1346 502 1346 512 L 1346 662 Q 1346 672 1356 672 L 2106 672 Q 2116 672 2116 682 L 2116 692.61" fill="none" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+            <path d="M 2116 700.21 L 2113.47 692.61 L 2118.53 692.61 Z" fill="#526575" stroke="#526575" stroke-width="1.6" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(82, 101, 117), rgb(138, 155, 168)); stroke: light-dark(rgb(82, 101, 117), rgb(138, 155, 168));"/>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>

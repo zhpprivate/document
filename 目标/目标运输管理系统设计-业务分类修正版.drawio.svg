@@ -1,0 +1,353 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2800px" height="1650px" viewBox="0 0 2800 1650" role="img" aria-labelledby="diagram-title diagram-desc" content="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;mxfile host=&quot;app.diagrams.net&quot; modified=&quot;2026-08-24T00:00:00.000Z&quot; agent=&quot;Codex&quot; version=&quot;26.0.0&quot; compressed=&quot;false&quot;&gt;
+  &lt;diagram id=&quot;target-business-classification-design&quot; name=&quot;目标运输管理系统设计-业务分类修正版&quot;&gt;
+    &lt;mxGraphModel dx=&quot;2800&quot; dy=&quot;1650&quot; grid=&quot;1&quot; gridSize=&quot;10&quot; guides=&quot;1&quot; tooltips=&quot;1&quot; connect=&quot;1&quot; arrows=&quot;1&quot; fold=&quot;1&quot; page=&quot;1&quot; pageScale=&quot;1&quot; pageWidth=&quot;2800&quot; pageHeight=&quot;1650&quot; math=&quot;0&quot; shadow=&quot;0&quot;&gt;
+      &lt;root&gt;
+        &lt;mxCell id=&quot;0&quot; /&gt;
+        &lt;mxCell id=&quot;1&quot; parent=&quot;0&quot; /&gt;
+        &lt;mxCell id=&quot;title&quot; value=&quot;目标运输管理系统：三类业务总体设计&quot; style=&quot;text;html=1;align=left;verticalAlign=middle;fontSize=27;fontStyle=1;fontColor=#172B4D;fontFamily=Microsoft YaHei;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;24&quot; y=&quot;18&quot; width=&quot;1500&quot; height=&quot;44&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;subtitle&quot; value=&quot;覆盖整车业务（出人车）、板车运输（出车）、自驾运输（出人，开送/总驾）；三类业务统一编排执行与结算&quot; style=&quot;text;html=1;align=left;verticalAlign=middle;fontSize=14;fontColor=#52606D;fontFamily=Microsoft YaHei;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;24&quot; y=&quot;65&quot; width=&quot;1780&quot; height=&quot;28&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;legend_core&quot; value=&quot;P1核心&quot; style=&quot;rounded=1;html=1;fillColor=#E8F1FB;strokeColor=#4F7CAC;fontColor=#17324D;fontSize=11;fontFamily=Microsoft YaHei;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;1870&quot; y=&quot;25&quot; width=&quot;135&quot; height=&quot;28&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;legend_orch&quot; value=&quot;任务编排&quot; style=&quot;rounded=1;html=1;fillColor=#F0EAF7;strokeColor=#8064A2;fontColor=#382B4D;fontSize=11;fontFamily=Microsoft YaHei;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;2030&quot; y=&quot;25&quot; width=&quot;135&quot; height=&quot;28&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;legend_fin&quot; value=&quot;结算&quot; style=&quot;rounded=1;html=1;fillColor=#E8F5EA;strokeColor=#4F8A5B;fontColor=#24452B;fontSize=11;fontFamily=Microsoft YaHei;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;2200&quot; y=&quot;25&quot; width=&quot;135&quot; height=&quot;28&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;legend_future&quot; value=&quot;二期/待定&quot; style=&quot;rounded=1;html=1;fillColor=#FFF8EB;strokeColor=#D59A2D;fontColor=#60450A;fontSize=11;fontFamily=Microsoft YaHei;dashed=1;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;2345&quot; y=&quot;25&quot; width=&quot;135&quot; height=&quot;28&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;legend_ext&quot; value=&quot;外部&quot; style=&quot;rounded=1;html=1;fillColor=#F8FAFC;strokeColor=#64748B;fontColor=#334155;fontSize=11;fontFamily=Microsoft YaHei;dashed=1;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;2535&quot; y=&quot;25&quot; width=&quot;135&quot; height=&quot;28&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;d_ext&quot; value=&quot;外部输入与保留系统&quot; style=&quot;swimlane;html=1;startSize=38;horizontal=0;collapsible=0;container=1;pointerEvents=0;fillColor=#F8FAFC;strokeColor=#94A3B8;fontColor=#243447;fontSize=16;fontStyle=1;fontFamily=Microsoft YaHei;rounded=1;arcSize=4;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;30&quot; y=&quot;110&quot; width=&quot;2740&quot; height=&quot;180&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;d_flow&quot; value=&quot;P1 目标业务主链路&quot; style=&quot;swimlane;html=1;startSize=38;horizontal=0;collapsible=0;container=1;pointerEvents=0;fillColor=#F7FAFD;strokeColor=#6B91B8;fontColor=#243447;fontSize=16;fontStyle=1;fontFamily=Microsoft YaHei;rounded=1;arcSize=4;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;30&quot; y=&quot;320&quot; width=&quot;2740&quot; height=&quot;330&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;d_modes&quot; value=&quot;三类业务下的统一执行模型&quot; style=&quot;swimlane;html=1;startSize=38;horizontal=0;collapsible=0;container=1;pointerEvents=0;fillColor=#FBF9FD;strokeColor=#8064A2;fontColor=#243447;fontSize=16;fontStyle=1;fontFamily=Microsoft YaHei;rounded=1;arcSize=4;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;30&quot; y=&quot;680&quot; width=&quot;2740&quot; height=&quot;390&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;d_rules&quot; value=&quot;核心分类、数据与结算规则&quot; style=&quot;swimlane;html=1;startSize=38;horizontal=0;collapsible=0;container=1;pointerEvents=0;fillColor=#FFFCF5;strokeColor=#C88719;fontColor=#243447;fontSize=16;fontStyle=1;fontFamily=Microsoft YaHei;rounded=1;arcSize=4;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;30&quot; y=&quot;1100&quot; width=&quot;2740&quot; height=&quot;300&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;d_scope&quot; value=&quot;分期边界&quot; style=&quot;swimlane;html=1;startSize=38;horizontal=0;collapsible=0;container=1;pointerEvents=0;fillColor=#F8FAFC;strokeColor=#94A3B8;fontColor=#243447;fontSize=16;fontStyle=1;fontFamily=Microsoft YaHei;rounded=1;arcSize=4;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;30&quot; y=&quot;1430&quot; width=&quot;2740&quot; height=&quot;190&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;de1&quot; value=&quot;委托厂商后台&amp;#xa;Excel / API / 每日批次&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F8FAFC;strokeColor=#64748B;fontColor=#334155;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;dashed=1;dashPattern=6 4;&quot; vertex=&quot;1&quot; parent=&quot;d_ext&quot;&gt;&lt;mxGeometry x=&quot;60&quot; y=&quot;55&quot; width=&quot;380&quot; height=&quot;82&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;de2&quot; value=&quot;项目、合同与基础运价表&amp;#xa;厂商字段模板 / 服务系数&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F8FAFC;strokeColor=#64748B;fontColor=#334155;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;dashed=1;dashPattern=6 4;&quot; vertex=&quot;1&quot; parent=&quot;d_ext&quot;&gt;&lt;mxGeometry x=&quot;490&quot; y=&quot;55&quot; width=&quot;380&quot; height=&quot;82&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;de3&quot; value=&quot;承运商 / 司机服务商&amp;#xa;司机、承运车辆与资质&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F8FAFC;strokeColor=#64748B;fontColor=#334155;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;dashed=1;dashPattern=6 4;&quot; vertex=&quot;1&quot; parent=&quot;d_ext&quot;&gt;&lt;mxGeometry x=&quot;920&quot; y=&quot;55&quot; width=&quot;380&quot; height=&quot;82&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;de4&quot; value=&quot;电话 / 微信 / 短信&amp;#xa;一次性定位与回单链接&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F8FAFC;strokeColor=#64748B;fontColor=#334155;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;dashed=1;dashPattern=6 4;&quot; vertex=&quot;1&quot; parent=&quot;d_ext&quot;&gt;&lt;mxGeometry x=&quot;1350&quot; y=&quot;55&quot; width=&quot;380&quot; height=&quot;82&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;de5&quot; value=&quot;地图与行政区划服务&amp;#xa;地址标准化 / 距离 / 路线&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F8FAFC;strokeColor=#64748B;fontColor=#334155;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;dashed=1;dashPattern=6 4;&quot; vertex=&quot;1&quot; parent=&quot;d_ext&quot;&gt;&lt;mxGeometry x=&quot;1780&quot; y=&quot;55&quot; width=&quot;380&quot; height=&quot;82&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;de6&quot; value=&quot;现有财务系统 / 金蝶&amp;#xa;银行、支付与发票平台&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F8FAFC;strokeColor=#64748B;fontColor=#334155;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;dashed=1;dashPattern=6 4;&quot; vertex=&quot;1&quot; parent=&quot;d_ext&quot;&gt;&lt;mxGeometry x=&quot;2210&quot; y=&quot;55&quot; width=&quot;440&quot; height=&quot;82&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;df1&quot; value=&quot;多厂商接入与标准化&amp;#xa;每日多时点、50-200条/批&amp;#xa;Excel / API、原文件与字段映射&amp;#xa;模糊地址行政区划化、校验去重&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E8F1FB;strokeColor=#4F7CAC;fontColor=#17324D;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;&quot; vertex=&quot;1&quot; parent=&quot;d_flow&quot;&gt;&lt;mxGeometry x=&quot;50&quot; y=&quot;85&quot; width=&quot;350&quot; height=&quot;180&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;df2&quot; value=&quot;需求、货物与内部运单&amp;#xa;一需求 = 一货物 = 一内部运单&amp;#xa;商品车记录VIN/底盘号&amp;#xa;项目、业务类型和执行子类型明确&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E8F1FB;strokeColor=#4F7CAC;fontColor=#17324D;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;&quot; vertex=&quot;1&quot; parent=&quot;d_flow&quot;&gt;&lt;mxGeometry x=&quot;480&quot; y=&quot;85&quot; width=&quot;350&quot; height=&quot;180&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;df3&quot; value=&quot;计划、合单与合同价&amp;#xa;同/近路线、串点、车型兼容&amp;#xa;规则推荐 + 人工确认&amp;#xa;合同价按需求绑定&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#FFF3D6;strokeColor=#C88719;fontColor=#5A3A05;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;&quot; vertex=&quot;1&quot; parent=&quot;d_flow&quot;&gt;&lt;mxGeometry x=&quot;910&quot; y=&quot;85&quot; width=&quot;350&quot; height=&quot;180&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;df4&quot; value=&quot;运输任务与执行编排&amp;#xa;1个任务含1-N条需求/执行单元&amp;#xa;按业务类型生成执行单元&amp;#xa;编组与装载关系、装卸顺序&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F0EAF7;strokeColor=#8064A2;fontColor=#382B4D;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;&quot; vertex=&quot;1&quot; parent=&quot;d_flow&quot;&gt;&lt;mxGeometry x=&quot;1340&quot; y=&quot;85&quot; width=&quot;350&quot; height=&quot;180&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;df5&quot; value=&quot;派车、履约与逐货回单&amp;#xa;外部运力池或指定承运商&amp;#xa;按业务类型绑定相应车/人/承运方&amp;#xa;电话/微信/短信、节点、异常、POD&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E7F4F3;strokeColor=#4F8A8B;fontColor=#194748;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;&quot; vertex=&quot;1&quot; parent=&quot;d_flow&quot;&gt;&lt;mxGeometry x=&quot;1770&quot; y=&quot;85&quot; width=&quot;350&quot; height=&quot;180&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;df6&quot; value=&quot;双向结算与财务适配&amp;#xa;客户应收：需求/合同价&amp;#xa;履约应付：执行单元/任务&amp;#xa;预付+尾款、增补价与审批&amp;#xa;回单不齐禁止尾款&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E8F5EA;strokeColor=#4F8A5B;fontColor=#24452B;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;&quot; vertex=&quot;1&quot; parent=&quot;d_flow&quot;&gt;&lt;mxGeometry x=&quot;2200&quot; y=&quot;85&quot; width=&quot;460&quot; height=&quot;180&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dm1&quot; value=&quot;整车业务（出人车）&amp;#xa;运输计划确认后派车并派司机&amp;#xa;1辆承运车 + 1名司机，取送1-N件货物&amp;#xa;车辆和司机共同承担现场运输执行&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E7F4F3;strokeColor=#4F8A8B;fontColor=#194748;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;&quot; vertex=&quot;1&quot; parent=&quot;d_modes&quot;&gt;&lt;mxGeometry x=&quot;60&quot; y=&quot;90&quot; width=&quot;590&quot; height=&quot;190&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dm2&quot; value=&quot;板车运输（出车）&amp;#xa;我方提供专用板车运力&amp;#xa;1个执行单元承载1-N辆商品车 / 配件&amp;#xa;商品车作为货物装载运输，不自行上路&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E7F4F3;strokeColor=#4F8A8B;fontColor=#194748;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;&quot; vertex=&quot;1&quot; parent=&quot;d_modes&quot;&gt;&lt;mxGeometry x=&quot;730&quot; y=&quot;90&quot; width=&quot;590&quot; height=&quot;190&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dm3&quot; value=&quot;自驾运输（出人，开送 / 总驾）&amp;#xa;我方提供司机，商品车由厂商提供&amp;#xa;商品车直接行驶，同时是货物与行驶车辆&amp;#xa;执行子类型：单车地跑 / 编组跑路 / 背载&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F0EAF7;strokeColor=#8064A2;fontColor=#382B4D;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;&quot; vertex=&quot;1&quot; parent=&quot;d_modes&quot;&gt;&lt;mxGeometry x=&quot;1400&quot; y=&quot;90&quot; width=&quot;590&quot; height=&quot;190&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dm4&quot; value=&quot;自驾运输的三种执行子类型&amp;#xa;单车地跑：1车1司机&amp;#xa;编组跑路：N个执行单元 + 可选执行编组&amp;#xa;背载：显式记录母车、子车与装载关系&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F0EAF7;strokeColor=#8064A2;fontColor=#382B4D;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;&quot; vertex=&quot;1&quot; parent=&quot;d_modes&quot;&gt;&lt;mxGeometry x=&quot;2070&quot; y=&quot;90&quot; width=&quot;590&quot; height=&quot;190&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dm5&quot; value=&quot;统一抽象：运输需求 → 运输计划 → 运输任务 → 执行编组（可选）→ 1-N个执行单元；业务类型直接决定本次需提供的人/车资源，车辆角色按执行记录，不固化在档案。&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F1F5F9;strokeColor=#64748B;fontColor=#27364A;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;&quot; vertex=&quot;1&quot; parent=&quot;d_modes&quot;&gt;&lt;mxGeometry x=&quot;230&quot; y=&quot;305&quot; width=&quot;2300&quot; height=&quot;58&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dr1&quot; value=&quot;业务类型（一级分类）&amp;#xa;整车业务 = 出人车&amp;#xa;板车运输 = 出车&amp;#xa;自驾运输 = 出人&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#FFF3D6;strokeColor=#C88719;fontColor=#5A3A05;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;&quot; vertex=&quot;1&quot; parent=&quot;d_rules&quot;&gt;&lt;mxGeometry x=&quot;60&quot; y=&quot;65&quot; width=&quot;570&quot; height=&quot;175&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dr2&quot; value=&quot;自驾运输子类型&amp;#xa;开送 / 总驾服务&amp;#xa;单车地跑 / 编组跑路 / 背载&amp;#xa;不归入整车业务下级场景&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#FFF3D6;strokeColor=#C88719;fontColor=#5A3A05;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;&quot; vertex=&quot;1&quot; parent=&quot;d_rules&quot;&gt;&lt;mxGeometry x=&quot;680&quot; y=&quot;65&quot; width=&quot;530&quot; height=&quot;175&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dr3&quot; value=&quot;价格中心&amp;#xa;基础价键：起讫省市区 + 轴距/车型 + 公里档&amp;#xa;扩展维度：项目 + 业务类型 + 自驾子类型&amp;#xa;合同价=基础价×服务系数；最终价=合同价+增补价&amp;#xa;规则版本、原因与审批全留痕&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E8F5EA;strokeColor=#4F8A5B;fontColor=#24452B;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;&quot; vertex=&quot;1&quot; parent=&quot;d_rules&quot;&gt;&lt;mxGeometry x=&quot;1260&quot; y=&quot;65&quot; width=&quot;650&quot; height=&quot;175&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dr4&quot; value=&quot;状态与证据门禁&amp;#xa;待派车 → 已派车 → 运输中 → 已送达 → 回单通过 → 已结算&amp;#xa;节点可人工代录，但必须记录来源、时间和操作者&amp;#xa;逐货POD通过后，才允许任务完成和承运尾款结算&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F1F5F9;strokeColor=#64748B;fontColor=#27364A;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;&quot; vertex=&quot;1&quot; parent=&quot;d_rules&quot;&gt;&lt;mxGeometry x=&quot;1960&quot; y=&quot;65&quot; width=&quot;700&quot; height=&quot;175&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;ds1&quot; value=&quot;P1 / MVP 必须覆盖&amp;#xa;Excel/API导入、项目模板、人工/规则合单、价格试算、任务/执行单元、三类业务派车、电话/微信/短信跟踪、逐货回单、应收应付与审批、财务适配&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#E8F1FB;strokeColor=#4F7CAC;fontColor=#17324D;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;&quot; vertex=&quot;1&quot; parent=&quot;d_scope&quot;&gt;&lt;mxGeometry x=&quot;60&quot; y=&quot;55&quot; width=&quot;1250&quot; height=&quot;100&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;ds2&quot; value=&quot;二期或待定能力&amp;#xa;智能合单优化算法、承运商门户、司机小程序、厂商门户、自动持续定位、偏航/无定位/超时自动预警；在能力上线前不作为P1完成条件&quot; style=&quot;rounded=1;arcSize=8;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#FFF8EB;strokeColor=#D59A2D;fontColor=#60450A;fontSize=13;fontFamily=Microsoft YaHei;strokeWidth=1.5;spacing=7;dashed=1;dashPattern=6 4;&quot; vertex=&quot;1&quot; parent=&quot;d_scope&quot;&gt;&lt;mxGeometry x=&quot;1400&quot; y=&quot;55&quot; width=&quot;1260&quot; height=&quot;100&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dedge1&quot; value=&quot;标准需求&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#526575;strokeWidth=1.6;endArrow=blockThin;endFill=1;fontColor=#526575;fontSize=12;fontFamily=Microsoft YaHei;labelBackgroundColor=#FFFFFF;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;df1&quot; target=&quot;df2&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dedge2&quot; value=&quot;进入计划池&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#526575;strokeWidth=1.6;endArrow=blockThin;endFill=1;fontColor=#526575;fontSize=12;fontFamily=Microsoft YaHei;labelBackgroundColor=#FFFFFF;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;df2&quot; target=&quot;df3&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dedge3&quot; value=&quot;方案确认&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#526575;strokeWidth=1.6;endArrow=blockThin;endFill=1;fontColor=#526575;fontSize=12;fontFamily=Microsoft YaHei;labelBackgroundColor=#FFFFFF;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;df3&quot; target=&quot;df4&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dedge4&quot; value=&quot;派车执行&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#526575;strokeWidth=1.6;endArrow=blockThin;endFill=1;fontColor=#526575;fontSize=12;fontFamily=Microsoft YaHei;labelBackgroundColor=#FFFFFF;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;df4&quot; target=&quot;df5&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dedge5&quot; value=&quot;送达/回单&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#526575;strokeWidth=1.6;endArrow=blockThin;endFill=1;fontColor=#526575;fontSize=12;fontFamily=Microsoft YaHei;labelBackgroundColor=#FFFFFF;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;df5&quot; target=&quot;df6&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dedge6&quot; value=&quot;导入&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.6;endArrow=blockThin;endFill=1;fontColor=#64748B;fontSize=12;fontFamily=Microsoft YaHei;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;de1&quot; target=&quot;df1&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dedge7&quot; value=&quot;合同/运价&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.6;endArrow=blockThin;endFill=1;fontColor=#64748B;fontSize=12;fontFamily=Microsoft YaHei;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;de2&quot; target=&quot;df3&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;Array as=&quot;points&quot;&gt;
+              &lt;mxPoint x=&quot;710&quot; y=&quot;315&quot; /&gt;
+              &lt;mxPoint x=&quot;1115&quot; y=&quot;315&quot; /&gt;
+            &lt;/Array&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dedge8&quot; value=&quot;资源档案&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.6;endArrow=blockThin;endFill=1;fontColor=#64748B;fontSize=12;fontFamily=Microsoft YaHei;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;de3&quot; target=&quot;df5&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;Array as=&quot;points&quot;&gt;
+              &lt;mxPoint x=&quot;1140&quot; y=&quot;305&quot; /&gt;
+              &lt;mxPoint x=&quot;1975&quot; y=&quot;305&quot; /&gt;
+            &lt;/Array&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dedge9&quot; value=&quot;触达/回传&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.6;endArrow=blockThin;endFill=1;fontColor=#64748B;fontSize=12;fontFamily=Microsoft YaHei;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;de4&quot; target=&quot;df5&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;Array as=&quot;points&quot;&gt;
+              &lt;mxPoint x=&quot;1570&quot; y=&quot;335&quot; /&gt;
+              &lt;mxPoint x=&quot;1900&quot; y=&quot;335&quot; /&gt;
+            &lt;/Array&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dedge10&quot; value=&quot;地址服务&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.6;endArrow=blockThin;endFill=1;fontColor=#64748B;fontSize=12;fontFamily=Microsoft YaHei;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=7 5;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;de5&quot; target=&quot;df1&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;Array as=&quot;points&quot;&gt;
+              &lt;mxPoint x=&quot;2000&quot; y=&quot;300&quot; /&gt;
+              &lt;mxPoint x=&quot;360&quot; y=&quot;300&quot; /&gt;
+            &lt;/Array&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dedge11&quot; value=&quot;结算申请/回写&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4F8A5B;strokeWidth=1.6;endArrow=blockThin;endFill=1;fontColor=#4F8A5B;fontSize=12;fontFamily=Microsoft YaHei;labelBackgroundColor=#FFFFFF;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;df6&quot; target=&quot;de6&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;Array as=&quot;points&quot;&gt;
+              &lt;mxPoint x=&quot;2460&quot; y=&quot;285&quot; /&gt;
+            &lt;/Array&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dedge12&quot; value=&quot;选择业务类型&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#526575;strokeWidth=1.6;endArrow=blockThin;endFill=1;fontColor=#526575;fontSize=12;fontFamily=Microsoft YaHei;labelBackgroundColor=#FFFFFF;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;df4&quot; target=&quot;dm1&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;Array as=&quot;points&quot;&gt;
+              &lt;mxPoint x=&quot;1545&quot; y=&quot;735&quot; /&gt;
+              &lt;mxPoint x=&quot;385&quot; y=&quot;735&quot; /&gt;
+            &lt;/Array&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dedge13&quot; value=&quot;&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#526575;strokeWidth=1.6;endArrow=blockThin;endFill=1;fontColor=#526575;fontSize=12;fontFamily=Microsoft YaHei;labelBackgroundColor=#FFFFFF;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;df4&quot; target=&quot;dm2&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;Array as=&quot;points&quot;&gt;
+              &lt;mxPoint x=&quot;1545&quot; y=&quot;735&quot; /&gt;
+              &lt;mxPoint x=&quot;1055&quot; y=&quot;735&quot; /&gt;
+            &lt;/Array&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dedge14&quot; value=&quot;&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#526575;strokeWidth=1.6;endArrow=blockThin;endFill=1;fontColor=#526575;fontSize=12;fontFamily=Microsoft YaHei;labelBackgroundColor=#FFFFFF;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;df4&quot; target=&quot;dm3&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;Array as=&quot;points&quot;&gt;
+              &lt;mxPoint x=&quot;1545&quot; y=&quot;735&quot; /&gt;
+              &lt;mxPoint x=&quot;1725&quot; y=&quot;735&quot; /&gt;
+            &lt;/Array&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;dedge15&quot; value=&quot;&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#526575;strokeWidth=1.6;endArrow=blockThin;endFill=1;fontColor=#526575;fontSize=12;fontFamily=Microsoft YaHei;labelBackgroundColor=#FFFFFF;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;df4&quot; target=&quot;dm4&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;Array as=&quot;points&quot;&gt;
+              &lt;mxPoint x=&quot;1545&quot; y=&quot;735&quot; /&gt;
+              &lt;mxPoint x=&quot;2395&quot; y=&quot;735&quot; /&gt;
+            &lt;/Array&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+      &lt;/root&gt;
+    &lt;/mxGraphModel&gt;
+  &lt;/diagram&gt;
+&lt;/mxfile&gt;
+">
+  <title id="diagram-title">目标运输管理系统：三类业务总体设计</title>
+  <desc id="diagram-desc">新的运输管理系统总体设计，以整车业务、板车运输和自驾运输为一级分类，使用运输任务、执行编组和执行单元统一承载三类业务，并展示P1与二期边界。</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.10" /></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526575" /></marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4F8A5B" /></marker>
+    <style>
+      text { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; letter-spacing: 0; }
+      .node-label { font-size: 13px; font-weight: 600; text-anchor: middle; dominant-baseline: middle; }
+      .edge { fill: none; stroke: #526575; stroke-width: 1.7; marker-end: url(#arrow); stroke-linejoin: round; stroke-linecap: round; }
+      .edge-dashed { fill: none; stroke: #64748B; stroke-width: 1.6; stroke-dasharray: 7 5; marker-end: url(#arrow); stroke-linejoin: round; stroke-linecap: round; }
+      .edge-green { fill: none; stroke: #4F8A5B; stroke-width: 1.8; marker-end: url(#arrow-green); stroke-linejoin: round; stroke-linecap: round; }
+      .edge-label { font-size: 12px; fill: #475569; paint-order: stroke; stroke: #FFFFFF; stroke-width: 5px; stroke-linejoin: round; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="2800" height="1650" fill="#FFFFFF" />
+  <text x="24" y="48" font-size="28" font-weight="700" fill="#172B4D">目标运输管理系统：三类业务总体设计</text>
+  <text x="24" y="80" font-size="14" fill="#52606D">覆盖整车业务（出人车）、板车运输（出车）、自驾运输（出人，开送/总驾）；三类业务统一编排执行与结算</text>
+  <text x="1790" y="41" font-size="12" font-weight="700" fill="#475569">图例</text>
+  <rect x="1870" y="25" width="22" height="16" rx="3" fill="#E8F1FB" stroke="#4F7CAC" />
+  <text x="1900" y="38" font-size="12" fill="#475569">P1核心</text>
+  <rect x="2030" y="25" width="22" height="16" rx="3" fill="#F0EAF7" stroke="#8064A2" />
+  <text x="2060" y="38" font-size="12" fill="#475569">任务编排</text>
+  <rect x="2200" y="25" width="22" height="16" rx="3" fill="#E8F5EA" stroke="#4F8A5B" />
+  <text x="2230" y="38" font-size="12" fill="#475569">结算</text>
+  <rect x="2345" y="25" width="22" height="16" rx="3" fill="#FFF8EB" stroke="#D59A2D" stroke-dasharray="5 4" />
+  <text x="2375" y="38" font-size="12" fill="#475569">二期/待定</text>
+  <rect x="2535" y="25" width="22" height="16" rx="3" fill="#F8FAFC" stroke="#64748B" stroke-dasharray="5 4" />
+  <text x="2565" y="38" font-size="12" fill="#475569">外部</text>
+  <rect x="30" y="110" width="2740" height="180" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5" />
+  <text x="48" y="139" font-size="16" font-weight="700" fill="#243447">外部输入与保留系统</text>
+  <rect x="30" y="320" width="2740" height="330" rx="8" fill="#F7FAFD" stroke="#6B91B8" stroke-width="1.5" />
+  <text x="48" y="349" font-size="16" font-weight="700" fill="#243447">P1 目标业务主链路</text>
+  <rect x="30" y="680" width="2740" height="390" rx="8" fill="#FBF9FD" stroke="#8064A2" stroke-width="1.5" />
+  <text x="48" y="709" font-size="16" font-weight="700" fill="#243447">三类业务下的统一执行模型</text>
+  <rect x="30" y="1100" width="2740" height="300" rx="8" fill="#FFFCF5" stroke="#C88719" stroke-width="1.5" />
+  <text x="48" y="1129" font-size="16" font-weight="700" fill="#243447">核心分类、数据与结算规则</text>
+  <rect x="30" y="1430" width="2740" height="190" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5" />
+  <text x="48" y="1459" font-size="16" font-weight="700" fill="#243447">分期边界</text>
+  <polyline points="430,495 510,495" class="edge" />
+  <polyline points="860,495 940,495" class="edge" />
+  <polyline points="1290,495 1370,495" class="edge" />
+  <polyline points="1720,495 1800,495" class="edge" />
+  <polyline points="2150,495 2230,495" class="edge" />
+  <polyline points="280,247 280,405" class="edge-dashed" />
+  <polyline points="710,247 710,315 1115,315 1115,405" class="edge-dashed" />
+  <polyline points="1140,247 1140,305 1975,305 1975,405" class="edge-dashed" />
+  <polyline points="1570,247 1570,335 1900,335 1900,405" class="edge-dashed" />
+  <polyline points="2000,247 2000,300 360,300 360,405" class="edge-dashed" />
+  <polyline points="2460,405 2460,285 2460,247" class="edge-green" />
+  <polyline points="1545,585 1545,735 385,735 385,770" class="edge" />
+  <polyline points="1545,585 1545,735 1055,735 1055,770" class="edge" />
+  <polyline points="1545,585 1545,735 1725,735 1725,770" class="edge" />
+  <polyline points="1545,585 1545,735 2395,735 2395,770" class="edge" />
+  <rect x="90" y="165" width="380" height="82" rx="6" fill="#F8FAFC" stroke="#64748B" stroke-width="1.6" stroke-dasharray="7 5" filter="url(#shadow)" />
+  <text x="280" y="196.5" class="node-label" font-size="13" fill="#334155">
+    <tspan x="280" dy="0">委托厂商后台</tspan>
+    <tspan x="280" dy="19">Excel / API / 每日批次</tspan>
+  </text>
+  <rect x="520" y="165" width="380" height="82" rx="6" fill="#F8FAFC" stroke="#64748B" stroke-width="1.6" stroke-dasharray="7 5" filter="url(#shadow)" />
+  <text x="710" y="196.5" class="node-label" font-size="13" fill="#334155">
+    <tspan x="710" dy="0">项目、合同与基础运价表</tspan>
+    <tspan x="710" dy="19">厂商字段模板 / 服务系数</tspan>
+  </text>
+  <rect x="950" y="165" width="380" height="82" rx="6" fill="#F8FAFC" stroke="#64748B" stroke-width="1.6" stroke-dasharray="7 5" filter="url(#shadow)" />
+  <text x="1140" y="196.5" class="node-label" font-size="13" fill="#334155">
+    <tspan x="1140" dy="0">承运商 / 司机服务商</tspan>
+    <tspan x="1140" dy="19">司机、承运车辆与资质</tspan>
+  </text>
+  <rect x="1380" y="165" width="380" height="82" rx="6" fill="#F8FAFC" stroke="#64748B" stroke-width="1.6" stroke-dasharray="7 5" filter="url(#shadow)" />
+  <text x="1570" y="196.5" class="node-label" font-size="13" fill="#334155">
+    <tspan x="1570" dy="0">电话 / 微信 / 短信</tspan>
+    <tspan x="1570" dy="19">一次性定位与回单链接</tspan>
+  </text>
+  <rect x="1810" y="165" width="380" height="82" rx="6" fill="#F8FAFC" stroke="#64748B" stroke-width="1.6" stroke-dasharray="7 5" filter="url(#shadow)" />
+  <text x="2000" y="196.5" class="node-label" font-size="13" fill="#334155">
+    <tspan x="2000" dy="0">地图与行政区划服务</tspan>
+    <tspan x="2000" dy="19">地址标准化 / 距离 / 路线</tspan>
+  </text>
+  <rect x="2240" y="165" width="440" height="82" rx="6" fill="#F8FAFC" stroke="#64748B" stroke-width="1.6" stroke-dasharray="7 5" filter="url(#shadow)" />
+  <text x="2460" y="196.5" class="node-label" font-size="13" fill="#334155">
+    <tspan x="2460" dy="0">现有财务系统 / 金蝶</tspan>
+    <tspan x="2460" dy="19">银行、支付与发票平台</tspan>
+  </text>
+  <rect x="80" y="405" width="350" height="180" rx="6" fill="#E8F1FB" stroke="#4F7CAC" stroke-width="1.6" filter="url(#shadow)" />
+  <text x="255" y="466.5" class="node-label" font-size="13" fill="#17324D">
+    <tspan x="255" dy="0">多厂商接入与标准化</tspan>
+    <tspan x="255" dy="19">每日多时点、50-200条/批</tspan>
+    <tspan x="255" dy="19">Excel / API、原文件与字段映射</tspan>
+    <tspan x="255" dy="19">模糊地址行政区划化、校验去重</tspan>
+  </text>
+  <rect x="510" y="405" width="350" height="180" rx="6" fill="#E8F1FB" stroke="#4F7CAC" stroke-width="1.6" filter="url(#shadow)" />
+  <text x="685" y="466.5" class="node-label" font-size="13" fill="#17324D">
+    <tspan x="685" dy="0">需求、货物与内部运单</tspan>
+    <tspan x="685" dy="19">一需求 = 一货物 = 一内部运单</tspan>
+    <tspan x="685" dy="19">商品车记录VIN/底盘号</tspan>
+    <tspan x="685" dy="19">项目、业务类型和执行子类型明确</tspan>
+  </text>
+  <rect x="940" y="405" width="350" height="180" rx="6" fill="#FFF3D6" stroke="#C88719" stroke-width="1.6" filter="url(#shadow)" />
+  <text x="1115" y="466.5" class="node-label" font-size="13" fill="#5A3A05">
+    <tspan x="1115" dy="0">计划、合单与合同价</tspan>
+    <tspan x="1115" dy="19">同/近路线、串点、车型兼容</tspan>
+    <tspan x="1115" dy="19">规则推荐 + 人工确认</tspan>
+    <tspan x="1115" dy="19">合同价按需求绑定</tspan>
+  </text>
+  <rect x="1370" y="405" width="350" height="180" rx="6" fill="#F0EAF7" stroke="#8064A2" stroke-width="1.6" filter="url(#shadow)" />
+  <text x="1545" y="466.5" class="node-label" font-size="13" fill="#382B4D">
+    <tspan x="1545" dy="0">运输任务与执行编排</tspan>
+    <tspan x="1545" dy="19">1个任务含1-N条需求/执行单元</tspan>
+    <tspan x="1545" dy="19">按业务类型生成执行单元</tspan>
+    <tspan x="1545" dy="19">编组与装载关系、装卸顺序</tspan>
+  </text>
+  <rect x="1800" y="405" width="350" height="180" rx="6" fill="#E7F4F3" stroke="#4F8A8B" stroke-width="1.6" filter="url(#shadow)" />
+  <text x="1975" y="466.5" class="node-label" font-size="13" fill="#194748">
+    <tspan x="1975" dy="0">派车、履约与逐货回单</tspan>
+    <tspan x="1975" dy="19">外部运力池或指定承运商</tspan>
+    <tspan x="1975" dy="19">按业务类型绑定相应车/人/承运方</tspan>
+    <tspan x="1975" dy="19">电话/微信/短信、节点、异常、POD</tspan>
+  </text>
+  <rect x="2230" y="405" width="460" height="180" rx="6" fill="#E8F5EA" stroke="#4F8A5B" stroke-width="1.6" filter="url(#shadow)" />
+  <text x="2460" y="457" class="node-label" font-size="13" fill="#24452B">
+    <tspan x="2460" dy="0">双向结算与财务适配</tspan>
+    <tspan x="2460" dy="19">客户应收：需求/合同价</tspan>
+    <tspan x="2460" dy="19">履约应付：执行单元/任务</tspan>
+    <tspan x="2460" dy="19">预付+尾款、增补价与审批</tspan>
+    <tspan x="2460" dy="19">回单不齐禁止尾款</tspan>
+  </text>
+  <rect x="90" y="770" width="590" height="190" rx="6" fill="#E7F4F3" stroke="#4F8A8B" stroke-width="1.6" filter="url(#shadow)" />
+  <text x="385" y="836.5" class="node-label" font-size="13" fill="#194748">
+    <tspan x="385" dy="0">整车业务（出人车）</tspan>
+    <tspan x="385" dy="19">运输计划确认后派车并派司机</tspan>
+    <tspan x="385" dy="19">1辆承运车 + 1名司机，取送1-N件货物</tspan>
+    <tspan x="385" dy="19">车辆和司机共同承担现场运输执行</tspan>
+  </text>
+  <rect x="760" y="770" width="590" height="190" rx="6" fill="#E7F4F3" stroke="#4F8A8B" stroke-width="1.6" filter="url(#shadow)" />
+  <text x="1055" y="836.5" class="node-label" font-size="13" fill="#194748">
+    <tspan x="1055" dy="0">板车运输（出车）</tspan>
+    <tspan x="1055" dy="19">我方提供专用板车运力</tspan>
+    <tspan x="1055" dy="19">1个执行单元承载1-N辆商品车 / 配件</tspan>
+    <tspan x="1055" dy="19">商品车作为货物装载运输，不自行上路</tspan>
+  </text>
+  <rect x="1430" y="770" width="590" height="190" rx="6" fill="#F0EAF7" stroke="#8064A2" stroke-width="1.6" filter="url(#shadow)" />
+  <text x="1725" y="836.5" class="node-label" font-size="13" fill="#382B4D">
+    <tspan x="1725" dy="0">自驾运输（出人，开送 / 总驾）</tspan>
+    <tspan x="1725" dy="19">我方提供司机，商品车由厂商提供</tspan>
+    <tspan x="1725" dy="19">商品车直接行驶，同时是货物与行驶车辆</tspan>
+    <tspan x="1725" dy="19">执行子类型：单车地跑 / 编组跑路 / 背载</tspan>
+  </text>
+  <rect x="2100" y="770" width="590" height="190" rx="6" fill="#F0EAF7" stroke="#8064A2" stroke-width="1.6" filter="url(#shadow)" />
+  <text x="2395" y="836.5" class="node-label" font-size="13" fill="#382B4D">
+    <tspan x="2395" dy="0">自驾运输的三种执行子类型</tspan>
+    <tspan x="2395" dy="19">单车地跑：1车1司机</tspan>
+    <tspan x="2395" dy="19">编组跑路：N个执行单元 + 可选执行编组</tspan>
+    <tspan x="2395" dy="19">背载：显式记录母车、子车与装载关系</tspan>
+  </text>
+  <rect x="260" y="985" width="2300" height="58" rx="6" fill="#F1F5F9" stroke="#64748B" stroke-width="1.6" filter="url(#shadow)" />
+  <text x="1410" y="1014" class="node-label" font-size="13" fill="#27364A">
+    <tspan x="1410" dy="0">统一抽象：运输需求 → 运输计划 → 运输任务 → 执行编组（可选）→ 1-N个执行单元；业务类型直接决定本次需提供的人/车资源，车辆角色按执行记录，不固化在档案。</tspan>
+  </text>
+  <rect x="90" y="1165" width="570" height="175" rx="6" fill="#FFF3D6" stroke="#C88719" stroke-width="1.6" filter="url(#shadow)" />
+  <text x="375" y="1224" class="node-label" font-size="13" fill="#5A3A05">
+    <tspan x="375" dy="0">业务类型（一级分类）</tspan>
+    <tspan x="375" dy="19">整车业务 = 出人车</tspan>
+    <tspan x="375" dy="19">板车运输 = 出车</tspan>
+    <tspan x="375" dy="19">自驾运输 = 出人</tspan>
+  </text>
+  <rect x="710" y="1165" width="530" height="175" rx="6" fill="#FFF3D6" stroke="#C88719" stroke-width="1.6" filter="url(#shadow)" />
+  <text x="975" y="1224" class="node-label" font-size="13" fill="#5A3A05">
+    <tspan x="975" dy="0">自驾运输子类型</tspan>
+    <tspan x="975" dy="19">开送 / 总驾服务</tspan>
+    <tspan x="975" dy="19">单车地跑 / 编组跑路 / 背载</tspan>
+    <tspan x="975" dy="19">不归入整车业务下级场景</tspan>
+  </text>
+  <rect x="1290" y="1165" width="650" height="175" rx="6" fill="#E8F5EA" stroke="#4F8A5B" stroke-width="1.6" filter="url(#shadow)" />
+  <text x="1615" y="1214.5" class="node-label" font-size="13" fill="#24452B">
+    <tspan x="1615" dy="0">价格中心</tspan>
+    <tspan x="1615" dy="19">基础价键：起讫省市区 + 轴距/车型 + 公里档</tspan>
+    <tspan x="1615" dy="19">扩展维度：项目 + 业务类型 + 自驾子类型</tspan>
+    <tspan x="1615" dy="19">合同价=基础价×服务系数；最终价=合同价+增补价</tspan>
+    <tspan x="1615" dy="19">规则版本、原因与审批全留痕</tspan>
+  </text>
+  <rect x="1990" y="1165" width="700" height="175" rx="6" fill="#F1F5F9" stroke="#64748B" stroke-width="1.6" filter="url(#shadow)" />
+  <text x="2340" y="1224" class="node-label" font-size="13" fill="#27364A">
+    <tspan x="2340" dy="0">状态与证据门禁</tspan>
+    <tspan x="2340" dy="19">待派车 → 已派车 → 运输中 → 已送达 → 回单通过 → 已结算</tspan>
+    <tspan x="2340" dy="19">节点可人工代录，但必须记录来源、时间和操作者</tspan>
+    <tspan x="2340" dy="19">逐货POD通过后，才允许任务完成和承运尾款结算</tspan>
+  </text>
+  <rect x="90" y="1485" width="1250" height="100" rx="6" fill="#E8F1FB" stroke="#4F7CAC" stroke-width="1.6" filter="url(#shadow)" />
+  <text x="715" y="1525.5" class="node-label" font-size="13" fill="#17324D">
+    <tspan x="715" dy="0">P1 / MVP 必须覆盖</tspan>
+    <tspan x="715" dy="19">Excel/API导入、项目模板、人工/规则合单、价格试算、任务/执行单元、三类业务派车、电话/微信/短信跟踪、逐货回单、应收应付与审批、财务适配</tspan>
+  </text>
+  <rect x="1430" y="1485" width="1260" height="100" rx="6" fill="#FFF8EB" stroke="#D59A2D" stroke-width="1.6" stroke-dasharray="7 5" filter="url(#shadow)" />
+  <text x="2060" y="1525.5" class="node-label" font-size="13" fill="#60450A">
+    <tspan x="2060" dy="0">二期或待定能力</tspan>
+    <tspan x="2060" dy="19">智能合单优化算法、承运商门户、司机小程序、厂商门户、自动持续定位、偏航/无定位/超时自动预警；在能力上线前不作为P1完成条件</tspan>
+  </text>
+  <text x="438" y="488" class="edge-label">标准需求</text>
+  <text x="868" y="488" class="edge-label">进入计划池</text>
+  <text x="1298" y="488" class="edge-label">方案确认</text>
+  <text x="1728" y="488" class="edge-label">派车执行</text>
+  <text x="2158" y="488" class="edge-label">送达/回单</text>
+  <text x="288" y="240" class="edge-label">导入</text>
+  <text x="718" y="308" class="edge-label">合同/运价</text>
+  <text x="1148" y="298" class="edge-label">资源档案</text>
+  <text x="1578" y="328" class="edge-label">触达/回传</text>
+  <text x="2008" y="293" class="edge-label">地址服务</text>
+  <text x="2468" y="278" class="edge-label">结算申请/回写</text>
+  <text x="1553" y="728" class="edge-label">选择业务类型</text>
+</svg>

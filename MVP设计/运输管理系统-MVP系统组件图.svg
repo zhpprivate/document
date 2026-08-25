@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200" role="img" aria-labelledby="title desc">
+  <title id="title">运输管理系统 MVP 系统组件图</title>
+  <desc id="desc">展示内部用户、外部渠道、内部运输运营后台、领域服务、公共能力、数据存储与金蝶适配之间的关系。</desc>
+  <style>
+    text { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; letter-spacing: 0; }
+    .title { font-size: 28px; font-weight: 700; fill: #111827; }
+    .subtitle { font-size: 14px; fill: #6b7280; }
+    .section-title { font-size: 15px; font-weight: 700; fill: #1f2937; }
+    .card-title { font-size: 15px; font-weight: 700; fill: #111827; }
+    .card-sub { font-size: 12px; fill: #4b5563; }
+    .small { font-size: 11px; fill: #6b7280; }
+    .edge-label { font-size: 12px; font-weight: 600; fill: #4b5563; }
+    .legend { font-size: 12px; fill: #4b5563; }
+    .layer { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 1.4; stroke-dasharray: 7 5; }
+    .node { fill: #ffffff; stroke: #d1d5db; stroke-width: 1.5; }
+    .blue { fill: #eff6ff; stroke: #93c5fd; }
+    .green { fill: #f0fdf4; stroke: #86efac; }
+    .purple { fill: #faf5ff; stroke: #d8b4fe; }
+    .orange { fill: #fff7ed; stroke: #fdba74; }
+    .teal { fill: #f0fdfa; stroke: #5eead4; }
+    .gray { fill: #f9fafb; stroke: #d1d5db; }
+    .flow { fill: none; stroke: #2563eb; stroke-width: 2; marker-end: url(#arrow-blue); }
+    .dependency { fill: none; stroke: #9333ea; stroke-width: 1.8; stroke-dasharray: 7 4; marker-end: url(#arrow-purple); }
+    .callback { fill: none; stroke: #16a34a; stroke-width: 1.8; marker-start: url(#arrow-green-start); marker-end: url(#arrow-green); }
+    .human { fill: none; stroke: #6b7280; stroke-width: 1.6; stroke-dasharray: 5 4; marker-end: url(#arrow-gray); }
+  </style>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#2563eb"/></marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#9333ea"/></marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#16a34a"/></marker>
+    <marker id="arrow-green-start" markerWidth="10" markerHeight="7" refX="1" refY="3.5" orient="auto-start-reverse"><polygon points="0 0,10 3.5,0 7" fill="#16a34a"/></marker>
+    <marker id="arrow-gray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#6b7280"/></marker>
+  </defs>
+
+  <rect width="1800" height="1200" fill="#ffffff" data-graph-role="background"/>
+  <text x="48" y="48" class="title">运输管理系统 MVP 系统组件图</text>
+  <text x="48" y="78" class="subtitle">以真实运输事实为主线：一期建设内部运营后台与结算中心，不建设司机端、承运商门户或委托厂商门户</text>
+
+  <rect id="external-zone" x="48" y="104" width="1704" height="126" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.2" stroke-dasharray="6 4" data-graph-role="container" data-container-id="external-zone" data-semantic-role="external" data-graph-bounds="48,104,1752,230"/>
+  <text x="68" y="128" class="section-title">用户与外部渠道</text>
+
+  <rect id="vendor" data-node-id="vendor" x="90" y="146" width="340" height="62" rx="8" class="node gray" data-graph-role="node" data-semantic-role="external-system" data-graph-bounds="90,146,430,208"/>
+  <path d="M112 160 H140 L151 171 V194 H112 Z M140 160 V171 H151" fill="#ffffff" stroke="#6b7280" stroke-width="1.3"/>
+  <text x="170" y="172" class="card-title">委托厂商后台</text>
+  <text x="170" y="193" class="card-sub">人工导出需求 Excel / 回传回单</text>
+
+  <rect id="users" data-node-id="users" x="520" y="146" width="420" height="62" rx="8" class="node blue" data-graph-role="node" data-semantic-role="internal-users" data-graph-bounds="520,146,940,208"/>
+  <circle cx="548" cy="168" r="9" fill="#dbeafe" stroke="#2563eb" stroke-width="1.3"/>
+  <path d="M532 195 Q532 178 548 178 Q564 178 564 195" fill="#dbeafe" stroke="#2563eb" stroke-width="1.3"/>
+  <text x="585" y="172" class="card-title">内部业务用户</text>
+  <text x="585" y="193" class="card-sub">业务 / 调度 / 驻厂 / 运踪 / 回单 / 结算 / 管理</text>
+
+  <rect id="offline" data-node-id="offline" x="1030" y="146" width="300" height="62" rx="8" class="node gray" data-graph-role="node" data-semantic-role="offline-channel" data-graph-bounds="1030,146,1330,208"/>
+  <path d="M1055 160 H1084 V182 H1068 L1058 192 V182 H1055 Z" fill="#ffffff" stroke="#6b7280" stroke-width="1.3"/>
+  <text x="1100" y="172" class="card-title">线下沟通渠道</text>
+  <text x="1100" y="193" class="card-sub">电话 / 微信 / 短信反馈</text>
+
+  <rect id="kingdee" data-node-id="kingdee" x="1410" y="146" width="300" height="62" rx="8" class="node green" data-graph-role="node" data-semantic-role="external-finance" data-graph-bounds="1410,146,1710,208"/>
+  <ellipse cx="1442" cy="163" rx="18" ry="7" fill="#dcfce7" stroke="#16a34a" stroke-width="1.3"/>
+  <path d="M1424 163 V190 C1424 198 1460 198 1460 190 V163" fill="#dcfce7" stroke="#16a34a" stroke-width="1.3"/>
+  <text x="1480" y="172" class="card-title">金蝶服务</text>
+  <text x="1480" y="193" class="card-sub">单据受理 / 入账 / 收付款结果</text>
+
+  <rect id="mvp-boundary" x="48" y="264" width="1704" height="830" rx="8" fill="#ffffff" stroke="#60a5fa" stroke-width="2" data-graph-role="container" data-container-id="mvp-boundary" data-semantic-role="system-boundary" data-graph-bounds="48,264,1752,1094"/>
+  <rect x="68" y="248" width="314" height="32" rx="6" fill="#dbeafe" stroke="#60a5fa" stroke-width="1.2" data-graph-role="reserved"/>
+  <text x="86" y="270" class="section-title" fill="#1d4ed8">待建 MVP：内部运输运营与结算系统</text>
+
+  <rect id="ui-layer" x="76" y="300" width="1648" height="178" rx="8" class="layer" data-graph-role="container" data-container-id="ui-layer" data-semantic-role="presentation" data-graph-bounds="76,300,1724,478"/>
+  <text x="96" y="326" class="section-title">前端：内部运输运营管理后台</text>
+  <text x="1692" y="326" text-anchor="end" class="small">统一登录 · 统一待办 · 按角色与项目授权</text>
+
+  <rect id="ui-demand" data-node-id="ui-demand" x="100" y="350" width="220" height="88" rx="8" class="node blue" data-graph-role="node" data-semantic-role="ui-module" data-graph-bounds="100,350,320,438"/>
+  <text x="210" y="379" text-anchor="middle" class="card-title">数据导入与需求</text>
+  <text x="210" y="402" text-anchor="middle" class="card-sub">批次 · 映射 · 纠错 · 去重</text>
+  <text x="210" y="421" text-anchor="middle" class="small">需求 / 业务订单查询</text>
+
+  <rect id="ui-plan" data-node-id="ui-plan" x="370" y="350" width="220" height="88" rx="8" class="node purple" data-graph-role="node" data-semantic-role="ui-module" data-graph-bounds="370,350,590,438"/>
+  <text x="480" y="379" text-anchor="middle" class="card-title">运输计划与价格</text>
+  <text x="480" y="402" text-anchor="middle" class="card-sub">人工合单 · 线路 · 途经点</text>
+  <text x="480" y="421" text-anchor="middle" class="small">客户价 / 履约成本试算</text>
+
+  <rect id="ui-dispatch" data-node-id="ui-dispatch" x="640" y="350" width="220" height="88" rx="8" class="node orange" data-graph-role="node" data-semantic-role="ui-module" data-graph-bounds="640,350,860,438"/>
+  <text x="750" y="379" text-anchor="middle" class="card-title">履约资源与派车</text>
+  <text x="750" y="402" text-anchor="middle" class="card-sub">任务 · 编组 · 执行单元</text>
+  <text x="750" y="421" text-anchor="middle" class="small">真实人 / 车 / 装载关系</text>
+
+  <rect id="ui-track" data-node-id="ui-track" x="910" y="350" width="220" height="88" rx="8" class="node teal" data-graph-role="node" data-semantic-role="ui-module" data-graph-bounds="910,350,1130,438"/>
+  <text x="1020" y="379" text-anchor="middle" class="card-title">人工运踪与回单</text>
+  <text x="1020" y="402" text-anchor="middle" class="card-sub">驻厂核验 · 节点 · 异常</text>
+  <text x="1020" y="421" text-anchor="middle" class="small">逐件送达 / POD 审核补传</text>
+
+  <rect id="ui-settle" data-node-id="ui-settle" x="1180" y="350" width="220" height="88" rx="8" class="node green" data-graph-role="node" data-semantic-role="ui-module" data-graph-bounds="1180,350,1400,438"/>
+  <text x="1290" y="379" text-anchor="middle" class="card-title">结算中心与状态</text>
+  <text x="1290" y="402" text-anchor="middle" class="card-sub">应收 · 应付 · 毛利 · 审批</text>
+  <text x="1290" y="421" text-anchor="middle" class="small">金蝶推送与结果查询</text>
+
+  <rect id="ui-admin" data-node-id="ui-admin" x="1450" y="350" width="220" height="88" rx="8" class="node gray" data-graph-role="node" data-semantic-role="ui-module" data-graph-bounds="1450,350,1670,438"/>
+  <text x="1560" y="379" text-anchor="middle" class="card-title">基础配置与管理</text>
+  <text x="1560" y="402" text-anchor="middle" class="card-sub">项目 · 合同 · 主体 · 资源</text>
+  <text x="1560" y="421" text-anchor="middle" class="small">权限 / 日志 / 基础报表</text>
+
+  <rect id="domain-layer" x="76" y="516" width="1648" height="258" rx="8" class="layer" data-graph-role="container" data-container-id="domain-layer" data-semantic-role="domain" data-graph-bounds="76,516,1724,774"/>
+  <text x="96" y="542" class="section-title">后端：MVP 业务服务与统一领域模型</text>
+  <text x="1692" y="542" text-anchor="end" class="small">运输需求 → 业务订单 → 计划 → 任务 → 执行单元 → 回单 / 异常 → 费用 → 结算单</text>
+
+  <rect id="svc-demand" data-node-id="svc-demand" x="100" y="570" width="220" height="158" rx="8" class="node blue" data-graph-role="node" data-semantic-role="domain-service" data-graph-bounds="100,570,320,728"/>
+  <text x="210" y="600" text-anchor="middle" class="card-title">厂商接入与业务订单</text>
+  <line x1="122" y1="615" x2="298" y2="615" stroke="#bfdbfe"/>
+  <text x="210" y="642" text-anchor="middle" class="card-sub">Excel 批次 / 字段模板</text>
+  <text x="210" y="666" text-anchor="middle" class="card-sub">逐件交付标的 / 服务类型</text>
+  <text x="210" y="690" text-anchor="middle" class="card-sub">来源、变更、取消与关联</text>
+  <text x="210" y="714" text-anchor="middle" class="small">厂商 API 仅预留</text>
+
+  <rect id="svc-plan" data-node-id="svc-plan" x="370" y="570" width="220" height="158" rx="8" class="node purple" data-graph-role="node" data-semantic-role="domain-service" data-graph-bounds="370,570,590,728"/>
+  <text x="480" y="600" text-anchor="middle" class="card-title">计划、合单与价格</text>
+  <line x1="392" y1="615" x2="568" y2="615" stroke="#e9d5ff"/>
+  <text x="480" y="642" text-anchor="middle" class="card-sub">人工计划 / 线路 / 途经点</text>
+  <text x="480" y="666" text-anchor="middle" class="card-sub">客户合同价与履约成本</text>
+  <text x="480" y="690" text-anchor="middle" class="card-sub">增补、改价、倒挂审批</text>
+  <text x="480" y="714" text-anchor="middle" class="small">规则版本全留痕</text>
+
+  <rect id="svc-task" data-node-id="svc-task" x="640" y="570" width="220" height="158" rx="8" class="node orange" data-graph-role="node" data-semantic-role="domain-service" data-graph-bounds="640,570,860,728"/>
+  <text x="750" y="600" text-anchor="middle" class="card-title">任务、编组与执行单元</text>
+  <line x1="662" y1="615" x2="838" y2="615" stroke="#fed7aa"/>
+  <text x="750" y="642" text-anchor="middle" class="card-sub">整车：板车 / 司机 / 装载</text>
+  <text x="750" y="666" text-anchor="middle" class="card-sub">开送：商品车 / 司机</text>
+  <text x="750" y="690" text-anchor="middle" class="card-sub">单车 / 编组 / 背载关系</text>
+  <text x="750" y="714" text-anchor="middle" class="small">单元内不得混合服务类型</text>
+
+  <rect id="svc-fulfill" data-node-id="svc-fulfill" x="910" y="570" width="220" height="158" rx="8" class="node teal" data-graph-role="node" data-semantic-role="domain-service" data-graph-bounds="910,570,1130,728"/>
+  <text x="1020" y="600" text-anchor="middle" class="card-title">履约、异常与电子回单</text>
+  <line x1="932" y1="615" x2="1108" y2="615" stroke="#99f6e4"/>
+  <text x="1020" y="642" text-anchor="middle" class="card-sub">驻厂核验 / 发车 / 节点</text>
+  <text x="1020" y="666" text-anchor="middle" class="card-sub">异常责任与处理闭环</text>
+  <text x="1020" y="690" text-anchor="middle" class="card-sub">逐件送达 / POD 齐套</text>
+  <text x="1020" y="714" text-anchor="middle" class="small">人工反馈保留来源与操作人</text>
+
+  <rect id="svc-settle" data-node-id="svc-settle" x="1180" y="570" width="220" height="158" rx="8" class="node green" data-graph-role="node" data-semantic-role="domain-service" data-graph-bounds="1180,570,1400,728"/>
+  <text x="1290" y="600" text-anchor="middle" class="card-title">应收、应付与结算中心</text>
+  <line x1="1202" y1="615" x2="1378" y2="615" stroke="#bbf7d0"/>
+  <text x="1290" y="642" text-anchor="middle" class="card-sub">客户应收 / 履约应付分离</text>
+  <text x="1290" y="666" text-anchor="middle" class="card-sub">预付 / 尾款 / 扣补 / 理赔</text>
+  <text x="1290" y="690" text-anchor="middle" class="card-sub">主体核验 / 对账 / 毛利</text>
+  <text x="1290" y="714" text-anchor="middle" class="small">审核后方可推送财务</text>
+
+  <rect id="svc-master" data-node-id="svc-master" x="1450" y="570" width="220" height="158" rx="8" class="node gray" data-graph-role="node" data-semantic-role="domain-service" data-graph-bounds="1450,570,1670,728"/>
+  <text x="1560" y="600" text-anchor="middle" class="card-title">主数据与经营管理</text>
+  <line x1="1472" y1="615" x2="1648" y2="615" stroke="#e5e7eb"/>
+  <text x="1560" y="642" text-anchor="middle" class="card-sub">厂商 / 项目 / 合同 / 主体</text>
+  <text x="1560" y="666" text-anchor="middle" class="card-sub">司机 / 车辆 / 价格规则</text>
+  <text x="1560" y="690" text-anchor="middle" class="card-sub">权限 / 审计 / 经营报表</text>
+  <text x="1560" y="714" text-anchor="middle" class="small">按项目控制数据范围</text>
+
+  <rect id="shared-layer" x="76" y="812" width="1648" height="114" rx="8" class="layer" data-graph-role="container" data-container-id="shared-layer" data-semantic-role="shared-capability" data-graph-bounds="76,812,1724,926"/>
+  <text x="96" y="838" class="section-title">公共支撑能力</text>
+  <rect id="cap-import" data-node-id="cap-import" x="100" y="854" width="280" height="48" rx="8" class="node blue" data-graph-role="node" data-semantic-role="shared-service" data-graph-bounds="100,854,380,902"/>
+  <text x="240" y="883" text-anchor="middle" class="card-title">导入引擎 / 校验 / 幂等去重</text>
+  <rect id="cap-rule" data-node-id="cap-rule" x="430" y="854" width="280" height="48" rx="8" class="node purple" data-graph-role="node" data-semantic-role="shared-service" data-graph-bounds="430,854,710,902"/>
+  <text x="570" y="883" text-anchor="middle" class="card-title">价格规则 / 审批 / 待办</text>
+  <rect id="cap-state" data-node-id="cap-state" x="760" y="854" width="280" height="48" rx="8" class="node orange" data-graph-role="node" data-semantic-role="shared-service" data-graph-bounds="760,854,1040,902"/>
+  <text x="900" y="883" text-anchor="middle" class="card-title">状态机 / 业务门禁</text>
+  <rect id="cap-file" data-node-id="cap-file" x="1090" y="854" width="280" height="48" rx="8" class="node teal" data-graph-role="node" data-semantic-role="shared-service" data-graph-bounds="1090,854,1370,902"/>
+  <text x="1230" y="883" text-anchor="middle" class="card-title">文件影像 / 电子回单</text>
+  <rect id="cap-security" data-node-id="cap-security" x="1420" y="854" width="280" height="48" rx="8" class="node gray" data-graph-role="node" data-semantic-role="shared-service" data-graph-bounds="1420,854,1700,902"/>
+  <text x="1560" y="883" text-anchor="middle" class="card-title">权限 / 审计 / 通知 / 报表</text>
+
+  <rect id="infra-layer" x="76" y="954" width="1648" height="112" rx="8" class="layer" data-graph-role="container" data-container-id="infra-layer" data-semantic-role="data-integration" data-graph-bounds="76,954,1724,1066"/>
+  <text x="96" y="980" class="section-title">数据存储与集成适配</text>
+  <rect id="db" data-node-id="db" x="100" y="994" width="280" height="50" rx="8" class="node blue" data-graph-role="node" data-semantic-role="database" data-graph-bounds="100,994,380,1044"/>
+  <text x="240" y="1024" text-anchor="middle" class="card-title">关系型数据库：核心业务与日志</text>
+  <rect id="object-store" data-node-id="object-store" x="430" y="994" width="280" height="50" rx="8" class="node teal" data-graph-role="node" data-semantic-role="object-storage" data-graph-bounds="430,994,710,1044"/>
+  <text x="570" y="1024" text-anchor="middle" class="card-title">对象存储：Excel / POD / 影像</text>
+  <rect id="async" data-node-id="async" x="760" y="994" width="280" height="50" rx="8" class="node gray" data-graph-role="node" data-semantic-role="infrastructure" data-graph-bounds="760,994,1040,1044"/>
+  <text x="900" y="1024" text-anchor="middle" class="card-title">缓存 / 异步任务 / 监控告警</text>
+  <rect id="vendor-adapter" data-node-id="vendor-adapter" x="1090" y="994" width="280" height="50" rx="8" class="node purple" data-graph-role="node" data-semantic-role="adapter" data-graph-bounds="1090,994,1370,1044"/>
+  <text x="1230" y="1024" text-anchor="middle" class="card-title">委托厂商接入适配器（API 预留）</text>
+  <rect id="finance-adapter" data-node-id="finance-adapter" x="1420" y="994" width="280" height="50" rx="8" class="node green" data-graph-role="node" data-semantic-role="adapter" data-graph-bounds="1420,994,1700,1044"/>
+  <text x="1560" y="1024" text-anchor="middle" class="card-title">金蝶财务适配：幂等 / 重试 / 回写</text>
+
+  <g id="edges">
+    <path id="vendor-to-users" data-graph-role="edge" data-edge-id="vendor-to-users" data-source="vendor" data-target="users" data-edge-kind="human" data-flow="manual" data-bends="0" data-route-stretch="1" d="M430 177 H520" class="human"/>
+    <text x="475" y="164" text-anchor="middle" class="edge-label" data-graph-role="label" data-owner="vendor-to-users">人工导出</text>
+    <path id="offline-to-users" data-graph-role="edge" data-edge-id="offline-to-users" data-source="offline" data-target="users" data-edge-kind="human" data-flow="manual" data-bends="0" data-route-stretch="1" d="M1030 194 H940" class="human"/>
+    <text x="985" y="215" text-anchor="middle" class="edge-label" data-graph-role="label" data-owner="offline-to-users">人工接收反馈</text>
+    <path id="users-to-ui" data-graph-role="edge" data-edge-id="users-to-ui" data-source="users" data-target="ui-layer" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M730 208 V300" class="flow"/>
+    <text x="744" y="252" class="edge-label" data-graph-role="label" data-owner="users-to-ui">按角色使用</text>
+
+    <path id="ui-demand-edge" data-graph-role="edge" data-edge-id="ui-demand-edge" data-source="ui-demand" data-target="svc-demand" data-edge-kind="dependency" data-flow="primary" data-bends="0" data-route-stretch="1" d="M210 438 V570" class="flow"/>
+    <path id="ui-plan-edge" data-graph-role="edge" data-edge-id="ui-plan-edge" data-source="ui-plan" data-target="svc-plan" data-edge-kind="dependency" data-flow="primary" data-bends="0" data-route-stretch="1" d="M480 438 V570" class="flow"/>
+    <path id="ui-dispatch-edge" data-graph-role="edge" data-edge-id="ui-dispatch-edge" data-source="ui-dispatch" data-target="svc-task" data-edge-kind="dependency" data-flow="primary" data-bends="0" data-route-stretch="1" d="M750 438 V570" class="flow"/>
+    <path id="ui-track-edge" data-graph-role="edge" data-edge-id="ui-track-edge" data-source="ui-track" data-target="svc-fulfill" data-edge-kind="dependency" data-flow="primary" data-bends="0" data-route-stretch="1" d="M1020 438 V570" class="flow"/>
+    <path id="ui-settle-edge" data-graph-role="edge" data-edge-id="ui-settle-edge" data-source="ui-settle" data-target="svc-settle" data-edge-kind="dependency" data-flow="primary" data-bends="0" data-route-stretch="1" d="M1290 438 V570" class="flow"/>
+    <path id="ui-admin-edge" data-graph-role="edge" data-edge-id="ui-admin-edge" data-source="ui-admin" data-target="svc-master" data-edge-kind="dependency" data-flow="primary" data-bends="0" data-route-stretch="1" d="M1560 438 V570" class="flow"/>
+
+    <path id="domain-to-shared" data-graph-role="edge" data-edge-id="domain-to-shared" data-source="domain-layer" data-target="shared-layer" data-edge-kind="dependency" data-flow="dependency" data-bends="0" data-route-stretch="1" d="M900 774 V812" class="dependency"/>
+    <text x="914" y="798" class="edge-label" data-graph-role="label" data-owner="domain-to-shared">统一复用</text>
+    <path id="domain-to-db" data-graph-role="edge" data-edge-id="domain-to-db" data-source="svc-demand" data-target="db" data-edge-kind="data" data-flow="primary" data-bends="2" data-route-stretch="1.2" d="M100 700 H88 V1019 H100" class="flow"/>
+    <path id="file-to-store" data-graph-role="edge" data-edge-id="file-to-store" data-source="cap-file" data-target="object-store" data-edge-kind="data" data-flow="primary" data-bends="2" data-route-stretch="1.25" d="M1230 902 V940 H570 V994" class="flow"/>
+    <path id="settle-to-adapter" data-graph-role="edge" data-edge-id="settle-to-adapter" data-source="svc-settle" data-target="finance-adapter" data-edge-kind="integration" data-flow="dependency" data-bends="2" data-route-stretch="1.2" d="M1380 728 H1400 V1019 H1420" class="dependency"/>
+    <text x="1412" y="944" class="edge-label" data-graph-role="label" data-owner="settle-to-adapter">审核后推送</text>
+    <path id="adapter-to-kingdee" data-graph-role="edge" data-edge-id="adapter-to-kingdee" data-source="finance-adapter" data-target="kingdee" data-edge-kind="integration" data-flow="callback" data-bends="2" data-route-stretch="1.25" d="M1700 1019 H1734 V177 H1710" class="callback"/>
+    <text x="1718" y="604" text-anchor="end" class="edge-label" data-graph-role="label" data-owner="adapter-to-kingdee">单据推送 / 财务结果回写</text>
+  </g>
+
+  <g data-graph-role="legend">
+    <text x="48" y="1150" class="section-title">图例</text>
+    <path d="M104 1145 H154" class="flow"/>
+    <text x="168" y="1150" class="legend">业务调用 / 数据流</text>
+    <path d="M340 1145 H390" class="dependency"/>
+    <text x="404" y="1150" class="legend">依赖 / 集成调用</text>
+    <path d="M584 1145 H634" class="callback"/>
+    <text x="648" y="1150" class="legend">双向财务交互</text>
+    <path d="M842 1145 H892" class="human"/>
+    <text x="906" y="1150" class="legend">人工 / 线下交接</text>
+    <rect x="1220" y="1128" width="532" height="40" rx="6" fill="#fef2f2" stroke="#fecaca"/>
+    <text x="1486" y="1153" text-anchor="middle" font-size="12" font-weight="600" fill="#b91c1c">核心约束：不使用虚拟货物、虚拟车牌、虚拟运单或虚拟调度单</text>
+  </g>
+</svg>

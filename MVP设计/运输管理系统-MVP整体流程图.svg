@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2320" viewBox="0 0 1800 2320" role="img" aria-labelledby="title desc">
+  <title id="title">运输管理系统 MVP 整体流程图</title>
+  <desc id="desc">从厂商 Excel 需求导入开始，经计划、价格、整车运输或开送服务分支、履约、回单、结算门禁和金蝶结果回写的端到端流程。</desc>
+  <style>
+    text { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; letter-spacing: 0; }
+    .title { font-size: 28px; font-weight: 700; fill: #111827; }
+    .subtitle { font-size: 14px; fill: #6b7280; }
+    .phase-title { font-size: 16px; font-weight: 700; fill: #1f2937; }
+    .node-title { font-size: 16px; font-weight: 700; fill: #111827; }
+    .node-sub { font-size: 12px; fill: #4b5563; }
+    .small { font-size: 11px; fill: #6b7280; }
+    .edge-label { font-size: 12px; font-weight: 600; fill: #4b5563; }
+    .node { fill: #ffffff; stroke: #d1d5db; stroke-width: 1.6; }
+    .blue { fill: #eff6ff; stroke: #93c5fd; }
+    .purple { fill: #faf5ff; stroke: #d8b4fe; }
+    .orange { fill: #fff7ed; stroke: #fdba74; }
+    .teal { fill: #f0fdfa; stroke: #5eead4; }
+    .green { fill: #f0fdf4; stroke: #86efac; }
+    .red { fill: #fef2f2; stroke: #fca5a5; }
+    .gray { fill: #f9fafb; stroke: #d1d5db; }
+    .phase { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 1.3; stroke-dasharray: 7 5; }
+    .flow { fill: none; stroke: #2563eb; stroke-width: 2.4; marker-end: url(#arrow-blue); }
+    .human { fill: none; stroke: #6b7280; stroke-width: 1.8; stroke-dasharray: 6 4; marker-end: url(#arrow-gray); }
+    .control { fill: none; stroke: #ea580c; stroke-width: 2; marker-end: url(#arrow-orange); }
+    .reject { fill: none; stroke: #dc2626; stroke-width: 2; stroke-dasharray: 6 4; marker-end: url(#arrow-red); }
+    .callback { fill: none; stroke: #16a34a; stroke-width: 2; marker-end: url(#arrow-green); }
+  </style>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#2563eb"/></marker>
+    <marker id="arrow-gray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#6b7280"/></marker>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#ea580c"/></marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#dc2626"/></marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#16a34a"/></marker>
+  </defs>
+
+  <rect width="1800" height="2320" fill="#ffffff" data-graph-role="background"/>
+  <text x="48" y="48" class="title">运输管理系统 MVP 整体流程图</text>
+  <text x="48" y="78" class="subtitle">两类服务共用主流程，在执行编排处应用不同真实资源规则；蓝色区域内为待建系统，灰色节点为外部或线下渠道</text>
+
+  <rect id="external-input" x="80" y="104" width="1640" height="112" rx="8" class="phase" data-graph-role="container" data-container-id="external-input" data-semantic-role="external" data-graph-bounds="80,104,1720,216"/>
+  <text x="100" y="130" class="phase-title">外部输入与人工协作</text>
+
+  <rect id="vendor" data-node-id="vendor" x="160" y="146" width="360" height="52" rx="8" class="node gray" data-graph-role="node" data-semantic-role="external-system" data-graph-bounds="160,146,520,198"/>
+  <text x="340" y="177" text-anchor="middle" class="node-title">委托厂商后台：需求 Excel / 回单回传</text>
+  <rect id="operator" data-node-id="operator" x="690" y="146" width="420" height="52" rx="8" class="node blue" data-graph-role="node" data-semantic-role="internal-user" data-graph-bounds="690,146,1110,198"/>
+  <text x="900" y="177" text-anchor="middle" class="node-title">内部人员：业务 / 调度 / 驻厂 / 运踪 / 回单 / 结算</text>
+  <rect id="offline" data-node-id="offline" x="1280" y="146" width="360" height="52" rx="8" class="node gray" data-graph-role="node" data-semantic-role="offline-channel" data-graph-bounds="1280,146,1640,198"/>
+  <text x="1460" y="177" text-anchor="middle" class="node-title">电话 / 微信 / 短信：司机与承运方反馈</text>
+
+  <rect id="system-boundary" x="80" y="242" width="1640" height="2038" rx="8" fill="#ffffff" stroke="#60a5fa" stroke-width="2" data-graph-role="container" data-container-id="system-boundary" data-semantic-role="system-boundary" data-graph-bounds="80,242,1720,2280"/>
+  <rect x="104" y="226" width="344" height="32" rx="6" fill="#dbeafe" stroke="#60a5fa" stroke-width="1.2" data-graph-role="reserved"/>
+  <text x="122" y="248" class="phase-title" fill="#1d4ed8">待建 MVP：内部运输运营与结算系统</text>
+
+  <rect id="phase-intake" x="112" y="278" width="1576" height="650" rx="8" fill="#eff6ff" fill-opacity="0.42" stroke="#bfdbfe" stroke-width="1.2" data-graph-role="container" data-container-id="phase-intake" data-semantic-role="phase" data-graph-bounds="112,278,1688,928"/>
+  <text x="136" y="306" class="phase-title">阶段一：需求接入、服务分类、计划与价格</text>
+
+  <rect id="import" data-node-id="import" x="690" y="330" width="420" height="76" rx="8" class="node blue" data-graph-role="node" data-semantic-role="process" data-graph-bounds="690,330,1110,406"/>
+  <text x="900" y="360" text-anchor="middle" class="node-title">批量导入</text>
+  <text x="900" y="385" text-anchor="middle" class="node-sub">留存原始文件、厂商、项目、批次、操作人与时间</text>
+
+  <rect id="normalize" data-node-id="normalize" x="690" y="446" width="420" height="76" rx="8" class="node purple" data-graph-role="node" data-semantic-role="process" data-graph-bounds="690,446,1110,522"/>
+  <text x="900" y="476" text-anchor="middle" class="node-title">标准化处理</text>
+  <text x="900" y="501" text-anchor="middle" class="node-sub">字段映射、必填校验、唯一键、去重与人工纠错</text>
+
+  <rect id="demand" data-node-id="demand" x="690" y="562" width="420" height="76" rx="8" class="node blue" data-graph-role="node" data-semantic-role="process" data-graph-bounds="690,562,1110,638"/>
+  <text x="900" y="592" text-anchor="middle" class="node-title">生成运输需求</text>
+  <text x="900" y="617" text-anchor="middle" class="node-sub">逐件保留交付标的、原始来源和厂商字段</text>
+
+  <polygon id="service-type" data-node-id="service-type" points="900,662 1060,724 900,786 740,724" fill="#fff7ed" stroke="#f59e0b" stroke-width="1.8" data-graph-role="node" data-semantic-role="decision" data-graph-bounds="740,662,1060,786"/>
+  <text x="900" y="711" text-anchor="middle" class="node-title">确认服务类型</text>
+  <text x="900" y="735" text-anchor="middle" class="node-sub">整车运输 / 开送</text>
+  <text x="900" y="755" text-anchor="middle" class="small">确认后生成业务订单</text>
+
+  <rect id="plan-price" data-node-id="plan-price" x="690" y="818" width="420" height="84" rx="8" class="node purple" data-graph-role="node" data-semantic-role="process" data-graph-bounds="690,818,1110,902"/>
+  <text x="900" y="848" text-anchor="middle" class="node-title">计划编排与价格试算</text>
+  <text x="900" y="873" text-anchor="middle" class="node-sub">人工计划、合单、线路与途经点；客户价和履约成本分开</text>
+  <text x="900" y="892" text-anchor="middle" class="small">改价、倒挂或负毛利必须提示并审批</text>
+
+  <rect id="phase-dispatch" x="112" y="950" width="1576" height="356" rx="8" fill="#fff7ed" fill-opacity="0.44" stroke="#fed7aa" stroke-width="1.2" data-graph-role="container" data-container-id="phase-dispatch" data-semantic-role="phase" data-graph-bounds="112,950,1688,1306"/>
+  <text x="136" y="978" class="phase-title">阶段二：任务编排与真实资源绑定</text>
+
+  <rect id="whole-container" x="160" y="1028" width="620" height="230" rx="8" fill="#eff6ff" fill-opacity="0.5" stroke="#93c5fd" stroke-width="1.3" stroke-dasharray="7 5" data-graph-role="container" data-container-id="whole-container" data-semantic-role="service-branch" data-graph-bounds="160,1028,780,1258"/>
+  <text x="184" y="1056" class="phase-title" fill="#1d4ed8">整车运输服务：板车运输</text>
+  <rect id="whole-resource" data-node-id="whole-resource" x="220" y="1080" width="500" height="66" rx="8" class="node blue" data-graph-role="node" data-semantic-role="process" data-graph-bounds="220,1080,720,1146"/>
+  <text x="470" y="1107" text-anchor="middle" class="node-title">绑定真实承运资源</text>
+  <text x="470" y="1131" text-anchor="middle" class="node-sub">真实板车 + 承运司机 + 承运方</text>
+  <rect id="whole-load" data-node-id="whole-load" x="220" y="1170" width="500" height="66" rx="8" class="node blue" data-graph-role="node" data-semantic-role="process" data-graph-bounds="220,1170,720,1236"/>
+  <text x="470" y="1197" text-anchor="middle" class="node-title">建立实际装载关系</text>
+  <text x="470" y="1221" text-anchor="middle" class="node-sub">1-N 件商品车 / 配件，记录装载与卸货顺序</text>
+
+  <rect id="drive-container" x="1020" y="1028" width="620" height="230" rx="8" fill="#faf5ff" fill-opacity="0.5" stroke="#d8b4fe" stroke-width="1.3" stroke-dasharray="7 5" data-graph-role="container" data-container-id="drive-container" data-semantic-role="service-branch" data-graph-bounds="1020,1028,1640,1258"/>
+  <text x="1044" y="1056" class="phase-title" fill="#7e22ce">开送服务：单车 / 编组 / 背载</text>
+  <rect id="drive-mode" data-node-id="drive-mode" x="1080" y="1080" width="500" height="66" rx="8" class="node purple" data-graph-role="node" data-semantic-role="process" data-graph-bounds="1080,1080,1580,1146"/>
+  <text x="1330" y="1107" text-anchor="middle" class="node-title">选择开送执行方式</text>
+  <text x="1330" y="1131" text-anchor="middle" class="node-sub">单车地跑 / N 个单车执行单元组成编组 / 母子车背载</text>
+  <rect id="drive-bind" data-node-id="drive-bind" x="1080" y="1170" width="500" height="66" rx="8" class="node purple" data-graph-role="node" data-semantic-role="process" data-graph-bounds="1080,1170,1580,1236"/>
+  <text x="1330" y="1197" text-anchor="middle" class="node-title">绑定真实商品车与开送司机</text>
+  <text x="1330" y="1221" text-anchor="middle" class="node-sub">逐车逐司机，记录 VIN / 车牌或临牌、领队、顺序或母子关系</text>
+
+  <rect id="phase-fulfillment" x="112" y="1338" width="1576" height="522" rx="8" fill="#f0fdfa" fill-opacity="0.48" stroke="#99f6e4" stroke-width="1.2" data-graph-role="container" data-container-id="phase-fulfillment" data-semantic-role="phase" data-graph-bounds="112,1338,1688,1860"/>
+  <text x="136" y="1366" class="phase-title">阶段三：驻厂核验、人工运踪、送达与结算门禁</text>
+
+  <rect id="verify" data-node-id="verify" x="690" y="1390" width="420" height="76" rx="8" class="node orange" data-graph-role="node" data-semantic-role="quality-gate" data-graph-bounds="690,1390,1110,1466"/>
+  <text x="900" y="1420" text-anchor="middle" class="node-title">驻厂核验并确认发车</text>
+  <text x="900" y="1445" text-anchor="middle" class="node-sub">核对货、人、车、装载、保险与临牌；按配置触发预付款</text>
+
+  <rect id="tracking" data-node-id="tracking" x="690" y="1506" width="420" height="76" rx="8" class="node teal" data-graph-role="node" data-semantic-role="process" data-graph-bounds="690,1506,1110,1582"/>
+  <text x="900" y="1536" text-anchor="middle" class="node-title">人工运踪与异常闭环</text>
+  <text x="900" y="1561" text-anchor="middle" class="node-sub">代录发车、到达、延误、货损等节点，保留来源与责任人</text>
+
+  <rect id="pod" data-node-id="pod" x="690" y="1622" width="420" height="76" rx="8" class="node teal" data-graph-role="node" data-semantic-role="process" data-graph-bounds="690,1622,1110,1698"/>
+  <text x="900" y="1652" text-anchor="middle" class="node-title">逐件送达与电子回单</text>
+  <text x="900" y="1677" text-anchor="middle" class="node-sub">逐件核销；上传、审核、驳回、补传并检查回单齐套</text>
+
+  <polygon id="settlement-gate" data-node-id="settlement-gate" points="900,1730 1080,1792 900,1854 720,1792" fill="#fff7ed" stroke="#f59e0b" stroke-width="1.8" data-graph-role="node" data-semantic-role="decision" data-graph-bounds="720,1730,1080,1854"/>
+  <text x="900" y="1778" text-anchor="middle" class="node-title">结算门禁通过？</text>
+  <text x="900" y="1802" text-anchor="middle" class="node-sub">送达 + 回单 + 异常 + 金额 + 主体</text>
+  <text x="900" y="1822" text-anchor="middle" class="small">缺一项均不可生成可支付尾款资料</text>
+
+  <rect id="phase-settlement" x="112" y="1870" width="1576" height="398" rx="8" fill="#f0fdf4" fill-opacity="0.48" stroke="#bbf7d0" stroke-width="1.2" data-graph-role="container" data-container-id="phase-settlement" data-semantic-role="phase" data-graph-bounds="112,1870,1688,2268"/>
+  <text x="136" y="1898" class="phase-title">阶段四：结算中心、财务适配与结果回写</text>
+
+  <rect id="charges" data-node-id="charges" x="250" y="1930" width="460" height="92" rx="8" class="node green" data-graph-role="node" data-semantic-role="process" data-graph-bounds="250,1930,710,2022"/>
+  <text x="480" y="1960" text-anchor="middle" class="node-title">形成应收、应付与费用明细</text>
+  <text x="480" y="1985" text-anchor="middle" class="node-sub">客户应收：业务订单 / 合同价 / 付款码 / 实际到账</text>
+  <text x="480" y="2006" text-anchor="middle" class="node-sub">履约应付：执行单元 / 预付 / 尾款 / 扣补款 / 理赔</text>
+
+  <rect id="settlement" data-node-id="settlement" x="800" y="1930" width="420" height="92" rx="8" class="node green" data-graph-role="node" data-semantic-role="process" data-graph-bounds="800,1930,1220,2022"/>
+  <text x="1010" y="1960" text-anchor="middle" class="node-title">结算审核与主体核验</text>
+  <text x="1010" y="1985" text-anchor="middle" class="node-sub">核对收入、成本、毛利、结算主体与附件</text>
+  <text x="1010" y="2006" text-anchor="middle" class="small">审核通过后生成结算资料</text>
+
+  <rect id="adapter" data-node-id="adapter" x="800" y="2060" width="420" height="70" rx="8" class="node purple" data-graph-role="node" data-semantic-role="adapter" data-graph-bounds="800,2060,1220,2130"/>
+  <text x="1010" y="2088" text-anchor="middle" class="node-title">金蝶财务适配</text>
+  <text x="1010" y="2112" text-anchor="middle" class="node-sub">幂等号 / 版本 / 失败重试 / 驳回修改 / 重推 / 审计</text>
+
+  <rect id="kingdee" data-node-id="kingdee" x="1320" y="2060" width="320" height="70" rx="8" class="node gray" data-graph-role="node" data-semantic-role="external-finance" data-graph-bounds="1320,2060,1640,2130"/>
+  <text x="1480" y="2088" text-anchor="middle" class="node-title">金蝶服务</text>
+  <text x="1480" y="2112" text-anchor="middle" class="node-sub">受理 / 入账 / 开票 / 实际收付款</text>
+
+  <rect id="done" data-node-id="done" x="690" y="2200" width="420" height="68" rx="34" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8" data-graph-role="node" data-semantic-role="terminal" data-graph-bounds="690,2200,1110,2268"/>
+  <text x="900" y="2229" text-anchor="middle" class="node-title" fill="#166534">回写结算与业务状态</text>
+  <text x="900" y="2252" text-anchor="middle" class="node-sub">以金蝶实际结果为准，全链路可追溯</text>
+
+  <g id="edges">
+    <path id="vendor-operator" data-graph-role="edge" data-edge-id="vendor-operator" data-source="vendor" data-target="operator" data-edge-kind="human" data-flow="manual" data-bends="0" data-route-stretch="1" d="M520 172 H690" class="human"/>
+    <text x="605" y="159" text-anchor="middle" class="edge-label" data-graph-role="label" data-owner="vendor-operator">人工导出</text>
+    <path id="operator-import" data-graph-role="edge" data-edge-id="operator-import" data-source="operator" data-target="import" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 198 V330" class="flow"/>
+    <text x="916" y="273" class="edge-label" data-graph-role="label" data-owner="operator-import">导入批次</text>
+    <path id="offline-tracking" data-graph-role="edge" data-edge-id="offline-tracking" data-source="offline" data-target="tracking" data-edge-kind="human" data-flow="manual" data-bends="2" data-route-stretch="1.3" d="M1640 172 H1668 V1544 H1110" class="human"/>
+    <text x="1653" y="860" text-anchor="end" class="edge-label" data-graph-role="label" data-owner="offline-tracking">反馈由内部人员代录</text>
+
+    <path id="import-normalize" data-graph-role="edge" data-edge-id="import-normalize" data-source="import" data-target="normalize" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 406 V446" class="flow"/>
+    <path id="normalize-demand" data-graph-role="edge" data-edge-id="normalize-demand" data-source="normalize" data-target="demand" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 522 V562" class="flow"/>
+    <path id="demand-service" data-graph-role="edge" data-edge-id="demand-service" data-source="demand" data-target="service-type" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 638 V662" class="flow"/>
+    <path id="service-plan" data-graph-role="edge" data-edge-id="service-plan" data-source="service-type" data-target="plan-price" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 786 V818" class="flow"/>
+    <text x="916" y="807" class="edge-label" data-graph-role="label" data-owner="service-plan">分类确认</text>
+
+    <path id="plan-whole" data-graph-role="edge" data-edge-id="plan-whole" data-source="plan-price" data-target="whole-resource" data-edge-kind="control" data-flow="control" data-bends="2" data-route-stretch="1.2" d="M820 902 V1012 H470 V1080" class="control"/>
+    <text x="642" y="1000" text-anchor="middle" class="edge-label" data-graph-role="label" data-owner="plan-whole">整车运输服务</text>
+    <path id="plan-drive" data-graph-role="edge" data-edge-id="plan-drive" data-source="plan-price" data-target="drive-mode" data-edge-kind="control" data-flow="control" data-bends="2" data-route-stretch="1.2" d="M980 902 V1012 H1330 V1080" class="control"/>
+    <text x="1158" y="1000" text-anchor="middle" class="edge-label" data-graph-role="label" data-owner="plan-drive">开送服务</text>
+    <path id="whole-resource-load" data-graph-role="edge" data-edge-id="whole-resource-load" data-source="whole-resource" data-target="whole-load" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M470 1146 V1170" class="flow"/>
+    <path id="drive-mode-bind" data-graph-role="edge" data-edge-id="drive-mode-bind" data-source="drive-mode" data-target="drive-bind" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M1330 1146 V1170" class="flow"/>
+    <path id="whole-verify" data-graph-role="edge" data-edge-id="whole-verify" data-source="whole-load" data-target="verify" data-edge-kind="flow" data-flow="primary" data-bends="2" data-route-stretch="1.2" d="M470 1236 V1284 H780 V1390" class="flow"/>
+    <path id="drive-verify" data-graph-role="edge" data-edge-id="drive-verify" data-source="drive-bind" data-target="verify" data-edge-kind="flow" data-flow="primary" data-bends="2" data-route-stretch="1.2" d="M1330 1236 V1284 H1020 V1390" class="flow"/>
+
+    <path id="verify-tracking" data-graph-role="edge" data-edge-id="verify-tracking" data-source="verify" data-target="tracking" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 1466 V1506" class="flow"/>
+    <path id="tracking-pod" data-graph-role="edge" data-edge-id="tracking-pod" data-source="tracking" data-target="pod" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 1582 V1622" class="flow"/>
+    <path id="pod-gate" data-graph-role="edge" data-edge-id="pod-gate" data-source="pod" data-target="settlement-gate" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 1698 V1730" class="flow"/>
+    <path id="gate-reject" data-graph-role="edge" data-edge-id="gate-reject" data-source="settlement-gate" data-target="tracking" data-edge-kind="feedback" data-flow="feedback" data-bends="2" data-route-stretch="1.25" d="M720 1792 H500 V1544 H690" class="reject"/>
+    <rect x="284" y="1647" width="246" height="32" rx="5" fill="#ffffff" stroke="#fecaca" data-graph-role="reserved"/>
+    <text x="407" y="1668" text-anchor="middle" class="edge-label" fill="#b91c1c" data-graph-role="label" data-owner="gate-reject">未通过：补传 / 处理异常 / 确认金额主体</text>
+    <path id="gate-charges" data-graph-role="edge" data-edge-id="gate-charges" data-source="settlement-gate" data-target="charges" data-edge-kind="flow" data-flow="primary" data-bends="2" data-route-stretch="1.2" d="M820 1824 V1888 H480 V1930" class="flow"/>
+    <text x="650" y="1877" text-anchor="middle" class="edge-label" data-graph-role="label" data-owner="gate-charges">通过</text>
+    <path id="charges-settlement" data-graph-role="edge" data-edge-id="charges-settlement" data-source="charges" data-target="settlement" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M710 1976 H800" class="flow"/>
+    <path id="settlement-adapter" data-graph-role="edge" data-edge-id="settlement-adapter" data-source="settlement" data-target="adapter" data-edge-kind="control" data-flow="control" data-bends="0" data-route-stretch="1" d="M1010 2022 V2060" class="control"/>
+    <path id="adapter-kingdee" data-graph-role="edge" data-edge-id="adapter-kingdee" data-source="adapter" data-target="kingdee" data-edge-kind="integration" data-flow="primary" data-bends="0" data-route-stretch="1" d="M1220 2095 H1320" class="flow"/>
+    <text x="1270" y="2082" text-anchor="middle" class="edge-label" data-graph-role="label" data-owner="adapter-kingdee">幂等推送</text>
+    <path id="kingdee-done" data-graph-role="edge" data-edge-id="kingdee-done" data-source="kingdee" data-target="done" data-edge-kind="callback" data-flow="callback" data-bends="2" data-route-stretch="1.2" d="M1480 2130 V2234 H1110" class="callback"/>
+    <text x="1310" y="2221" text-anchor="middle" class="edge-label" fill="#166534" data-graph-role="label" data-owner="kingdee-done">受理 / 入账 / 收付款结果</text>
+  </g>
+
+  <g data-graph-role="legend">
+    <text x="80" y="2300" class="phase-title">图例</text>
+    <path d="M140 2294 H190" class="flow"/>
+    <text x="204" y="2300" class="node-sub">主业务流</text>
+    <path d="M330 2294 H380" class="control"/>
+    <text x="394" y="2300" class="node-sub">分类 / 审核触发</text>
+    <path d="M570 2294 H620" class="human"/>
+    <text x="634" y="2300" class="node-sub">人工 / 线下反馈</text>
+    <path d="M820 2294 H870" class="reject"/>
+    <text x="884" y="2300" class="node-sub">未通过回退</text>
+    <path d="M1050 2294 H1100" class="callback"/>
+    <text x="1114" y="2300" class="node-sub">财务结果回写</text>
+    <text x="1718" y="2300" text-anchor="end" font-size="12" font-weight="600" fill="#b91c1c">禁止：虚拟货物 / 虚拟车牌 / 虚拟运单 / 虚拟调度单</text>
+  </g>
+</svg>

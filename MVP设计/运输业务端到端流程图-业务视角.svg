@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="3220" viewBox="0 0 1800 3220" role="img" aria-labelledby="title desc">
+  <title id="title">整体业务流程图</title>
+  <desc id="desc">从委托厂商下达发运计划开始，经过需求澄清、服务分类、内部计划、两类履约组织、交付回单和财务结算的纯业务流程。</desc>
+  <style>
+    text { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; letter-spacing: 0; }
+    .title { font-size: 30px; font-weight: 700; fill: #111827; }
+    .subtitle { font-size: 14px; fill: #6b7280; }
+    .phase-title { font-size: 17px; font-weight: 700; fill: #1f2937; }
+    .role { font-size: 11px; font-weight: 700; fill: #2563eb; }
+    .node-title { font-size: 17px; font-weight: 700; fill: #111827; }
+    .node-sub { font-size: 13px; fill: #4b5563; }
+    .small { font-size: 12px; fill: #6b7280; }
+    .edge-label { font-size: 12px; font-weight: 600; fill: #4b5563; }
+    .node { fill: #ffffff; stroke: #d1d5db; stroke-width: 1.6; }
+    .blue { fill: #eff6ff; stroke: #93c5fd; }
+    .purple { fill: #faf5ff; stroke: #d8b4fe; }
+    .orange { fill: #fff7ed; stroke: #fdba74; }
+    .teal { fill: #f0fdfa; stroke: #5eead4; }
+    .green { fill: #f0fdf4; stroke: #86efac; }
+    .red { fill: #fef2f2; stroke: #fca5a5; }
+    .gray { fill: #f9fafb; stroke: #d1d5db; }
+    .phase { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 1.3; stroke-dasharray: 7 5; }
+    .flow { fill: none; stroke: #2563eb; stroke-width: 2.4; marker-end: url(#arrow-blue); }
+    .control { fill: none; stroke: #ea580c; stroke-width: 2.1; marker-end: url(#arrow-orange); }
+    .exception { fill: none; stroke: #dc2626; stroke-width: 2; stroke-dasharray: 6 4; marker-end: url(#arrow-red); }
+    .finance { fill: none; stroke: #16a34a; stroke-width: 2.2; marker-end: url(#arrow-green); }
+  </style>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#2563eb"/></marker>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#ea580c"/></marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#dc2626"/></marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#16a34a"/></marker>
+  </defs>
+
+  <rect width="1800" height="3220" fill="#ffffff" data-graph-role="background"/>
+  <text x="60" y="52" class="title">整体业务流程图</text>
+  <text x="60" y="82" class="subtitle">业务视角：描述各参与方如何完成委托、计划、履约、回单与结算，不包含任何系统组件或技术实现</text>
+
+  <rect id="phase-demand" x="60" y="112" width="1680" height="520" rx="8" fill="#eff6ff" fill-opacity="0.42" stroke="#bfdbfe" stroke-width="1.3" data-graph-role="container" data-container-id="phase-demand" data-semantic-role="phase" data-graph-bounds="60,112,1740,632"/>
+  <text x="84" y="142" class="phase-title">阶段一：委托与需求确认</text>
+
+  <rect id="phase-plan" x="60" y="662" width="1680" height="548" rx="8" fill="#faf5ff" fill-opacity="0.42" stroke="#e9d5ff" stroke-width="1.3" data-graph-role="container" data-container-id="phase-plan" data-semantic-role="phase" data-graph-bounds="60,662,1740,1210"/>
+  <text x="84" y="692" class="phase-title">阶段二：内部执行计划与商业决策</text>
+
+  <rect id="phase-resource" x="60" y="1240" width="1680" height="490" rx="8" fill="#fff7ed" fill-opacity="0.44" stroke="#fed7aa" stroke-width="1.3" data-graph-role="container" data-container-id="phase-resource" data-semantic-role="phase" data-graph-bounds="60,1240,1740,1730"/>
+  <text x="84" y="1270" class="phase-title">阶段三：按服务类型组织真实履约资源</text>
+  <rect id="whole-branch" x="110" y="1430" width="720" height="250" rx="8" fill="#eff6ff" fill-opacity="0.58" stroke="#93c5fd" stroke-width="1.3" stroke-dasharray="7 5" data-graph-role="container" data-container-id="whole-branch" data-semantic-role="service-branch" data-graph-bounds="110,1430,830,1680"/>
+  <text x="134" y="1460" class="phase-title" fill="#1d4ed8">整车运输服务 · 板车运输</text>
+  <rect id="drive-branch" x="970" y="1430" width="720" height="250" rx="8" fill="#faf5ff" fill-opacity="0.58" stroke="#d8b4fe" stroke-width="1.3" stroke-dasharray="7 5" data-graph-role="container" data-container-id="drive-branch" data-semantic-role="service-branch" data-graph-bounds="970,1430,1690,1680"/>
+  <text x="994" y="1460" class="phase-title" fill="#7e22ce">开送服务 · 单车 / 编组 / 背载</text>
+
+  <rect id="phase-delivery" x="60" y="1760" width="1680" height="590" rx="8" fill="#f0fdfa" fill-opacity="0.46" stroke="#99f6e4" stroke-width="1.3" data-graph-role="container" data-container-id="phase-delivery" data-semantic-role="phase" data-graph-bounds="60,1760,1740,2350"/>
+  <text x="84" y="1790" class="phase-title">阶段四：发车、在途履约、送达与回单</text>
+
+  <rect id="phase-settlement" x="60" y="2380" width="1680" height="760" rx="8" fill="#f0fdf4" fill-opacity="0.46" stroke="#bbf7d0" stroke-width="1.3" data-graph-role="container" data-container-id="phase-settlement" data-semantic-role="phase" data-graph-bounds="60,2380,1740,3140"/>
+  <text x="84" y="2410" class="phase-title">阶段五：结算门禁、应收应付与财务闭环</text>
+
+  <g id="edges">
+    <path id="e-plan-to-organize" data-graph-role="edge" data-edge-id="e-plan-to-organize" data-source="vendor-plan" data-target="organize" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 242 V290" class="flow"/>
+    <path id="e-organize-to-clarify" data-graph-role="edge" data-edge-id="e-organize-to-clarify" data-source="organize" data-target="clarify" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 370 V420" class="flow"/>
+    <path id="e-clarify-to-classify" data-graph-role="edge" data-edge-id="e-clarify-to-classify" data-source="clarify" data-target="classify" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 500 V550" class="flow"/>
+    <path id="e-classify-to-internal-plan" data-graph-role="edge" data-edge-id="e-classify-to-internal-plan" data-source="classify" data-target="internal-plan" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 612 V712" class="flow"/>
+    <path id="e-plan-to-price" data-graph-role="edge" data-edge-id="e-plan-to-price" data-source="internal-plan" data-target="price" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 797 V842" class="flow"/>
+    <path id="e-price-to-approval" data-graph-role="edge" data-edge-id="e-price-to-approval" data-source="price" data-target="approval" data-edge-kind="control" data-flow="control" data-bends="0" data-route-stretch="1" d="M900 927 V970" class="control"/>
+    <path id="e-approval-rework" data-graph-role="edge" data-edge-id="e-approval-rework" data-source="approval" data-target="price" data-edge-kind="feedback" data-flow="feedback" data-bends="2" data-route-stretch="1.25" d="M1070 1035 H1260 V884 H1200" class="exception"/>
+    <path id="e-approval-to-task" data-graph-role="edge" data-edge-id="e-approval-to-task" data-source="approval" data-target="task" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 1100 V1140" class="flow"/>
+    <path id="e-task-to-resource" data-graph-role="edge" data-edge-id="e-task-to-resource" data-source="task" data-target="resource-decision" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 1200 V1290" class="flow"/>
+
+    <path id="e-resource-to-whole" data-graph-role="edge" data-edge-id="e-resource-to-whole" data-source="resource-decision" data-target="whole-resource" data-edge-kind="control" data-flow="control" data-bends="2" data-route-stretch="1.22" d="M730 1350 H90 V1525 H170" class="control"/>
+    <path id="e-resource-to-drive" data-graph-role="edge" data-edge-id="e-resource-to-drive" data-source="resource-decision" data-target="drive-mode" data-edge-kind="control" data-flow="control" data-bends="2" data-route-stretch="1.22" d="M1070 1350 H1710 V1525 H1630" class="control"/>
+    <path id="e-whole-resource-to-load" data-graph-role="edge" data-edge-id="e-whole-resource-to-load" data-source="whole-resource" data-target="whole-load" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M470 1560 V1590" class="flow"/>
+    <path id="e-drive-mode-to-bind" data-graph-role="edge" data-edge-id="e-drive-mode-to-bind" data-source="drive-mode" data-target="drive-bind" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M1330 1560 V1590" class="flow"/>
+    <path id="e-whole-to-verify" data-graph-role="edge" data-edge-id="e-whole-to-verify" data-source="whole-load" data-target="verify" data-edge-kind="flow" data-flow="primary" data-bends="2" data-route-stretch="1.25" d="M470 1660 V1740 H820 V1810" class="flow"/>
+    <path id="e-drive-to-verify" data-graph-role="edge" data-edge-id="e-drive-to-verify" data-source="drive-bind" data-target="verify" data-edge-kind="flow" data-flow="primary" data-bends="2" data-route-stretch="1.25" d="M1330 1660 V1740 H980 V1810" class="flow"/>
+
+    <path id="e-verify-to-depart" data-graph-role="edge" data-edge-id="e-verify-to-depart" data-source="verify" data-target="depart" data-edge-kind="control" data-flow="control" data-bends="0" data-route-stretch="1" d="M900 1890 V1940" class="control"/>
+    <path id="e-depart-to-track" data-graph-role="edge" data-edge-id="e-depart-to-track" data-source="depart" data-target="track" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 2020 V2070" class="flow"/>
+    <path id="e-track-to-delivery" data-graph-role="edge" data-edge-id="e-track-to-delivery" data-source="track" data-target="delivery" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 2150 V2200" class="flow"/>
+    <path id="e-delivery-to-gate" data-graph-role="edge" data-edge-id="e-delivery-to-gate" data-source="delivery" data-target="settlement-gate" data-edge-kind="flow" data-flow="primary" data-bends="0" data-route-stretch="1" d="M900 2280 V2450" class="flow"/>
+
+    <path id="e-gate-to-issue" data-graph-role="edge" data-edge-id="e-gate-to-issue" data-source="settlement-gate" data-target="settlement-issue" data-edge-kind="feedback" data-flow="feedback" data-bends="0" data-route-stretch="1" d="M730 2510 H560" class="exception"/>
+    <path id="e-gate-to-ar" data-graph-role="edge" data-edge-id="e-gate-to-ar" data-source="settlement-gate" data-target="receivable" data-edge-kind="finance" data-flow="finance" data-bends="2" data-route-stretch="1.25" d="M815 2540 V2600 H500 V2640" class="finance"/>
+    <path id="e-gate-to-ap" data-graph-role="edge" data-edge-id="e-gate-to-ap" data-source="settlement-gate" data-target="payable" data-edge-kind="finance" data-flow="finance" data-bends="2" data-route-stretch="1.25" d="M985 2540 V2600 H1300 V2640" class="finance"/>
+    <path id="e-ar-to-audit" data-graph-role="edge" data-edge-id="e-ar-to-audit" data-source="receivable" data-target="audit" data-edge-kind="finance" data-flow="finance" data-bends="2" data-route-stretch="1.2" d="M500 2730 V2760 H800 V2790" class="finance"/>
+    <path id="e-ap-to-audit" data-graph-role="edge" data-edge-id="e-ap-to-audit" data-source="payable" data-target="audit" data-edge-kind="finance" data-flow="finance" data-bends="2" data-route-stretch="1.2" d="M1300 2730 V2760 H1000 V2790" class="finance"/>
+    <path id="e-audit-to-payment" data-graph-role="edge" data-edge-id="e-audit-to-payment" data-source="audit" data-target="payment" data-edge-kind="finance" data-flow="finance" data-bends="0" data-route-stretch="1" d="M900 2870 V2920" class="finance"/>
+    <path id="e-payment-to-close" data-graph-role="edge" data-edge-id="e-payment-to-close" data-source="payment" data-target="close" data-edge-kind="finance" data-flow="finance" data-bends="0" data-route-stretch="1" d="M900 3000 V3040" class="finance"/>
+  </g>
+
+  <g id="nodes">
+    <rect id="vendor-plan" data-node-id="vendor-plan" x="600" y="162" width="600" height="80" rx="8" class="node gray" data-graph-role="node" data-semantic-role="business-event" data-graph-bounds="600,162,1200,242"/>
+    <text x="624" y="184" class="role">委托厂商</text>
+    <text x="900" y="207" text-anchor="middle" class="node-title">厂商提供待发运车辆/货物清单</text>
+    <text x="900" y="230" text-anchor="middle" class="node-sub">明确交付标的、发收货地点、时限、联系人和厂商识别信息</text>
+
+    <rect id="organize" data-node-id="organize" x="600" y="290" width="600" height="80" rx="8" class="node blue" data-graph-role="node" data-semantic-role="process" data-graph-bounds="600,290,1200,370"/>
+    <text x="624" y="312" class="role">业务专员 / 项目人员</text>
+    <text x="900" y="335" text-anchor="middle" class="node-title">获取并整理当日原始计划</text>
+    <text x="900" y="358" text-anchor="middle" class="node-sub">按厂商和项目归集 Excel；一行原则上对应一件货物或一辆商品车</text>
+
+    <rect id="clarify" data-node-id="clarify" x="600" y="420" width="600" height="80" rx="8" class="node blue" data-graph-role="node" data-semantic-role="process" data-graph-bounds="600,420,1200,500"/>
+    <text x="624" y="442" class="role">业务专员 / 项目人员 + 委托厂商</text>
+    <text x="900" y="465" text-anchor="middle" class="node-title">核对、补全并澄清需求</text>
+    <text x="900" y="488" text-anchor="middle" class="node-sub">确认地址、车型、VIN、数量、时限、变更或取消；保留原始来源</text>
+
+    <rect id="classify" data-node-id="classify" x="600" y="550" width="600" height="62" rx="8" class="node orange" data-graph-role="node" data-semantic-role="process" data-graph-bounds="600,550,1200,612"/>
+    <text x="624" y="572" class="role">业务专员 / 项目负责人</text>
+    <text x="900" y="590" text-anchor="middle" class="node-title">逐件确认服务类型：整车运输服务或开送服务</text>
+
+    <rect id="internal-plan" data-node-id="internal-plan" x="600" y="712" width="600" height="85" rx="8" class="node purple" data-graph-role="node" data-semantic-role="process" data-graph-bounds="600,712,1200,797"/>
+    <text x="624" y="734" class="role">调度员 / 项目主管</text>
+    <text x="900" y="758" text-anchor="middle" class="node-title">编制内部执行计划</text>
+    <text x="900" y="782" text-anchor="middle" class="node-sub">按允许边界人工计划、合单、线路、途经点、时间和运输顺序</text>
+
+    <rect id="price" data-node-id="price" x="600" y="842" width="600" height="85" rx="8" class="node purple" data-graph-role="node" data-semantic-role="process" data-graph-bounds="600,842,1200,927"/>
+    <text x="624" y="864" class="role">调度员 / 业务经理</text>
+    <text x="900" y="888" text-anchor="middle" class="node-title">测算客户价格、履约成本与预计毛利</text>
+    <text x="900" y="912" text-anchor="middle" class="node-sub">合同约定价与履约成本分别核算；记录增补、调整依据和原因</text>
+
+    <polygon id="approval" data-node-id="approval" points="900,970 1070,1035 900,1100 730,1035" fill="#fff7ed" stroke="#f59e0b" stroke-width="1.8" data-graph-role="node" data-semantic-role="decision" data-graph-bounds="730,970,1070,1100"/>
+    <text x="900" y="1021" text-anchor="middle" class="node-title">计划与价格可执行？</text>
+    <text x="900" y="1046" text-anchor="middle" class="node-sub">改价、倒挂或异常费用需审批</text>
+    <text x="900" y="1067" text-anchor="middle" class="small">通过后进入履约组织</text>
+
+    <rect id="task" data-node-id="task" x="600" y="1140" width="600" height="60" rx="8" class="node purple" data-graph-role="node" data-semantic-role="process" data-graph-bounds="600,1140,1200,1200"/>
+    <text x="624" y="1162" class="role">调度员</text>
+    <text x="900" y="1180" text-anchor="middle" class="node-title">形成运输任务，并拆分 1-N 个真实执行单元</text>
+
+    <polygon id="resource-decision" data-node-id="resource-decision" points="900,1290 1070,1350 900,1410 730,1350" fill="#fff7ed" stroke="#f59e0b" stroke-width="1.8" data-graph-role="node" data-semantic-role="decision" data-graph-bounds="730,1290,1070,1410"/>
+    <text x="900" y="1337" text-anchor="middle" class="node-title">按服务类型组织履约</text>
+    <text x="900" y="1361" text-anchor="middle" class="node-sub">单个执行单元不得混合两种服务类型</text>
+
+    <rect id="whole-resource" data-node-id="whole-resource" x="170" y="1490" width="600" height="70" rx="8" class="node blue" data-graph-role="node" data-semantic-role="process" data-graph-bounds="170,1490,770,1560"/>
+    <text x="194" y="1512" class="role">调度员 + 承运方</text>
+    <text x="470" y="1534" text-anchor="middle" class="node-title">确定真实板车、承运司机和承运方</text>
+    <text x="470" y="1553" text-anchor="middle" class="small">外部车辆和司机信息必须真实、可核验</text>
+
+    <rect id="whole-load" data-node-id="whole-load" x="170" y="1590" width="600" height="70" rx="8" class="node blue" data-graph-role="node" data-semantic-role="process" data-graph-bounds="170,1590,770,1660"/>
+    <text x="194" y="1612" class="role">调度员 + 驻厂人员 + 承运方</text>
+    <text x="470" y="1634" text-anchor="middle" class="node-title">确定 1-N 件实际装载清单</text>
+    <text x="470" y="1653" text-anchor="middle" class="small">明确装车、卸货和沿途交付顺序</text>
+
+    <rect id="drive-mode" data-node-id="drive-mode" x="1030" y="1490" width="600" height="70" rx="8" class="node purple" data-graph-role="node" data-semantic-role="process" data-graph-bounds="1030,1490,1630,1560"/>
+    <text x="1054" y="1512" class="role">调度员 + 司机服务方</text>
+    <text x="1330" y="1534" text-anchor="middle" class="node-title">确定单车地跑、编组跑路或背载</text>
+    <text x="1330" y="1553" text-anchor="middle" class="small">执行方式由商品车数量、线路和现场条件决定</text>
+
+    <rect id="drive-bind" data-node-id="drive-bind" x="1030" y="1590" width="600" height="70" rx="8" class="node purple" data-graph-role="node" data-semantic-role="process" data-graph-bounds="1030,1590,1630,1660"/>
+    <text x="1054" y="1612" class="role">调度员 + 开送司机 / 司机服务方</text>
+    <text x="1330" y="1634" text-anchor="middle" class="node-title">逐车绑定真实商品车与开送司机</text>
+    <text x="1330" y="1653" text-anchor="middle" class="small">记录 VIN、车牌或临牌、领队顺序或母子车关系</text>
+
+    <rect id="verify" data-node-id="verify" x="600" y="1810" width="600" height="80" rx="8" class="node orange" data-graph-role="node" data-semantic-role="quality-gate" data-graph-bounds="600,1810,1200,1890"/>
+    <text x="624" y="1832" class="role">驻厂人员</text>
+    <text x="900" y="1855" text-anchor="middle" class="node-title">现场核验货物、商品车、车辆、司机与关系</text>
+    <text x="900" y="1878" text-anchor="middle" class="node-sub">不符时换车、换人或补办保险与临牌，复核通过后才可发车</text>
+
+    <rect id="depart" data-node-id="depart" x="600" y="1940" width="600" height="80" rx="8" class="node orange" data-graph-role="node" data-semantic-role="process" data-graph-bounds="600,1940,1200,2020"/>
+    <text x="624" y="1962" class="role">驻厂人员 + 调度员 + 结算人员</text>
+    <text x="900" y="1985" text-anchor="middle" class="node-title">确认装车或交车、发车并按约定办理预付款</text>
+    <text x="900" y="2008" text-anchor="middle" class="node-sub">预付比例和触发节点按项目或合同约定执行</text>
+
+    <rect id="track" data-node-id="track" x="600" y="2070" width="600" height="80" rx="8" class="node teal" data-graph-role="node" data-semantic-role="process" data-graph-bounds="600,2070,1200,2150"/>
+    <text x="624" y="2092" class="role">运踪人员 + 承运司机 / 开送司机</text>
+    <text x="900" y="2115" text-anchor="middle" class="node-title">通过电话、微信或短信跟踪运输过程</text>
+    <text x="900" y="2138" text-anchor="middle" class="node-sub">登记发车、在途、到达、换车换人、延误、货损、事故及处理结果</text>
+
+    <rect id="exception-note" x="1230" y="2070" width="430" height="80" rx="8" class="red" data-graph-role="reserved"/>
+    <text x="1445" y="2100" text-anchor="middle" font-size="13" font-weight="700" fill="#b91c1c">异常闭环原则</text>
+    <text x="1445" y="2123" text-anchor="middle" class="node-sub">明确责任人、处理记录与理赔支出</text>
+    <text x="1445" y="2142" text-anchor="middle" class="small">关键异常关闭后方可结算</text>
+
+    <rect id="delivery" data-node-id="delivery" x="600" y="2200" width="600" height="80" rx="8" class="node teal" data-graph-role="node" data-semantic-role="process" data-graph-bounds="600,2200,1200,2280"/>
+    <text x="624" y="2222" class="role">收货方 + 司机 + 回单人员</text>
+    <text x="900" y="2245" text-anchor="middle" class="node-title">逐件送达、签收并收集原始凭证</text>
+    <text x="900" y="2268" text-anchor="middle" class="node-sub">核对每件交付结果，审核、驳回或补充回单，并按厂商要求回传</text>
+
+    <polygon id="settlement-gate" data-node-id="settlement-gate" points="900,2450 1070,2510 900,2570 730,2510" fill="#fff7ed" stroke="#f59e0b" stroke-width="1.8" data-graph-role="node" data-semantic-role="decision" data-graph-bounds="730,2450,1070,2570"/>
+    <text x="900" y="2497" text-anchor="middle" class="node-title">具备结算条件？</text>
+    <text x="900" y="2521" text-anchor="middle" class="node-sub">逐件送达 + 回单齐套 + 异常关闭</text>
+    <text x="900" y="2542" text-anchor="middle" class="small">金额确认 + 主体资料完整</text>
+
+    <rect id="settlement-issue" data-node-id="settlement-issue" x="140" y="2470" width="420" height="80" rx="8" class="node red" data-graph-role="node" data-semantic-role="remediation" data-graph-bounds="140,2470,560,2550"/>
+    <text x="164" y="2492" font-size="11" font-weight="700" fill="#b91c1c">相关责任人员</text>
+    <text x="350" y="2515" text-anchor="middle" class="node-title">补回单、关异常、确认金额或主体</text>
+    <text x="350" y="2538" text-anchor="middle" class="small">处理完成后重新进入结算条件核验</text>
+
+    <rect id="receivable" data-node-id="receivable" x="250" y="2640" width="500" height="90" rx="8" class="node green" data-graph-role="node" data-semantic-role="financial-process" data-graph-bounds="250,2640,750,2730"/>
+    <text x="274" y="2662" class="role" fill="#15803d">签单结算员 + 委托厂商</text>
+    <text x="500" y="2686" text-anchor="middle" class="node-title">核对客户应收</text>
+    <text x="500" y="2709" text-anchor="middle" class="node-sub">合同价 + 途中增补；关联付款码、收款主体与实际到账</text>
+
+    <rect id="payable" data-node-id="payable" x="1050" y="2640" width="500" height="90" rx="8" class="node green" data-graph-role="node" data-semantic-role="financial-process" data-graph-bounds="1050,2640,1550,2730"/>
+    <text x="1074" y="2662" class="role" fill="#15803d">外车 / 司机结算员 + 履约方</text>
+    <text x="1300" y="2686" text-anchor="middle" class="node-title">核对履约应付</text>
+    <text x="1300" y="2709" text-anchor="middle" class="node-sub">预付款、尾款、司机服务费、扣补款与理赔分别核对</text>
+
+    <rect id="audit" data-node-id="audit" x="600" y="2790" width="600" height="80" rx="8" class="node green" data-graph-role="node" data-semantic-role="financial-process" data-graph-bounds="600,2790,1200,2870"/>
+    <text x="624" y="2812" class="role" fill="#15803d">业务经理 + 财务审核员</text>
+    <text x="900" y="2835" text-anchor="middle" class="node-title">审核收入、成本、毛利、费用依据与主体关系</text>
+    <text x="900" y="2858" text-anchor="middle" class="node-sub">客户应收和履约应付分开审核，不以车牌或虚拟单据作为结算依据</text>
+
+    <rect id="payment" data-node-id="payment" x="600" y="2920" width="600" height="80" rx="8" class="node green" data-graph-role="node" data-semantic-role="financial-process" data-graph-bounds="600,2920,1200,3000"/>
+    <text x="624" y="2942" class="role" fill="#15803d">财务 + 委托厂商 + 履约方</text>
+    <text x="900" y="2965" text-anchor="middle" class="node-title">办理开票、客户收款与履约付款</text>
+    <text x="900" y="2988" text-anchor="middle" class="node-sub">按实际受理、入账和收付款结果完成对账</text>
+
+    <rect id="close" data-node-id="close" x="650" y="3040" width="500" height="70" rx="35" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8" data-graph-role="node" data-semantic-role="terminal" data-graph-bounds="650,3040,1150,3110"/>
+    <text x="900" y="3070" text-anchor="middle" class="node-title" fill="#166534">本次业务闭环</text>
+    <text x="900" y="3093" text-anchor="middle" class="node-sub">交付事实、回单、收入、成本与收付款相互对应</text>
+  </g>
+
+  <g id="labels">
+    <text x="1274" y="968" class="edge-label" fill="#b91c1c" data-graph-role="label" data-owner="e-approval-rework">不通过：调整计划或价格</text>
+    <text x="620" y="1335" text-anchor="middle" class="edge-label" data-graph-role="label" data-owner="e-resource-to-whole">整车运输服务</text>
+    <text x="1180" y="1335" text-anchor="middle" class="edge-label" data-graph-role="label" data-owner="e-resource-to-drive">开送服务</text>
+    <text x="645" y="2498" text-anchor="middle" class="edge-label" fill="#b91c1c" data-graph-role="label" data-owner="e-gate-to-issue">不具备</text>
+    <text x="650" y="2590" text-anchor="middle" class="edge-label" fill="#166534" data-graph-role="label" data-owner="e-gate-to-ar">具备</text>
+  </g>
+
+  <g data-graph-role="legend">
+    <text x="60" y="3184" class="phase-title">图例</text>
+    <path d="M120 3178 H172" class="flow"/>
+    <text x="188" y="3184" class="node-sub">主业务流</text>
+    <path d="M330 3178 H382" class="control"/>
+    <text x="398" y="3184" class="node-sub">分类 / 审批决策</text>
+    <path d="M590 3178 H642" class="exception"/>
+    <text x="658" y="3184" class="node-sub">退回 / 补充处理</text>
+    <path d="M860 3178 H912" class="finance"/>
+    <text x="928" y="3184" class="node-sub">结算与财务流</text>
+    <rect x="1208" y="3158" width="532" height="40" rx="6" fill="#fef2f2" stroke="#fecaca"/>
+    <text x="1474" y="3183" text-anchor="middle" font-size="12" font-weight="600" fill="#b91c1c">业务底线：真实货物、真实车辆、真实司机、真实履约与真实金额</text>
+  </g>
+</svg>
